@@ -43,14 +43,13 @@ The witness is also verified prime by the repository's deterministic 64-bit Mill
 
 ## Remaining unresolved gates
 
-After resolving 107 and 757, five mirror doors compress to two unresolved prime gates:
+After resolving 107, 757, and 1481, five mirror doors compress to one unresolved prime gate:
 
 | unresolved prime gate | affected mirror roots |
 |---:|---|
 | 211 | 633, 67731 |
-| 1481 | 4443, 8886 |
 
-The `757` gate is now resolved by the prime witness `21,855,419,538,769`, and `2271` has the explicit witness `4,305,517,649,137,493`. `67731` already has its 107 support but still depends on the unresolved 211 gate.
+The `757` gate is resolved by prime witness `21,855,419,538,769`, unlocking `2271`. The `1481` gate is resolved by prime witness `13,169,009,631,553`, unlocking `4443` and `8886`. `67731` already has its 107 support but still depends on the only unresolved gate, `211`.
 
 ## Bounded searches
 
@@ -58,7 +57,7 @@ For each unresolved prime root `q`, a direct-prime search was performed over can
 
 $$p=kq^2\pm1,$$
 
-with $1\le k\le200000$. No exact-rank witness was found in the original `k <= 200,000` windows for 211, 757, or 1481. A deeper scan later resolved 757 at `k = 38,138,832`; 211 and 1481 remain unresolved compact-witness gates.
+with $1\le k\le200000$. No exact-rank witness was found in the original `k <= 200,000` windows for 211, 757, or 1481. Deeper scans later resolved 757 at `k = 38,138,832` and 1481 at `k = 6,004,032`; only 211 remains unresolved as a compact-witness gate.
 
 This is strictly a bounded computational observation. It is **not** a claim that no such prime witness exists.
 

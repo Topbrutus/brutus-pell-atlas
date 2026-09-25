@@ -24,12 +24,20 @@ PRIME_SUPPORT_WITNESSES = {
         "k": 38_138_832,
         "sign": 1,
     },
+    1481: {
+        "witness": 13_169_009_631_553,
+        "rank": 1481 * 1481,
+        "kind": "prime-direct",
+        "status": "VERIFIED_COMPUTATION",
+        "k": 6_004_032,
+        "sign": 1,
+    },
 }
 
 BOUNDED_SEARCH_OBSERVATIONS = {
     211: {"max_k": 200_000, "hits": [], "status": "NO_HIT_IN_WINDOW"},
     757: {"max_k": 38_138_832, "hits": [{"witness": 21_855_419_538_769, "k": 38_138_832, "sign": 1}], "status": "FOUND_DEEP_SCAN"},
-    1481: {"max_k": 200_000, "hits": [], "status": "NO_HIT_IN_WINDOW"},
+    1481: {"max_k": 6_004_032, "hits": [{"witness": 13_169_009_631_553, "k": 6_004_032, "sign": 1}], "status": "FOUND_DEEP_SCAN"},
 }
 
 MR_BASES_64 = (2, 325, 9375, 28178, 450775, 9780504, 1795265022)

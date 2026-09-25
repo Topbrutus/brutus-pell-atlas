@@ -180,3 +180,11 @@ Gate `757` is resolved by the explicit prime witness `21,855,419,538,769`, with 
 `4,305,517,649,137,493`, with exact Pell rank `5,157,441 = 2271^2`.
 
 See `GATE_757.md` and `reports/gate_757_scan.json`.
+
+## Gate 1481
+
+Gate `1481` is resolved by the explicit prime witness `13,169,009,631,553`, with exact Pell rank `2,193,361 = 1481^2`. It unlocks explicit Level-2 witnesses for roots `4443` and `8886`.
+
+Only Gate `211` remains unresolved at Frontier Level 2.
+
+See `GATE_1481.md` and `reports/gate_1481_scan.json`.

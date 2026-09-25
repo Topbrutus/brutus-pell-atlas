@@ -6,7 +6,7 @@
 - Adds verified mirror-root fibers for roots 3, 12, 21, and 24.
 - Expands the Rank Lattice to 16 verified nodes and gives every node at least one Pell square-rank witness.
 - Refreshes bridge discovery to 230 square-LCM products, 169 rank-preserving products, and 3 mirror hosts within the current curated dataset.
-- Expands regression coverage to 64 automated tests.
+- Expands regression coverage to 74 automated tests.
 - Adds a Mirror Frontier for roots 48 and 861 without auto-promoting them into the core lattice.
 - Verifies a prime witness for root 48 and a structured 648-digit witness for root 861.
 - Documents universal Pell-term witnesses `z_P(P_m)=m` and the fast exact-target verifier.
@@ -21,6 +21,9 @@
 - Resolves Gate 757 with prime witness 21,855,419,538,769 at k = 38,138,832.
 - Adds an explicit verified root-2271 witness 4,305,517,649,137,493.
 - Reduces unresolved Level-2 prime-support gates from three to two: 211 and 1481.
+- Resolves Gate 1481 with prime witness 13,169,009,631,553 at k = 6,004,032.
+- Adds explicit verified frontier witnesses for roots 4443 and 8886.
+- Reduces unresolved Level-2 prime-support gates to one: 211.
 
 ## v1.0.0 — 2026-09-25
 

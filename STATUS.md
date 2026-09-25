@@ -61,3 +61,14 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Level-2 root `2271`: explicit witness `4,305,517,649,137,493`, exact rank `2271^2`.
 - Gate `757`: resolved; core-lattice promotion remains a separate decision.
 - Remaining unresolved Level-2 prime gates: `211` and `1481`.
+
+## Gate 1481 status
+
+- Target rank: `2,193,361 = 1481^2`.
+- Explicit prime witness: `13,169,009,631,553`.
+- First hit in scanned windows: `k = 6,004,032` in `p = k*2,193,361 + 1`.
+- Exact prime-witness rank: verified by fast target testing and the original iterative Pell-rank engine.
+- Level-2 root `4443`: explicit verified witness `2,594,294,897,415,941`.
+- Level-2 root `8886`: explicit verified witness `7,782,884,692,247,823`.
+- Gate `1481`: resolved; core-lattice promotion remains a separate decision.
+- Only unresolved Level-2 prime gate remaining: `211`.

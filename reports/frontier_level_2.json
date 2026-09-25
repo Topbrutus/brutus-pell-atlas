@@ -7,9 +7,15 @@
   },
   "bounded_search_observations": {
     "1481": {
-      "hits": [],
-      "max_k": 200000,
-      "status": "NO_HIT_IN_WINDOW"
+      "hits": [
+        {
+          "k": 6004032,
+          "sign": 1,
+          "witness": 13169009631553
+        }
+      ],
+      "max_k": 6004032,
+      "status": "FOUND_DEEP_SCAN"
     },
     "211": {
       "hits": [],
@@ -83,8 +89,10 @@
       "novel_prime_support": [
         1481
       ],
-      "promotion_ready": false,
-      "resolved_novel_support": [],
+      "promotion_ready": true,
+      "resolved_novel_support": [
+        1481
+      ],
       "root": 4443,
       "sources": [
         {
@@ -96,9 +104,7 @@
           "source_root": 34440
         }
       ],
-      "unresolved_prime_gates": [
-        1481
-      ]
+      "unresolved_prime_gates": []
     },
     {
       "factorization": {
@@ -109,8 +115,10 @@
       "novel_prime_support": [
         1481
       ],
-      "promotion_ready": false,
-      "resolved_novel_support": [],
+      "promotion_ready": true,
+      "resolved_novel_support": [
+        1481
+      ],
       "root": 8886,
       "sources": [
         {
@@ -122,9 +130,7 @@
           "source_root": 68880
         }
       ],
-      "unresolved_prime_gates": [
-        1481
-      ]
+      "unresolved_prime_gates": []
     },
     {
       "factorization": {
@@ -177,6 +183,16 @@
       "status": "VERIFIED_COMPUTATION",
       "witness": 82318309
     },
+    "1481": {
+      "exact_rank_verified": true,
+      "k": 6004032,
+      "kind": "prime-direct",
+      "prime_verified": true,
+      "rank": 2193361,
+      "sign": 1,
+      "status": "VERIFIED_COMPUTATION",
+      "witness": 13169009631553
+    },
     "757": {
       "exact_rank_verified": true,
       "k": 38138832,
@@ -221,12 +237,8 @@
     68880
   ],
   "source": "mirror of the 29-node simulated promotion closure",
-  "unresolved_gate_count": 2,
+  "unresolved_gate_count": 1,
   "unresolved_gate_to_doors": {
-    "1481": [
-      4443,
-      8886
-    ],
     "211": [
       633,
       67731
