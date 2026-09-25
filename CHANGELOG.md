@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Adds a bidirectional Atlas query engine.
+- Adds automatic bridge discovery across stored verified records.
+- Distinguishes verified products not yet catalogued as Atlas records.
+- Expands regression coverage to 23 automated tests.
+
 ## v1.0.0 — 2026-09-25
 
 - Creates the integrated Brutus–Pell Atlas.

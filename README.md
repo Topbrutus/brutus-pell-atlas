@@ -110,3 +110,13 @@ python -m calculation.query_atlas --mirror-host 198477 --max-steps 44100
 ```
 
 See `QUERY.md` for the supported query modes and scientific boundaries.
+
+## Find missing bridges
+
+The Atlas can scan its verified records for additional exact connections:
+
+```bash
+python -m calculation.bridge_finder
+```
+
+See `BRIDGES.md` and `reports/bridge_report.json`.
