@@ -45,3 +45,11 @@ The fast matrix implementation is regression-tested against the original iterati
 ## Universal Pell-term witness
 
 For every positive `m`, `P_m` itself has rank exactly `m`: it divides `P_m`, while strict increase of the positive Pell sequence makes divisibility by any earlier positive term impossible. Thus the Atlas studies structured witnesses rather than mere fiber non-emptiness.
+
+## Prime-Support Gate
+
+For a simulated mirror expansion, each new root is factored and compared with the prime support already present in the current closure. Any newly introduced prime factor is treated as a gate.
+
+A gate can be marked supported only after an exact square-rank witness for that prime root has been verified. Direct-prime searches use candidates `p = k*q^2 +/- 1`, deterministic Miller?Rabin primality for 64-bit candidates, and exact modular Pell-rank testing.
+
+A failed bounded search records only `NO_HIT_IN_WINDOW`; it never establishes nonexistence.

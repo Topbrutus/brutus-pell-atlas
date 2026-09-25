@@ -158,3 +158,9 @@ The first unpromoted mirror continuation is tracked separately from the 16-node 
 These roots are verified but remain frontier-only because automatic gcd/lcm closure would expand the lattice from 16 to 29 nodes.
 
 See `MIRROR_FRONTIER.md` and `reports/mirror_frontier.json`.
+
+## Frontier Level 2
+
+The mirror expansion is now controlled by a Prime-Support Gate. The five Level-2 mirror roots are `633`, `2271`, `4443`, `8886`, and `67731`; after verifying a compact `107^2` witness, they compress to three unresolved prime gates: `211`, `757`, and `1481`.
+
+See `FRONTIER_LEVELS.md` and `reports/frontier_level_2.json`.

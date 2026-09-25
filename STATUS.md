@@ -33,3 +33,12 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Fiber non-emptiness: universal elementary fact via `z_P(P_m)=m`; not a novelty claim.
 - Roots 48 and 861: frontier-only, not yet promoted into the 16-node core Rank Lattice.
 - Decimal mirror relation: project representation layer; no universal Pell-mirror theorem claimed.
+
+## Frontier Level 2 status
+
+- Five Level-2 mirror roots: exact representation-level classification.
+- Prime-support set before Level 2: `{2,3,5,7,41}`.
+- Root 107 support: prime witness `82,318,309`, exact rank `107^2`, verified computation.
+- Prime gates 211, 757, 1481: unresolved compact-witness targets.
+- No-hit statements for `k <= 200,000`: bounded search observations only, never nonexistence claims.
+- Level 2 is not promoted into the core Rank Lattice.

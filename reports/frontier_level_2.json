@@ -1,0 +1,222 @@
+{
+  "bounded_search_method": {
+    "candidate_form": "p = k*q^2 +/- 1",
+    "interpretation": "NO_HIT_IN_WINDOW is not a nonexistence claim",
+    "primality": "deterministic Miller-Rabin for 64-bit candidates",
+    "rank_test": "exact modular Pell target verification"
+  },
+  "bounded_search_observations": {
+    "1481": {
+      "hits": [],
+      "max_k": 200000,
+      "status": "NO_HIT_IN_WINDOW"
+    },
+    "211": {
+      "hits": [],
+      "max_k": 200000,
+      "status": "NO_HIT_IN_WINDOW"
+    },
+    "757": {
+      "hits": [],
+      "max_k": 200000,
+      "status": "NO_HIT_IN_WINDOW"
+    }
+  },
+  "doors": [
+    {
+      "factorization": {
+        "211": 1,
+        "3": 1
+      },
+      "novel_prime_support": [
+        211
+      ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
+      "root": 633,
+      "sources": [
+        {
+          "mirror_token": "633",
+          "source_root": 336
+        }
+      ],
+      "unresolved_prime_gates": [
+        211
+      ]
+    },
+    {
+      "factorization": {
+        "3": 1,
+        "757": 1
+      },
+      "novel_prime_support": [
+        757
+      ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
+      "root": 2271,
+      "sources": [
+        {
+          "mirror_token": "2271",
+          "source_root": 1722
+        },
+        {
+          "mirror_token": "02271",
+          "source_root": 17220
+        }
+      ],
+      "unresolved_prime_gates": [
+        757
+      ]
+    },
+    {
+      "factorization": {
+        "1481": 1,
+        "3": 1
+      },
+      "novel_prime_support": [
+        1481
+      ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
+      "root": 4443,
+      "sources": [
+        {
+          "mirror_token": "4443",
+          "source_root": 3444
+        },
+        {
+          "mirror_token": "04443",
+          "source_root": 34440
+        }
+      ],
+      "unresolved_prime_gates": [
+        1481
+      ]
+    },
+    {
+      "factorization": {
+        "1481": 1,
+        "2": 1,
+        "3": 1
+      },
+      "novel_prime_support": [
+        1481
+      ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
+      "root": 8886,
+      "sources": [
+        {
+          "mirror_token": "8886",
+          "source_root": 6888
+        },
+        {
+          "mirror_token": "08886",
+          "source_root": 68880
+        }
+      ],
+      "unresolved_prime_gates": [
+        1481
+      ]
+    },
+    {
+      "factorization": {
+        "107": 1,
+        "211": 1,
+        "3": 1
+      },
+      "novel_prime_support": [
+        107,
+        211
+      ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        107
+      ],
+      "root": 67731,
+      "sources": [
+        {
+          "mirror_token": "67731",
+          "source_root": 13776
+        }
+      ],
+      "unresolved_prime_gates": [
+        211
+      ]
+    }
+  ],
+  "name": "Brutus-Pell Frontier Level 2",
+  "new_mirror_roots": [
+    633,
+    2271,
+    4443,
+    8886,
+    67731
+  ],
+  "policy": "Do not promote a mirror root that introduces unresolved prime support; keep it at the frontier until a compact or structurally justified witness is verified.",
+  "prime_support_before": [
+    2,
+    3,
+    5,
+    7,
+    41
+  ],
+  "prime_support_witnesses": {
+    "107": {
+      "exact_rank_verified": true,
+      "kind": "prime-direct",
+      "prime_verified": true,
+      "rank": 11449,
+      "status": "VERIFIED_COMPUTATION",
+      "witness": 82318309
+    }
+  },
+  "promoted_node_count": 29,
+  "promoted_nodes": [
+    1,
+    3,
+    6,
+    7,
+    12,
+    21,
+    24,
+    30,
+    42,
+    48,
+    60,
+    84,
+    120,
+    168,
+    210,
+    240,
+    336,
+    420,
+    840,
+    861,
+    1680,
+    1722,
+    3444,
+    6888,
+    8610,
+    13776,
+    17220,
+    34440,
+    68880
+  ],
+  "source": "mirror of the 29-node simulated promotion closure",
+  "unresolved_gate_count": 3,
+  "unresolved_gate_to_doors": {
+    "1481": [
+      4443,
+      8886
+    ],
+    "211": [
+      633,
+      67731
+    ],
+    "757": [
+      2271
+    ]
+  }
+}
