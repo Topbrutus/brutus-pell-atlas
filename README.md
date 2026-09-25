@@ -96,3 +96,17 @@ This atlas is intended to connect, not replace, independently archived Brutus ob
 ## License
 
 MIT License. See `LICENSE`.
+
+## Query the atlas
+
+The repository now includes a bidirectional query engine:
+
+```bash
+python -m calculation.query_atlas --n 3529 --max-steps 1764
+python -m calculation.query_atlas --rank 1764
+python -m calculation.query_atlas --fiber 42
+python -m calculation.query_atlas --inverse 210
+python -m calculation.query_atlas --mirror-host 198477 --max-steps 44100
+```
+
+See `QUERY.md` for the supported query modes and scientific boundaries.
