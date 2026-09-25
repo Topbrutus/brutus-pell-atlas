@@ -1,0 +1,18 @@
+{
+  "P_211_digits": 81,
+  "P_211_mod_211": 210,
+  "P_44521_digits": 17042,
+  "classification": "EXACT_COMPUTATION",
+  "division_exact": true,
+  "divisor_index": 211,
+  "factorization_status": "UNFACTORED_PRIMITIVE_PART",
+  "gcd_primitive_P_211": 1,
+  "identity": "primitive_part = P_44521 / P_211",
+  "index": 44521,
+  "name": "Gate 211 Pell primitive part",
+  "primitive_digits": 16961,
+  "primitive_mod_211": 210,
+  "primitive_prefix_80": "61747207383745251267551661356840012522616943992759108901102961712573129140142670",
+  "primitive_sha256": "d516a24aaa5abcf58f1a232596db70b390174e74bab44b20ae0682896703321e",
+  "primitive_suffix_80": "97394859275614605027219034519231402753075009780246400409751793726060264771476949"
+}

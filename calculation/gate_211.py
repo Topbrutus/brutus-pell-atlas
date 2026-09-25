@@ -24,8 +24,11 @@ def scan_window(start_k: int, end_k: int, stop_after: int = 1) -> dict:
 
 def build_report() -> dict:
     windows = [
-        {"start_k": 1, "end_k": 200_000, "prime_candidates_tested": 9_177, "hits": []},
-        {"start_k": 200_001, "end_k": 5_000_000, "prime_candidates_tested": 190_833, "hits": []},
+        {"start_k": 1, "end_k": 200_000, "prime_candidates_tested": 9_177, "hits": [], "method": "direct-congruence-filter"},
+        {"start_k": 200_001, "end_k": 5_000_000, "prime_candidates_tested": 190_833, "hits": [], "method": "direct-congruence-filter"},
+        {"start_k": 5_000_001, "end_k": 100_000_000, "prime_candidates_tested": 3_374_781, "hits": [], "method": "parallel-congruence-filter"},
+        {"start_k": 100_000_001, "end_k": 500_000_000, "prime_candidates_tested": 13_342_466, "hits": [], "method": "segmented-small-prime-sieve-plus-exact-rank"},
+        {"start_k": 500_000_001, "end_k": 1_000_000_000, "prime_candidates_tested": 16_144_165, "hits": [], "method": "segmented-small-prime-sieve-plus-exact-rank"},
     ]
     return {
         "name": "Brutus-Pell Gate 211 Deep Scan",
@@ -50,8 +53,8 @@ def build_report() -> dict:
         },
         "computed_windows": windows,
         "combined": {
-            "max_k": 5_000_000,
-            "largest_candidate_bound": 5_000_000 * TARGET_RANK + 1,
+            "max_k": 1_000_000_000,
+            "largest_candidate_bound": 1_000_000_000 * TARGET_RANK + 1,
             "prime_candidates_tested": sum(w["prime_candidates_tested"] for w in windows),
             "hits": [],
             "status": "NO_EXPLICIT_PRIME_WITNESS_IN_SCANNED_WINDOW",

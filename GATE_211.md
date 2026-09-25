@@ -43,26 +43,54 @@ This known-theory filter is applied before primality and exact-rank testing.
 
 ## Deep scan
 
-Two verified scan segments together cover
+Five verified scan segments together cover
 
-$$1\le k\le5\,000\,000.$$
+$$1\le k\le1\,000\,000\,000.$$
 
 Results:
 
 - `k = 1..200000`: 9,177 admissible prime candidates tested;
-- `k = 200001..5000000`: 190,833 admissible prime candidates tested;
-- total exact-rank prime candidates tested: **200,010**;
+- `k = 200001..5000000`: 190,833 tested;
+- `k = 5000001..100000000`: 3,374,781 tested;
+- `k = 100000001..500000000`: 13,342,466 tested;
+- `k = 500000001..1000000000`: 16,144,165 tested;
+- total exact-rank prime candidates tested: **33,061,422**;
 - explicit rank-$44521$ hits: **0**.
 
 The largest candidate bound reached is
 
-$$5\,000\,000\cdot44521+1=222\,605\,000\,001.$$
+$$1\,000\,000\,000\cdot44521+1=44\,521\,000\,000\,001.$$
 
-Therefore the correct status is:
+The later windows used a segmented small-prime sieve as an execution optimization. Surviving integers were still subjected to deterministic 64-bit primality testing followed by the same exact Pell-rank criterion.
+
+Therefore the correct status remains
 
 $$\boxed{\text{NO EXPLICIT PRIME WITNESS IN THE SCANNED WINDOW}}.$$
 
 This is not a nonexistence statement.
+
+## Primitive-part pivot
+
+The OEIS primitive-part sequence for Pell numbers (A008555) defines the Sylvester?Pell cyclotomic part by removing the primitive parts attached to proper divisor indices. Since
+
+$$44521=211^2$$
+
+and `211` is prime, the relevant primitive part reduces here to
+
+$$\boxed{\Phi^{(P)}_{44521}=\frac{P_{44521}}{P_{211}}}.$$
+
+Exact computation gives:
+
+- `P_211`: 81 decimal digits;
+- `P_44521`: 17,042 decimal digits;
+- primitive quotient: **16,961 decimal digits**;
+- division remainder: `0`;
+- `gcd(primitive quotient, P_211) = 1`;
+- SHA-256 of the decimal primitive quotient:
+
+`d516a24aaa5abcf58f1a232596db70b390174e74bab44b20ae0682896703321e`.
+
+The primitive quotient is currently **unfactored** in this project. A direct SymPy Pollard p-1 attempt is operationally unsuitable at this size; the next factorization stage calls for a dedicated ECM/PARI/NTL-class engine rather than simply extending the congruential brute-force window.
 
 ## Reproduce
 
@@ -70,4 +98,6 @@ This is not a nonexistence statement.
 python -m calculation.gate_211
 ```
 
-Machine-readable report: `reports/gate_211_scan.json`.
+Machine-readable reports: `reports/gate_211_scan.json` and `reports/gate_211_primitive.json`.
+
+Primitive-part fingerprint: `python -m calculation.gate_211_primitive`.

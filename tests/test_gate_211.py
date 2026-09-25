@@ -38,9 +38,11 @@ class Gate211Tests(unittest.TestCase):
 
     def test_report_records_deep_scan(self):
         report = build_report()
-        self.assertEqual(report["combined"]["max_k"], 5_000_000)
-        self.assertEqual(report["combined"]["prime_candidates_tested"], 200_010)
+        self.assertEqual(report["combined"]["max_k"], 1_000_000_000)
+        self.assertEqual(report["combined"]["prime_candidates_tested"], 33_061_422)
         self.assertEqual(report["combined"]["hits"], [])
+        self.assertEqual(report["combined"]["largest_candidate_bound"], 44_521_000_000_001)
+        self.assertEqual(len(report["computed_windows"]), 5)
         self.assertTrue(report["known_theory"]["primitive_prime_divisor_existence"])
 
 if __name__ == "__main__":

@@ -161,7 +161,7 @@ See `MIRROR_FRONTIER.md` and `reports/mirror_frontier.json`.
 
 ## Frontier Level 2
 
-The mirror expansion is now controlled by a Prime-Support Gate. The five Level-2 mirror roots are `633`, `2271`, `4443`, `8886`, and `67731`; after verifying a compact `107^2` witness, they compress to three unresolved prime gates: `211`, `757`, and `1481`.
+The mirror expansion is now controlled by a Prime-Support Gate. The five Level-2 mirror roots are `633`, `2271`, `4443`, `8886`, and `67731`; the new prime support is `107`, `211`, `757`, and `1481`. Gates `107`, `757`, and `1481` now have explicit verified witnesses; only `211` remains unresolved.
 
 See `FRONTIER_LEVELS.md` and `reports/frontier_level_2.json`.
 
@@ -169,9 +169,9 @@ See `FRONTIER_LEVELS.md` and `reports/frontier_level_2.json`.
 
 Frontier Level 2 now isolates `211` as the first deep prime-support gate. Known primitive-divisor theory guarantees that a prime witness with Pell rank `211^2 = 44521` exists; the current computational task is to exhibit a compact explicit witness.
 
-A congruence-filtered scan has tested 200,010 admissible prime candidates through `k = 5,000,000` in `p = 44521*k +/- 1`, with no explicit hit in that bounded window.
+A congruence-filtered scan has tested 33,061,422 admissible prime candidates through `k = 1,000,000,000` in `p = 44521*k +/- 1`, with no explicit hit in that bounded window. The exact primitive part `P_44521 / P_211` has 16,961 decimal digits and is now fingerprinted for the next dedicated-factorization stage.
 
-See `GATE_211.md` and `reports/gate_211_scan.json`.
+See `GATE_211.md`, `reports/gate_211_scan.json`, and `reports/gate_211_primitive.json`.
 
 ## Gate 757
 

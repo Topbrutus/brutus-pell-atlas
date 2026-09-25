@@ -60,10 +60,18 @@ For Pell numbers, viewed as the Lucas sequence `U_n(2,-1)`, the discriminant is 
 
 For target rank `rho(p) = 44521`, candidate primes are therefore restricted to `p = 44521*k +/- 1`, with the sign required to equal the Legendre symbol `(8/p)`. The implementation applies this arithmetic filter first, then deterministic 64-bit Miller?Rabin primality, then exact modular Pell-rank verification.
 
-The stored deep-scan report records the performed windows and their tested-prime counts; regression tests verify the filter mechanics but intentionally do not rerun the entire five-million-`k` scan on every test suite invocation.
+The stored deep-scan report records the performed windows and their tested-prime counts; regression tests verify the filter mechanics but intentionally do not rerun the entire one-billion-`k` scan on every test suite invocation.
 
 ## Generic prime-support gate scanner
 
 `calculation/gate_scan.py` factors the common Lucas/Pell congruence filter and exact-rank scan logic out of gate-specific modules. Gate-specific files now store only the target root, verified scan history, witness data, and structural consequences.
 
 The 757 search used the same rule as Gate 211 and was parallelized only as an execution optimization; the candidate definition, primality test, and exact-rank criterion were unchanged.
+
+## Primitive-part factorization pivot
+
+For Gate 211, the congruential scan reached `k = 1,000,000,000` without an explicit rank-44521 prime witness. The next stage therefore works with the Pell primitive part directly.
+
+For `n = 44521 = 211^2`, OEIS A008555 gives the Sylvester?Pell cyclotomic/primitive-part construction; because 211 is prime, the relevant exact quotient is `P_44521 / P_211`. The repository computes this quotient exactly, records its decimal length and SHA-256 fingerprint, and verifies that it is coprime to `P_211`.
+
+The quotient has 16,961 decimal digits. General-purpose pure-Python Pollard p-1 is not treated as a completed factorization stage at this size; a dedicated ECM/PARI/NTL-class factorization engine is the appropriate next computational tool.

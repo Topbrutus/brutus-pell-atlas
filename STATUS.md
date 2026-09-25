@@ -39,8 +39,8 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Five Level-2 mirror roots: exact representation-level classification.
 - Prime-support set before Level 2: `{2,3,5,7,41}`.
 - Root 107 support: prime witness `82,318,309`, exact rank `107^2`, verified computation.
-- Prime gates 211, 757, 1481: unresolved compact-witness targets.
-- No-hit statements for `k <= 200,000`: bounded search observations only, never nonexistence claims.
+- Prime gates 757 and 1481: resolved with explicit prime witnesses; gate 211 remains the only unresolved compact-witness target.
+- No-hit statements are bounded search observations only, never nonexistence claims; Gate 211 is now scanned through `k = 1,000,000,000`.
 - Level 2 is not promoted into the core Rank Lattice.
 
 ## Gate 211 status
@@ -49,7 +49,9 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Existence of a prime with exact Pell rank 44521: `KNOWN_THEORY` via primitive prime divisors of Pell numbers.
 - Congruence restriction `p ? (8/p) mod z_P(p)`: `KNOWN_THEORY` for Lucas sequences.
 - Explicit compact prime witness: not yet found.
-- Deep bounded scan: 200,010 admissible prime candidates tested through `k = 5,000,000`; zero hits.
+- Deep bounded scan: 33,061,422 admissible prime candidates tested through `k = 1,000,000,000`; zero hits.
+- Largest candidate bound reached: `44,521,000,000,001`.
+- Primitive part `P_44521 / P_211`: exact 16,961-digit integer, SHA-256 `d516a24aaa5abcf58f1a232596db70b390174e74bab44b20ae0682896703321e`, currently unfactored.
 - Interpretation: `NO_EXPLICIT_PRIME_WITNESS_IN_SCANNED_WINDOW`, not nonexistence.
 
 ## Gate 757 status
@@ -60,7 +62,7 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
 - Level-2 root `2271`: explicit witness `4,305,517,649,137,493`, exact rank `2271^2`.
 - Gate `757`: resolved; core-lattice promotion remains a separate decision.
-- Remaining unresolved Level-2 prime gates: `211` and `1481`.
+- Remaining unresolved Level-2 prime gate: `211`.
 
 ## Gate 1481 status
 

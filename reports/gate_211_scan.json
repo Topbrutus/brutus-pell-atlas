@@ -1,23 +1,46 @@
 {
   "combined": {
     "hits": [],
-    "largest_candidate_bound": 222605000001,
-    "max_k": 5000000,
-    "prime_candidates_tested": 200010,
+    "largest_candidate_bound": 44521000000001,
+    "max_k": 1000000000,
+    "prime_candidates_tested": 33061422,
     "status": "NO_EXPLICIT_PRIME_WITNESS_IN_SCANNED_WINDOW"
   },
   "computed_windows": [
     {
       "end_k": 200000,
       "hits": [],
+      "method": "direct-congruence-filter",
       "prime_candidates_tested": 9177,
       "start_k": 1
     },
     {
       "end_k": 5000000,
       "hits": [],
+      "method": "direct-congruence-filter",
       "prime_candidates_tested": 190833,
       "start_k": 200001
+    },
+    {
+      "end_k": 100000000,
+      "hits": [],
+      "method": "parallel-congruence-filter",
+      "prime_candidates_tested": 3374781,
+      "start_k": 5000001
+    },
+    {
+      "end_k": 500000000,
+      "hits": [],
+      "method": "segmented-small-prime-sieve-plus-exact-rank",
+      "prime_candidates_tested": 13342466,
+      "start_k": 100000001
+    },
+    {
+      "end_k": 1000000000,
+      "hits": [],
+      "method": "segmented-small-prime-sieve-plus-exact-rank",
+      "prime_candidates_tested": 16144165,
+      "start_k": 500000001
     }
   ],
   "known_theory": {
