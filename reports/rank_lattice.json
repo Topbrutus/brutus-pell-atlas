@@ -1,0 +1,322 @@
+{
+  "closed_under_gcd": true,
+  "closed_under_lcm": true,
+  "hasse_edges": [
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      6,
+      30
+    ],
+    [
+      6,
+      42
+    ],
+    [
+      7,
+      42
+    ],
+    [
+      30,
+      210
+    ],
+    [
+      42,
+      210
+    ]
+  ],
+  "identity_rank": 1,
+  "identity_rank_verified": true,
+  "identity_root": 1,
+  "name": "Brutus-Pell Rank Lattice",
+  "node_records": [
+    {
+      "root": 1,
+      "square_rank": 1,
+      "stored_member_count": 0,
+      "stored_members": [],
+      "structural_only": true
+    },
+    {
+      "root": 6,
+      "square_rank": 36,
+      "stored_member_count": 1,
+      "stored_members": [
+        73
+      ],
+      "structural_only": false
+    },
+    {
+      "root": 7,
+      "square_rank": 49,
+      "stored_member_count": 1,
+      "stored_members": [
+        293
+      ],
+      "structural_only": false
+    },
+    {
+      "root": 30,
+      "square_rank": 900,
+      "stored_member_count": 1,
+      "stored_members": [
+        10877
+      ],
+      "structural_only": false
+    },
+    {
+      "root": 42,
+      "square_rank": 1764,
+      "stored_member_count": 4,
+      "stored_members": [
+        3529,
+        9261,
+        21389,
+        1203930
+      ],
+      "structural_only": false
+    },
+    {
+      "root": 210,
+      "square_rank": 44100,
+      "stored_member_count": 4,
+      "stored_members": [
+        198477,
+        33542613,
+        190736397,
+        32234451093
+      ],
+      "structural_only": false
+    }
+  ],
+  "nodes": [
+    1,
+    6,
+    7,
+    30,
+    42,
+    210
+  ],
+  "nontrivial_joins": [
+    {
+      "a": 6,
+      "b": 7,
+      "join": 42
+    },
+    {
+      "a": 7,
+      "b": 30,
+      "join": 210
+    },
+    {
+      "a": 30,
+      "b": 42,
+      "join": 210
+    }
+  ],
+  "order": "divisibility on square-rank roots C",
+  "pairs": [
+    {
+      "a": 1,
+      "b": 1,
+      "join_in_lattice": true,
+      "join_lcm": 1,
+      "meet_gcd": 1,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 1,
+      "b": 6,
+      "join_in_lattice": true,
+      "join_lcm": 6,
+      "meet_gcd": 1,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 1,
+      "b": 7,
+      "join_in_lattice": true,
+      "join_lcm": 7,
+      "meet_gcd": 1,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 1,
+      "b": 30,
+      "join_in_lattice": true,
+      "join_lcm": 30,
+      "meet_gcd": 1,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 1,
+      "b": 42,
+      "join_in_lattice": true,
+      "join_lcm": 42,
+      "meet_gcd": 1,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 1,
+      "b": 210,
+      "join_in_lattice": true,
+      "join_lcm": 210,
+      "meet_gcd": 1,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 6,
+      "b": 6,
+      "join_in_lattice": true,
+      "join_lcm": 6,
+      "meet_gcd": 6,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 6,
+      "b": 7,
+      "join_in_lattice": true,
+      "join_lcm": 42,
+      "meet_gcd": 1,
+      "meet_in_lattice": true,
+      "nontrivial_join": true
+    },
+    {
+      "a": 6,
+      "b": 30,
+      "join_in_lattice": true,
+      "join_lcm": 30,
+      "meet_gcd": 6,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 6,
+      "b": 42,
+      "join_in_lattice": true,
+      "join_lcm": 42,
+      "meet_gcd": 6,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 6,
+      "b": 210,
+      "join_in_lattice": true,
+      "join_lcm": 210,
+      "meet_gcd": 6,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 7,
+      "b": 7,
+      "join_in_lattice": true,
+      "join_lcm": 7,
+      "meet_gcd": 7,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 7,
+      "b": 30,
+      "join_in_lattice": true,
+      "join_lcm": 210,
+      "meet_gcd": 1,
+      "meet_in_lattice": true,
+      "nontrivial_join": true
+    },
+    {
+      "a": 7,
+      "b": 42,
+      "join_in_lattice": true,
+      "join_lcm": 42,
+      "meet_gcd": 7,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 7,
+      "b": 210,
+      "join_in_lattice": true,
+      "join_lcm": 210,
+      "meet_gcd": 7,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 30,
+      "b": 30,
+      "join_in_lattice": true,
+      "join_lcm": 30,
+      "meet_gcd": 30,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 30,
+      "b": 42,
+      "join_in_lattice": true,
+      "join_lcm": 210,
+      "meet_gcd": 6,
+      "meet_in_lattice": true,
+      "nontrivial_join": true
+    },
+    {
+      "a": 30,
+      "b": 210,
+      "join_in_lattice": true,
+      "join_lcm": 210,
+      "meet_gcd": 30,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 42,
+      "b": 42,
+      "join_in_lattice": true,
+      "join_lcm": 42,
+      "meet_gcd": 42,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 42,
+      "b": 210,
+      "join_in_lattice": true,
+      "join_lcm": 210,
+      "meet_gcd": 42,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    },
+    {
+      "a": 210,
+      "b": 210,
+      "join_in_lattice": true,
+      "join_lcm": 210,
+      "meet_gcd": 210,
+      "meet_in_lattice": true,
+      "nontrivial_join": false
+    }
+  ],
+  "seed_roots": [
+    6,
+    7,
+    30,
+    42,
+    210
+  ]
+}

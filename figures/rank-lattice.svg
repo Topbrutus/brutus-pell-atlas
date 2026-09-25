@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect width="1400" height="900" fill="#000"/>
+  <g stroke="#fff" stroke-width="3" fill="none">
+    <line x1="700" y1="760" x2="470" y2="620"/>
+    <line x1="700" y1="760" x2="930" y2="620"/>
+    <line x1="470" y1="620" x2="350" y2="430"/>
+    <line x1="470" y1="620" x2="700" y2="430"/>
+    <line x1="930" y1="620" x2="700" y2="430"/>
+    <line x1="350" y1="430" x2="700" y2="210"/>
+    <line x1="700" y1="430" x2="700" y2="210"/>
+  </g>
+  <g fill="#000" stroke="#fff" stroke-width="3">
+    <circle cx="700" cy="760" r="58"/>
+    <circle cx="470" cy="620" r="58"/>
+    <circle cx="930" cy="620" r="58"/>
+    <circle cx="350" cy="430" r="66"/>
+    <circle cx="700" cy="430" r="66"/>
+    <circle cx="700" cy="210" r="78"/>
+  </g>
+  <g fill="#fff" font-family="Georgia, Times New Roman, serif" text-anchor="middle">
+    <text x="700" y="75" font-size="48">Brutus–Pell Rank Lattice</text>
+    <text x="700" y="118" font-size="24">Square-rank roots ordered by divisibility</text>
+    <text x="700" y="770" font-size="34">1</text>
+    <text x="470" y="630" font-size="34">6</text>
+    <text x="930" y="630" font-size="34">7</text>
+    <text x="350" y="440" font-size="34">30</text>
+    <text x="700" y="440" font-size="34">42</text>
+    <text x="700" y="222" font-size="38">210</text>
+    <text x="1040" y="300" font-size="24" text-anchor="start">meet = gcd</text>
+    <text x="1040" y="338" font-size="24" text-anchor="start">join = lcm</text>
+    <text x="1040" y="395" font-size="22" text-anchor="start">6 ∨ 7 = 42</text>
+    <text x="1040" y="430" font-size="22" text-anchor="start">7 ∨ 30 = 210</text>
+    <text x="1040" y="465" font-size="22" text-anchor="start">30 ∨ 42 = 210</text>
+  </g>
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="90" y="845">Verified roots: 6, 7, 30, 42, 210 • structural identity: 1 • exact gcd/lcm closure verified</text>
+  </g>
+</svg>

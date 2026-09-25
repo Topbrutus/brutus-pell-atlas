@@ -120,3 +120,13 @@ python -m calculation.bridge_finder
 ```
 
 See `BRIDGES.md` and `reports/bridge_report.json`.
+
+## Rank Lattice
+
+The verified Square-Rank Fiber roots are also organized as a strict gcd/lcm lattice:
+
+```bash
+python -m calculation.rank_lattice
+```
+
+See `LATTICE.md` and `reports/rank_lattice.json`.
