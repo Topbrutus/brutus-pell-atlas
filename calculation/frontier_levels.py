@@ -16,11 +16,19 @@ PRIME_SUPPORT_WITNESSES = {
         "kind": "prime-direct",
         "status": "VERIFIED_COMPUTATION",
     },
+    757: {
+        "witness": 21_855_419_538_769,
+        "rank": 757 * 757,
+        "kind": "prime-direct",
+        "status": "VERIFIED_COMPUTATION",
+        "k": 38_138_832,
+        "sign": 1,
+    },
 }
 
 BOUNDED_SEARCH_OBSERVATIONS = {
     211: {"max_k": 200_000, "hits": [], "status": "NO_HIT_IN_WINDOW"},
-    757: {"max_k": 200_000, "hits": [], "status": "NO_HIT_IN_WINDOW"},
+    757: {"max_k": 38_138_832, "hits": [{"witness": 21_855_419_538_769, "k": 38_138_832, "sign": 1}], "status": "FOUND_DEEP_SCAN"},
     1481: {"max_k": 200_000, "hits": [], "status": "NO_HIT_IN_WINDOW"},
 }
 

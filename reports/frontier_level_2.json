@@ -17,9 +17,15 @@
       "status": "NO_HIT_IN_WINDOW"
     },
     "757": {
-      "hits": [],
-      "max_k": 200000,
-      "status": "NO_HIT_IN_WINDOW"
+      "hits": [
+        {
+          "k": 38138832,
+          "sign": 1,
+          "witness": 21855419538769
+        }
+      ],
+      "max_k": 38138832,
+      "status": "FOUND_DEEP_SCAN"
     }
   },
   "doors": [
@@ -52,8 +58,10 @@
       "novel_prime_support": [
         757
       ],
-      "promotion_ready": false,
-      "resolved_novel_support": [],
+      "promotion_ready": true,
+      "resolved_novel_support": [
+        757
+      ],
       "root": 2271,
       "sources": [
         {
@@ -65,9 +73,7 @@
           "source_root": 17220
         }
       ],
-      "unresolved_prime_gates": [
-        757
-      ]
+      "unresolved_prime_gates": []
     },
     {
       "factorization": {
@@ -170,6 +176,16 @@
       "rank": 11449,
       "status": "VERIFIED_COMPUTATION",
       "witness": 82318309
+    },
+    "757": {
+      "exact_rank_verified": true,
+      "k": 38138832,
+      "kind": "prime-direct",
+      "prime_verified": true,
+      "rank": 573049,
+      "sign": 1,
+      "status": "VERIFIED_COMPUTATION",
+      "witness": 21855419538769
     }
   },
   "promoted_node_count": 29,
@@ -205,7 +221,7 @@
     68880
   ],
   "source": "mirror of the 29-node simulated promotion closure",
-  "unresolved_gate_count": 3,
+  "unresolved_gate_count": 2,
   "unresolved_gate_to_doors": {
     "1481": [
       4443,
@@ -214,9 +230,6 @@
     "211": [
       633,
       67731
-    ],
-    "757": [
-      2271
     ]
   }
 }

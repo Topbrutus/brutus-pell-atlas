@@ -1,0 +1,52 @@
+{
+  "combined": {
+    "first_hit_k": 38138832,
+    "prime_candidates_tested_to_first_hit": 1286608,
+    "status": "EXPLICIT_PRIME_WITNESS_FOUND"
+  },
+  "computed_windows": [
+    {
+      "end_k": 200000,
+      "hits": [],
+      "prime_candidates_tested": 8205,
+      "start_k": 1
+    },
+    {
+      "end_k": 5000000,
+      "hits": [],
+      "prime_candidates_tested": 172511,
+      "start_k": 200001
+    },
+    {
+      "end_k": 38138832,
+      "hits": [
+        {
+          "k": 38138832,
+          "p": 21855419538769,
+          "sign": 1
+        }
+      ],
+      "prime_candidates_tested": 1105892,
+      "start_k": 5000001
+    }
+  ],
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 38138832,
+    "p": 21855419538769,
+    "prime_verified": true,
+    "sign": 1
+  },
+  "name": "Brutus-Pell Gate 757 Deep Scan",
+  "root": 757,
+  "target_rank": 573049,
+  "unlocked_mirror_root": {
+    "construction": "197 * 21855419538769",
+    "exact_rank_verified": true,
+    "gcd_components": 1,
+    "root": 2271,
+    "target_rank": 5157441,
+    "witness": 4305517649137493
+  }
+}

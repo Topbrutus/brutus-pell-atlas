@@ -51,3 +51,13 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Explicit compact prime witness: not yet found.
 - Deep bounded scan: 200,010 admissible prime candidates tested through `k = 5,000,000`; zero hits.
 - Interpretation: `NO_EXPLICIT_PRIME_WITNESS_IN_SCANNED_WINDOW`, not nonexistence.
+
+## Gate 757 status
+
+- Target rank: `573049 = 757^2`.
+- Explicit prime witness: `21,855,419,538,769`.
+- First hit: `k = 38,138,832` in `p = k*573049 + 1`.
+- Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
+- Level-2 root `2271`: explicit witness `4,305,517,649,137,493`, exact rank `2271^2`.
+- Gate `757`: resolved; core-lattice promotion remains a separate decision.
+- Remaining unresolved Level-2 prime gates: `211` and `1481`.

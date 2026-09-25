@@ -172,3 +172,11 @@ Frontier Level 2 now isolates `211` as the first deep prime-support gate. Known 
 A congruence-filtered scan has tested 200,010 admissible prime candidates through `k = 5,000,000` in `p = 44521*k +/- 1`, with no explicit hit in that bounded window.
 
 See `GATE_211.md` and `reports/gate_211_scan.json`.
+
+## Gate 757
+
+Gate `757` is resolved by the explicit prime witness `21,855,419,538,769`, with exact Pell rank `573,049 = 757^2`. Combining it with the verified root-3 witness `197` gives an explicit Level-2 mirror witness for root `2271`:
+
+`4,305,517,649,137,493`, with exact Pell rank `5,157,441 = 2271^2`.
+
+See `GATE_757.md` and `reports/gate_757_scan.json`.
