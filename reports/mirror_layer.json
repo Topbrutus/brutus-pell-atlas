@@ -1,0 +1,209 @@
+{
+  "arithmetic_rule": "negative sign does not change divisibility by Pell terms after absolute-value projection",
+  "mirror_cases": [
+    {
+      "mirror_members": [
+        197
+      ],
+      "mirror_rank": 9,
+      "mirror_root": 3,
+      "mirror_supported": true,
+      "mirror_token": "03",
+      "rank": 900,
+      "root": 30,
+      "root_members": [
+        1801,
+        10877
+      ],
+      "root_supported": true,
+      "sign_invariant_at_root_magnitude": true,
+      "signed_orbit_tokens": [
+        "30",
+        "03",
+        "-30",
+        "-03"
+      ],
+      "signed_orbit_values": [
+        30,
+        3,
+        -30,
+        -3
+      ],
+      "width": 2
+    },
+    {
+      "mirror_members": [
+        18761
+      ],
+      "mirror_rank": 576,
+      "mirror_root": 24,
+      "mirror_supported": true,
+      "mirror_token": "24",
+      "rank": 1764,
+      "root": 42,
+      "root_members": [
+        3529,
+        9261,
+        21389,
+        1203930
+      ],
+      "root_supported": true,
+      "sign_invariant_at_root_magnitude": true,
+      "signed_orbit_tokens": [
+        "42",
+        "24",
+        "-42",
+        "-24"
+      ],
+      "signed_orbit_values": [
+        42,
+        24,
+        -42,
+        -24
+      ],
+      "width": 2
+    },
+    {
+      "mirror_members": [
+        7081
+      ],
+      "mirror_rank": 144,
+      "mirror_root": 12,
+      "mirror_supported": true,
+      "mirror_token": "012",
+      "rank": 44100,
+      "root": 210,
+      "root_members": [
+        198477,
+        33542613,
+        190736397,
+        32234451093
+      ],
+      "root_supported": true,
+      "sign_invariant_at_root_magnitude": true,
+      "signed_orbit_tokens": [
+        "210",
+        "012",
+        "-210",
+        "-012"
+      ],
+      "signed_orbit_values": [
+        210,
+        12,
+        -210,
+        -12
+      ],
+      "width": 3
+    },
+    {
+      "mirror_members": [
+        57721
+      ],
+      "mirror_rank": 441,
+      "mirror_root": 21,
+      "mirror_supported": true,
+      "mirror_token": "21",
+      "rank": 144,
+      "root": 12,
+      "root_members": [
+        7081
+      ],
+      "root_supported": true,
+      "sign_invariant_at_root_magnitude": true,
+      "signed_orbit_tokens": [
+        "12",
+        "21",
+        "-12",
+        "-21"
+      ],
+      "signed_orbit_values": [
+        12,
+        21,
+        -12,
+        -21
+      ],
+      "width": 2
+    },
+    {
+      "mirror_members": [
+        3529,
+        9261,
+        21389,
+        1203930
+      ],
+      "mirror_rank": 1764,
+      "mirror_root": 42,
+      "mirror_supported": true,
+      "mirror_token": "42",
+      "rank": 576,
+      "root": 24,
+      "root_members": [
+        18761
+      ],
+      "root_supported": true,
+      "sign_invariant_at_root_magnitude": true,
+      "signed_orbit_tokens": [
+        "24",
+        "42",
+        "-24",
+        "-42"
+      ],
+      "signed_orbit_values": [
+        24,
+        42,
+        -24,
+        -42
+      ],
+      "width": 2
+    },
+    {
+      "mirror_members": [
+        7081
+      ],
+      "mirror_rank": 144,
+      "mirror_root": 12,
+      "mirror_supported": true,
+      "mirror_token": "12",
+      "rank": 441,
+      "root": 21,
+      "root_members": [
+        57721
+      ],
+      "root_supported": true,
+      "sign_invariant_at_root_magnitude": true,
+      "signed_orbit_tokens": [
+        "21",
+        "12",
+        "-21",
+        "-12"
+      ],
+      "signed_orbit_values": [
+        21,
+        12,
+        -21,
+        -12
+      ],
+      "width": 2
+    }
+  ],
+  "name": "Brutus-Pell Signed Mirror Layer",
+  "representation_rule": "reverse fixed-width decimal tokens; sign is a separate involution",
+  "verified_square_roots": [
+    1,
+    3,
+    6,
+    7,
+    12,
+    21,
+    24,
+    30,
+    42,
+    60,
+    84,
+    120,
+    168,
+    210,
+    420,
+    840
+  ]
+}

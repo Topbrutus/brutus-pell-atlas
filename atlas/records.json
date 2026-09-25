@@ -3,27 +3,345 @@
   "atlas": "Brutus-Pell Atlas",
   "definition": "z_P(n) = min{k>=1 : n divides P_k}, P_0=0, P_1=1, P_{k+2}=2P_{k+1}+P_k",
   "records": [
-    {"n":13,"rank":7,"square_rank_root":null,"role":["mirror-prime","silent-square-anchor"],"status":"VERIFIED_COMPUTATION"},
-    {"n":169,"rank":7,"square_rank_root":null,"role":["13-square","silent-square-anchor"],"status":"VERIFIED_COMPUTATION"},
-    {"n":31,"rank":30,"square_rank_root":null,"role":["mirror-prime","silent-square-anchor"],"status":"VERIFIED_COMPUTATION"},
-    {"n":961,"rank":30,"square_rank_root":null,"role":["31-square","silent-square-anchor"],"status":"VERIFIED_COMPUTATION"},
-    {"n":73,"rank":36,"square_rank_root":6,"role":["prime","square-rank-component"],"status":"VERIFIED_COMPUTATION"},
-    {"n":149,"rank":75,"square_rank_root":null,"role":["prime","square-rank-component"],"status":"VERIFIED_COMPUTATION"},
-    {"n":10877,"rank":900,"square_rank_root":30,"role":["fiber-30","73x149"],"status":"VERIFIED_COMPUTATION"},
-    {"n":293,"rank":49,"square_rank_root":7,"role":["prime","square-rank-component"],"status":"VERIFIED_COMPUTATION"},
-    {"n":21389,"rank":1764,"square_rank_root":42,"role":["fiber-42","73x293","rank-collision"],"status":"VERIFIED_COMPUTATION"},
-    {"n":3529,"rank":1764,"square_rank_root":42,"role":["fiber-42","prime","rank-collision"],"status":"VERIFIED_COMPUTATION"},
-    {"n":9261,"rank":1764,"square_rank_root":42,"role":["fiber-42","21-cubed","rank-collision"],"status":"VERIFIED_COMPUTATION"},
-    {"n":130,"rank":42,"square_rank_root":null,"role":["rank-preserving-component"],"status":"VERIFIED_COMPUTATION"},
-    {"n":1203930,"rank":1764,"square_rank_root":42,"role":["fiber-42","rank-preserved-extension"],"status":"VERIFIED_COMPUTATION"},
-    {"n":198477,"rank":44100,"square_rank_root":210,"role":["fiber-210","mirror-host"],"status":"VERIFIED_COMPUTATION"},
-    {"n":33542613,"rank":44100,"square_rank_root":210,"role":["fiber-210","mirror-host-13-state"],"status":"VERIFIED_COMPUTATION"},
-    {"n":190736397,"rank":44100,"square_rank_root":210,"role":["fiber-210","mirror-host-31-state"],"status":"VERIFIED_COMPUTATION"},
-    {"n":32234451093,"rank":44100,"square_rank_root":210,"role":["fiber-210","full-mirror-host-state"],"status":"VERIFIED_COMPUTATION"}
+    {
+      "n": 13,
+      "rank": 7,
+      "square_rank_root": null,
+      "role": [
+        "mirror-prime",
+        "silent-square-anchor"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 169,
+      "rank": 7,
+      "square_rank_root": null,
+      "role": [
+        "13-square",
+        "silent-square-anchor"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 31,
+      "rank": 30,
+      "square_rank_root": null,
+      "role": [
+        "mirror-prime",
+        "silent-square-anchor"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 961,
+      "rank": 30,
+      "square_rank_root": null,
+      "role": [
+        "31-square",
+        "silent-square-anchor"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 73,
+      "rank": 36,
+      "square_rank_root": 6,
+      "role": [
+        "prime",
+        "square-rank-component"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 149,
+      "rank": 75,
+      "square_rank_root": null,
+      "role": [
+        "prime",
+        "square-rank-component"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 10877,
+      "rank": 900,
+      "square_rank_root": 30,
+      "role": [
+        "fiber-30",
+        "73x149"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 293,
+      "rank": 49,
+      "square_rank_root": 7,
+      "role": [
+        "prime",
+        "square-rank-component"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 21389,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "role": [
+        "fiber-42",
+        "73x293",
+        "rank-collision"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 3529,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "role": [
+        "fiber-42",
+        "prime",
+        "rank-collision"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 9261,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "role": [
+        "fiber-42",
+        "21-cubed",
+        "rank-collision"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 130,
+      "rank": 42,
+      "square_rank_root": null,
+      "role": [
+        "rank-preserving-component"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 1203930,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "role": [
+        "fiber-42",
+        "rank-preserved-extension"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 198477,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "role": [
+        "fiber-210",
+        "mirror-host"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 33542613,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "role": [
+        "fiber-210",
+        "mirror-host-13-state"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 190736397,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "role": [
+        "fiber-210",
+        "mirror-host-31-state"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 32234451093,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "role": [
+        "fiber-210",
+        "full-mirror-host-state"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 197,
+      "rank": 9,
+      "square_rank_root": 3,
+      "role": [
+        "fiber-3",
+        "mirror-root-support-30-to-03"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 7081,
+      "rank": 144,
+      "square_rank_root": 12,
+      "role": [
+        "fiber-12",
+        "mirror-root-support-210-to-012",
+        "73x97"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 18761,
+      "rank": 576,
+      "square_rank_root": 24,
+      "role": [
+        "fiber-24",
+        "mirror-root-support-42-to-24",
+        "73x257"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 57721,
+      "rank": 441,
+      "square_rank_root": 21,
+      "role": [
+        "fiber-21",
+        "mirror-root-support-12-to-21",
+        "197x293"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 1,
+      "rank": 1,
+      "square_rank_root": 1,
+      "role": [
+        "fiber-1",
+        "lattice-identity"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 1801,
+      "rank": 900,
+      "square_rank_root": 30,
+      "role": [
+        "fiber-30",
+        "prime",
+        "alternate-coprime-host"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 12752881,
+      "rank": 3600,
+      "square_rank_root": 60,
+      "role": [
+        "fiber-60",
+        "7081x1801",
+        "lattice-node-witness"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 24988849,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "role": [
+        "fiber-84",
+        "7081x3529",
+        "lattice-node-witness"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 33788561,
+      "rank": 14400,
+      "square_rank_root": 120,
+      "role": [
+        "fiber-120",
+        "18761x1801",
+        "lattice-node-witness"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 66207569,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "role": [
+        "fiber-168",
+        "18761x3529",
+        "lattice-node-witness"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 1405415637,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "role": [
+        "fiber-420",
+        "7081x198477",
+        "lattice-node-witness"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "n": 3723626997,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "role": [
+        "fiber-840",
+        "18761x198477",
+        "lattice-node-witness"
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    }
   ],
   "relations": [
-    {"relation_id":"collision-42-a","kind":"rank-collision","members":[21389,3529,9261],"rank":1764,"status":"VERIFIED_COMPUTATION","statement":"Three distinct arithmetic inputs share Pell rank 42^2."},
-    {"relation_id":"preserve-42-130","kind":"rank-preserving-extension","members":[9261,1203930],"rank":1764,"status":"VERIFIED_COMPUTATION","statement":"Multiplication of 21^3 by 130 preserves Pell rank 1764 in this verified case."},
-    {"relation_id":"mirror-210-host","kind":"mirror-host","members":[198477,33542613,190736397,32234451093],"rank":44100,"status":"VERIFIED_COMPUTATION","statement":"Host, 13^2 extension, 31^2 extension, and combined extension all share Pell rank 210^2."}
+    {
+      "relation_id": "collision-42-a",
+      "kind": "rank-collision",
+      "members": [
+        21389,
+        3529,
+        9261
+      ],
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION",
+      "statement": "Three distinct arithmetic inputs share Pell rank 42^2."
+    },
+    {
+      "relation_id": "preserve-42-130",
+      "kind": "rank-preserving-extension",
+      "members": [
+        9261,
+        1203930
+      ],
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION",
+      "statement": "Multiplication of 21^3 by 130 preserves Pell rank 1764 in this verified case."
+    },
+    {
+      "relation_id": "mirror-210-host",
+      "kind": "mirror-host",
+      "members": [
+        198477,
+        33542613,
+        190736397,
+        32234451093
+      ],
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION",
+      "statement": "Host, 13^2 extension, 31^2 extension, and combined extension all share Pell rank 210^2."
+    }
   ]
 }

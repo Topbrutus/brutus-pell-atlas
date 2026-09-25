@@ -130,3 +130,20 @@ python -m calculation.rank_lattice
 ```
 
 See `LATTICE.md` and `reports/rank_lattice.json`.
+
+## Signed Mirror Layer
+
+Fixed-width decimal reversal is tracked separately from integer value and Pell rank. Verified mirror projections now include:
+
+```text
+30  <-> 03  -> root 3
+42  <-> 24  -> root 24
+210 <-> 012 -> root 12
+12  <-> 21  -> root 21
+```
+
+See `MIRROR_LAYER.md` and `reports/mirror_layer.json`.
+
+## Fully inhabited lattice
+
+Every node in the current 16-node gcd/lcm Rank Lattice now has at least one stored exact Pell square-rank witness.

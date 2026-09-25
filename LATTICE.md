@@ -1,73 +1,65 @@
 # Brutus–Pell Rank Lattice
 
-The Rank Lattice organizes verified Square-Rank Fibers by the divisibility of their roots.
+The Rank Lattice organizes verified Square-Rank Fibers by divisibility of their roots $C$ where
 
-If
+$$z_P(n)=C^2.$$
 
-$$z_P(n)=C^2,$$
+## Fully inhabited verified lattice
 
-then the lattice node is the root $C$, not the full rank $C^2$.
+The current verified root set is
 
-## Verified seed roots
+$$\boxed{\{1,3,6,7,12,21,24,30,42,60,84,120,168,210,420,840\}}.$$
 
-The current Atlas contains verified square-rank roots
+This set is closed under
 
-$$\boxed{6,\ 7,\ 30,\ 42,\ 210}.$$
+$$C_1\wedge C_2=\gcd(C_1,C_2)$$
 
-To obtain a genuine lattice under meet = gcd and join = lcm, closure adds the identity node
+and
 
-$$\boxed{1}$$
+$$C_1\vee C_2=\operatorname{lcm}(C_1,C_2).$$
 
-and the engine independently verifies
+Every node now has at least one stored integer witness whose Pell rank is exactly the node squared.
 
-$$z_P(1)=1=1^2.$$
+## Selected witnesses
 
-Thus the current closed node set is
+| root C | rank C² | verified witness n |
+|---:|---:|---:|
+| 1 | 1 | 1 |
+| 3 | 9 | 197 |
+| 6 | 36 | 73 |
+| 7 | 49 | 293 |
+| 12 | 144 | 7081 |
+| 21 | 441 | 57721 |
+| 24 | 576 | 18761 |
+| 30 | 900 | 10877 / 1801 |
+| 42 | 1764 | 3529 |
+| 60 | 3600 | 12752881 |
+| 84 | 7056 | 24988849 |
+| 120 | 14400 | 33788561 |
+| 168 | 28224 | 66207569 |
+| 210 | 44100 | 198477 |
+| 420 | 176400 | 1405415637 |
+| 840 | 705600 | 3723626997 |
+## Selected joins
 
-$$\boxed{\{1,6,7,30,42,210\}}.$$
-## Hasse diagram
+$$3\vee7=21,$$
+$$6\vee7=42,$$
+$$7\vee30=210,$$
+$$12\vee30=60,$$
+$$24\vee42=168,$$
+$$30\vee42=210,$$
+$$24\vee210=840.$$
 
-```mermaid
-graph BT
-  N1["1"] --> N6["6"]
-  N1 --> N7["7"]
-  N6 --> N30["30"]
-  N6 --> N42["42"]
-  N7 --> N42
-  N30 --> N210["210"]
-  N42 --> N210
-```
+## Mirror projection into the lattice
 
-The arrows mean divisibility covers inside the current closed set.
+The representation layer lands on verified nodes:
 
-## Important joins
+$$30\to03\mapsto3,$$
+$$42\to24,$$
+$$210\to012\mapsto12,$$
+$$12\leftrightarrow21.$$
 
-$$6\vee7=\operatorname{lcm}(6,7)=42,$$
-
-$$7\vee30=\operatorname{lcm}(7,30)=210,$$
-
-$$30\vee42=\operatorname{lcm}(30,42)=210.$$
-
-Corresponding Square-Rank levels are:
-
-$$6^2=36,\quad7^2=49,\quad30^2=900,\quad42^2=1764,\quad210^2=44100.$$
-
-## Important meet
-
-One reason the identity node is required is
-
-$$7\wedge30=\gcd(7,30)=1.$$
-
-Without node 1, the observed roots would form a join-semilattice fragment, but not a lattice in the strict order-theoretic sense.
-## Fiber attachment
-
-Each node may carry one or more verified Atlas inputs:
-
-- root 6 / rank 36: includes 73;
-- root 7 / rank 49: includes 293;
-- root 30 / rank 900: includes 10877;
-- root 42 / rank 1764: includes 3529, 9261, 21389, 1203930;
-- root 210 / rank 44100: includes the verified 13/31 mirror-host states.
+That is why the mirror layer now changes the structure of the Atlas rather than remaining only a visual annotation.
 
 ## Reproduce
 
@@ -75,12 +67,10 @@ Each node may carry one or more verified Atlas inputs:
 python -m calculation.rank_lattice
 ```
 
-The machine-readable structure is written to `reports/rank_lattice.json`.
-
-## Scientific boundary
-
-The divisibility lattice on positive integers with meet = gcd and join = lcm is standard mathematics.
-
-`Brutus–Pell Rank Lattice` is the project name for attaching the Atlas' verified Square-Rank Fibers and relations to this structure. The project name is not a claim that lattice theory itself is new.
+Machine-readable output: `reports/rank_lattice.json`.
 
 Static diagram: `figures/rank-lattice.svg`.
+
+## Boundary
+
+The gcd/lcm lattice of positive integers is standard mathematics. `Brutus–Pell Rank Lattice` is the project classification obtained by attaching verified Pell square-rank fibers to that structure.

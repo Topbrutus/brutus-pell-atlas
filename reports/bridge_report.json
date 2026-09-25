@@ -24,6 +24,16 @@
     {
       "kind": "same-rank-cluster",
       "members": [
+        1801,
+        10877
+      ],
+      "rank": 900,
+      "square_rank": true,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "kind": "same-rank-cluster",
+      "members": [
         3529,
         9261,
         21389,
@@ -47,12 +57,12 @@
     }
   ],
   "counts": {
-    "collision_clusters": 4,
-    "mirror_hosts_13_31": 1,
-    "missing_declared_bridges": 4,
-    "rank_preserving_products": 63,
-    "square_lcm_products": 68,
-    "verified_unstored_products": 60
+    "collision_clusters": 5,
+    "mirror_hosts_13_31": 3,
+    "missing_declared_bridges": 5,
+    "rank_preserving_products": 169,
+    "square_lcm_products": 230,
+    "verified_unstored_products": 182
   },
   "mirror_hosts_13_31": [
     {
@@ -71,6 +81,44 @@
         33542613,
         190736397,
         32234451093
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "kind": "mirror-host-13-31",
+      "rank": 176400,
+      "square_rank": true,
+      "state_ranks": [
+        176400,
+        176400,
+        176400,
+        176400
+      ],
+      "states": [
+        1405415637,
+        237515242653,
+        1350604427157,
+        228252148189533
+      ],
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "kind": "mirror-host-13-31",
+      "rank": 705600,
+      "square_rank": true,
+      "state_ranks": [
+        705600,
+        705600,
+        705600,
+        705600
+      ],
+      "states": [
+        3723626997,
+        629292962493,
+        3578405544117,
+        604750536955773
       ],
       "status": "VERIFIED_COMPUTATION"
     }
@@ -92,6 +140,15 @@
         961
       ],
       "rank": 30,
+      "status": "DISCOVERED_FROM_VERIFIED_RECORDS"
+    },
+    {
+      "kind": "undeclared-collision-cluster",
+      "members": [
+        1801,
+        10877
+      ],
+      "rank": 900,
       "status": "DISCOVERED_FROM_VERIFIED_RECORDS"
     },
     {
@@ -119,6 +176,96 @@
   ],
   "rank_preserving_products": [
     {
+      "host": 13,
+      "host_rank": 7,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 13,
+      "rank": 7,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 169,
+      "host_rank": 7,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 169,
+      "rank": 7,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 197,
+      "host_rank": 9,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 197,
+      "rank": 9,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 31,
+      "host_rank": 30,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 31,
+      "rank": 30,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 961,
+      "host_rank": 30,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 961,
+      "rank": 30,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 73,
+      "host_rank": 36,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 73,
+      "rank": 36,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 73,
+      "host_rank": 36,
+      "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 14381,
+      "rank": 36,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 130,
+      "host_rank": 42,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 130,
+      "rank": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 293,
+      "host_rank": 49,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 293,
+      "rank": 49,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
       "host": 293,
       "host_rank": 49,
       "kind": "rank-preserving-product",
@@ -139,6 +286,166 @@
       "status": "VERIFIED_COMPUTATION"
     },
     {
+      "host": 149,
+      "host_rank": 75,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 149,
+      "rank": 75,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 7081,
+      "host_rank": 144,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 7081,
+      "rank": 144,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 7081,
+      "host_rank": 144,
+      "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 1394957,
+      "rank": 144,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 57721,
+      "host_rank": 441,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 57721,
+      "rank": 441,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 57721,
+      "host_rank": 441,
+      "kind": "rank-preserving-product",
+      "multiplier": 13,
+      "multiplier_rank": 7,
+      "product": 750373,
+      "rank": 441,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 57721,
+      "host_rank": 441,
+      "kind": "rank-preserving-product",
+      "multiplier": 169,
+      "multiplier_rank": 7,
+      "product": 9754849,
+      "rank": 441,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 18761,
+      "host_rank": 576,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 18761,
+      "rank": 576,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 18761,
+      "host_rank": 576,
+      "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 3695917,
+      "rank": 576,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1801,
+      "host_rank": 900,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 1801,
+      "rank": 900,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1801,
+      "host_rank": 900,
+      "kind": "rank-preserving-product",
+      "multiplier": 31,
+      "multiplier_rank": 30,
+      "product": 55831,
+      "rank": 900,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1801,
+      "host_rank": 900,
+      "kind": "rank-preserving-product",
+      "multiplier": 73,
+      "multiplier_rank": 36,
+      "product": 131473,
+      "rank": 900,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1801,
+      "host_rank": 900,
+      "kind": "rank-preserving-product",
+      "multiplier": 149,
+      "multiplier_rank": 75,
+      "product": 268349,
+      "rank": 900,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1801,
+      "host_rank": 900,
+      "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 354797,
+      "rank": 900,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1801,
+      "host_rank": 900,
+      "kind": "rank-preserving-product",
+      "multiplier": 961,
+      "multiplier_rank": 30,
+      "product": 1730761,
+      "rank": 900,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1801,
+      "host_rank": 900,
+      "kind": "rank-preserving-product",
+      "multiplier": 10877,
+      "multiplier_rank": 900,
+      "product": 19589477,
+      "rank": 900,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 10877,
+      "host_rank": 900,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 10877,
+      "rank": 900,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
       "host": 10877,
       "host_rank": 900,
       "kind": "rank-preserving-product",
@@ -152,10 +459,40 @@
       "host": 10877,
       "host_rank": 900,
       "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 2142769,
+      "rank": 900,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 10877,
+      "host_rank": 900,
+      "kind": "rank-preserving-product",
       "multiplier": 961,
       "multiplier_rank": 30,
       "product": 10452797,
       "rank": 900,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 10877,
+      "host_rank": 900,
+      "kind": "rank-preserving-product",
+      "multiplier": 1801,
+      "multiplier_rank": 900,
+      "product": 19589477,
+      "rank": 900,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3529,
+      "host_rank": 1764,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 3529,
+      "rank": 1764,
       "status": "VERIFIED_COMPUTATION"
     },
     {
@@ -202,6 +539,16 @@
       "host": 3529,
       "host_rank": 1764,
       "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 695213,
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3529,
+      "host_rank": 1764,
+      "kind": "rank-preserving-product",
       "multiplier": 293,
       "multiplier_rank": 49,
       "product": 1033997,
@@ -232,9 +579,29 @@
       "host": 3529,
       "host_rank": 1764,
       "kind": "rank-preserving-product",
+      "multiplier": 57721,
+      "multiplier_rank": 441,
+      "product": 203697409,
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3529,
+      "host_rank": 1764,
+      "kind": "rank-preserving-product",
       "multiplier": 1203930,
       "multiplier_rank": 1764,
       "product": 4248668970,
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 9261,
+      "host_rank": 1764,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 9261,
       "rank": 1764,
       "status": "VERIFIED_COMPUTATION"
     },
@@ -282,6 +649,16 @@
       "host": 9261,
       "host_rank": 1764,
       "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 1824417,
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 9261,
+      "host_rank": 1764,
+      "kind": "rank-preserving-product",
       "multiplier": 293,
       "multiplier_rank": 49,
       "product": 2713473,
@@ -305,6 +682,26 @@
       "multiplier": 21389,
       "multiplier_rank": 1764,
       "product": 198083529,
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 9261,
+      "host_rank": 1764,
+      "kind": "rank-preserving-product",
+      "multiplier": 57721,
+      "multiplier_rank": 441,
+      "product": 534554181,
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 21389,
+      "host_rank": 1764,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 21389,
       "rank": 1764,
       "status": "VERIFIED_COMPUTATION"
     },
@@ -342,6 +739,16 @@
       "host": 21389,
       "host_rank": 1764,
       "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 4213633,
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 21389,
+      "host_rank": 1764,
+      "kind": "rank-preserving-product",
       "multiplier": 3529,
       "multiplier_rank": 1764,
       "product": 75481781,
@@ -372,9 +779,29 @@
       "host": 1203930,
       "host_rank": 1764,
       "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 1203930,
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1203930,
+      "host_rank": 1764,
+      "kind": "rank-preserving-product",
       "multiplier": 73,
       "multiplier_rank": 36,
       "product": 87886890,
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1203930,
+      "host_rank": 1764,
+      "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 237174210,
       "rank": 1764,
       "status": "VERIFIED_COMPUTATION"
     },
@@ -406,6 +833,306 @@
       "multiplier_rank": 1764,
       "product": 25750858770,
       "rank": 1764,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1203930,
+      "host_rank": 1764,
+      "kind": "rank-preserving-product",
+      "multiplier": 57721,
+      "multiplier_rank": 441,
+      "product": 69492043530,
+      "rank": 1764,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 12752881,
+      "host_rank": 3600,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 12752881,
+      "rank": 3600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 12752881,
+      "host_rank": 3600,
+      "kind": "rank-preserving-product",
+      "multiplier": 31,
+      "multiplier_rank": 30,
+      "product": 395339311,
+      "rank": 3600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 12752881,
+      "host_rank": 3600,
+      "kind": "rank-preserving-product",
+      "multiplier": 149,
+      "multiplier_rank": 75,
+      "product": 1900179269,
+      "rank": 3600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 12752881,
+      "host_rank": 3600,
+      "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 2512317557,
+      "rank": 3600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 12752881,
+      "host_rank": 3600,
+      "kind": "rank-preserving-product",
+      "multiplier": 961,
+      "multiplier_rank": 30,
+      "product": 12255518641,
+      "rank": 3600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 24988849,
+      "host_rank": 7056,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 24988849,
+      "rank": 7056,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 24988849,
+      "host_rank": 7056,
+      "kind": "rank-preserving-product",
+      "multiplier": 13,
+      "multiplier_rank": 7,
+      "product": 324855037,
+      "rank": 7056,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 24988849,
+      "host_rank": 7056,
+      "kind": "rank-preserving-product",
+      "multiplier": 130,
+      "multiplier_rank": 42,
+      "product": 3248550370,
+      "rank": 7056,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 24988849,
+      "host_rank": 7056,
+      "kind": "rank-preserving-product",
+      "multiplier": 169,
+      "multiplier_rank": 7,
+      "product": 4223115481,
+      "rank": 7056,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 24988849,
+      "host_rank": 7056,
+      "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 4922803253,
+      "rank": 7056,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 24988849,
+      "host_rank": 7056,
+      "kind": "rank-preserving-product",
+      "multiplier": 293,
+      "multiplier_rank": 49,
+      "product": 7321732757,
+      "rank": 7056,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 24988849,
+      "host_rank": 7056,
+      "kind": "rank-preserving-product",
+      "multiplier": 9261,
+      "multiplier_rank": 1764,
+      "product": 231421730589,
+      "rank": 7056,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 24988849,
+      "host_rank": 7056,
+      "kind": "rank-preserving-product",
+      "multiplier": 57721,
+      "multiplier_rank": 441,
+      "product": 1442381353129,
+      "rank": 7056,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 24988849,
+      "host_rank": 7056,
+      "kind": "rank-preserving-product",
+      "multiplier": 1203930,
+      "multiplier_rank": 1764,
+      "product": 30084824976570,
+      "rank": 7056,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 33788561,
+      "host_rank": 14400,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 33788561,
+      "rank": 14400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 33788561,
+      "host_rank": 14400,
+      "kind": "rank-preserving-product",
+      "multiplier": 31,
+      "multiplier_rank": 30,
+      "product": 1047445391,
+      "rank": 14400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 33788561,
+      "host_rank": 14400,
+      "kind": "rank-preserving-product",
+      "multiplier": 149,
+      "multiplier_rank": 75,
+      "product": 5034495589,
+      "rank": 14400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 33788561,
+      "host_rank": 14400,
+      "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 6656346517,
+      "rank": 14400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 33788561,
+      "host_rank": 14400,
+      "kind": "rank-preserving-product",
+      "multiplier": 961,
+      "multiplier_rank": 30,
+      "product": 32470807121,
+      "rank": 14400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 66207569,
+      "host_rank": 28224,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 66207569,
+      "rank": 28224,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 66207569,
+      "host_rank": 28224,
+      "kind": "rank-preserving-product",
+      "multiplier": 13,
+      "multiplier_rank": 7,
+      "product": 860698397,
+      "rank": 28224,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 66207569,
+      "host_rank": 28224,
+      "kind": "rank-preserving-product",
+      "multiplier": 130,
+      "multiplier_rank": 42,
+      "product": 8606983970,
+      "rank": 28224,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 66207569,
+      "host_rank": 28224,
+      "kind": "rank-preserving-product",
+      "multiplier": 169,
+      "multiplier_rank": 7,
+      "product": 11189079161,
+      "rank": 28224,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 66207569,
+      "host_rank": 28224,
+      "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 13042891093,
+      "rank": 28224,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 66207569,
+      "host_rank": 28224,
+      "kind": "rank-preserving-product",
+      "multiplier": 293,
+      "multiplier_rank": 49,
+      "product": 19398817717,
+      "rank": 28224,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 66207569,
+      "host_rank": 28224,
+      "kind": "rank-preserving-product",
+      "multiplier": 9261,
+      "multiplier_rank": 1764,
+      "product": 613148296509,
+      "rank": 28224,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 66207569,
+      "host_rank": 28224,
+      "kind": "rank-preserving-product",
+      "multiplier": 57721,
+      "multiplier_rank": 441,
+      "product": 3821567090249,
+      "rank": 28224,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 66207569,
+      "host_rank": 28224,
+      "kind": "rank-preserving-product",
+      "multiplier": 1203930,
+      "multiplier_rank": 1764,
+      "product": 79709278546170,
+      "rank": 28224,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 198477,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 198477,
+      "rank": 44100,
       "status": "VERIFIED_COMPUTATION"
     },
     {
@@ -472,6 +1199,16 @@
       "host": 198477,
       "host_rank": 44100,
       "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 39099969,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 198477,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
       "multiplier": 293,
       "multiplier_rank": 49,
       "product": 58153761,
@@ -485,6 +1222,16 @@
       "multiplier": 961,
       "multiplier_rank": 30,
       "product": 190736397,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 198477,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 1801,
+      "multiplier_rank": 900,
+      "product": 357457077,
       "rank": 44100,
       "status": "VERIFIED_COMPUTATION"
     },
@@ -515,6 +1262,26 @@
       "multiplier": 21389,
       "multiplier_rank": 1764,
       "product": 4245224553,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 198477,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 57721,
+      "multiplier_rank": 441,
+      "product": 11456290917,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 33542613,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 33542613,
       "rank": 44100,
       "status": "VERIFIED_COMPUTATION"
     },
@@ -552,6 +1319,16 @@
       "host": 33542613,
       "host_rank": 44100,
       "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 6607894761,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 33542613,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
       "multiplier": 293,
       "multiplier_rank": 49,
       "product": 9827985609,
@@ -565,6 +1342,16 @@
       "multiplier": 961,
       "multiplier_rank": 30,
       "product": 32234451093,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 33542613,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 1801,
+      "multiplier_rank": 900,
+      "product": 60410246013,
       "rank": 44100,
       "status": "VERIFIED_COMPUTATION"
     },
@@ -595,6 +1382,26 @@
       "multiplier": 21389,
       "multiplier_rank": 1764,
       "product": 717442949457,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 33542613,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 57721,
+      "multiplier_rank": 441,
+      "product": 1936113164973,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 190736397,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 190736397,
       "rank": 44100,
       "status": "VERIFIED_COMPUTATION"
     },
@@ -652,9 +1459,29 @@
       "host": 190736397,
       "host_rank": 44100,
       "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 37575070209,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 190736397,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
       "multiplier": 293,
       "multiplier_rank": 49,
       "product": 55885764321,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 190736397,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 1801,
+      "multiplier_rank": 900,
+      "product": 343516250997,
       "rank": 44100,
       "status": "VERIFIED_COMPUTATION"
     },
@@ -689,6 +1516,26 @@
       "status": "VERIFIED_COMPUTATION"
     },
     {
+      "host": 190736397,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 57721,
+      "multiplier_rank": 441,
+      "product": 11009495571237,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 32234451093,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 32234451093,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
       "host": 32234451093,
       "host_rank": 44100,
       "kind": "rank-preserving-product",
@@ -712,9 +1559,29 @@
       "host": 32234451093,
       "host_rank": 44100,
       "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 6350186865321,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 32234451093,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
       "multiplier": 293,
       "multiplier_rank": 49,
       "product": 9444694170249,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 32234451093,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 1801,
+      "multiplier_rank": 900,
+      "product": 58054246418493,
       "rank": 44100,
       "status": "VERIFIED_COMPUTATION"
     },
@@ -747,9 +1614,259 @@
       "product": 689462674428177,
       "rank": 44100,
       "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 32234451093,
+      "host_rank": 44100,
+      "kind": "rank-preserving-product",
+      "multiplier": 57721,
+      "multiplier_rank": 441,
+      "product": 1860604751539053,
+      "rank": 44100,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 1405415637,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 13,
+      "multiplier_rank": 7,
+      "product": 18270403281,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 31,
+      "multiplier_rank": 30,
+      "product": 43567884747,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 130,
+      "multiplier_rank": 42,
+      "product": 182704032810,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 149,
+      "multiplier_rank": 75,
+      "product": 209406929913,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 169,
+      "multiplier_rank": 7,
+      "product": 237515242653,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 276866880489,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 293,
+      "multiplier_rank": 49,
+      "product": 411786781641,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 961,
+      "multiplier_rank": 30,
+      "product": 1350604427157,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 1801,
+      "multiplier_rank": 900,
+      "product": 2531153562237,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 3529,
+      "multiplier_rank": 1764,
+      "product": 4959711782973,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 1405415637,
+      "host_rank": 176400,
+      "kind": "rank-preserving-product",
+      "multiplier": 57721,
+      "multiplier_rank": 441,
+      "product": 81121995983277,
+      "rank": 176400,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 1,
+      "multiplier_rank": 1,
+      "product": 3723626997,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 13,
+      "multiplier_rank": 7,
+      "product": 48407150961,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 31,
+      "multiplier_rank": 30,
+      "product": 115432436907,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 130,
+      "multiplier_rank": 42,
+      "product": 484071509610,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 149,
+      "multiplier_rank": 75,
+      "product": 554820422553,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 169,
+      "multiplier_rank": 7,
+      "product": 629292962493,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 197,
+      "multiplier_rank": 9,
+      "product": 733554518409,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 293,
+      "multiplier_rank": 49,
+      "product": 1091022710121,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 961,
+      "multiplier_rank": 30,
+      "product": 3578405544117,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 1801,
+      "multiplier_rank": 900,
+      "product": 6706252221597,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 3529,
+      "multiplier_rank": 1764,
+      "product": 13140679672413,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "host": 3723626997,
+      "host_rank": 705600,
+      "kind": "rank-preserving-product",
+      "multiplier": 57721,
+      "multiplier_rank": 441,
+      "product": 214931473893837,
+      "rank": 705600,
+      "status": "VERIFIED_COMPUTATION"
     }
   ],
-  "record_count": 17,
+  "record_count": 29,
   "square_lcm_products": [
     {
       "input_ranks": [
@@ -844,6 +1961,81 @@
     {
       "input_ranks": [
         7,
+        441
+      ],
+      "inputs": [
+        13,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 750373,
+      "rank": 441,
+      "square_rank_root": 21,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        7,
+        7056
+      ],
+      "inputs": [
+        13,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 324855037,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        7,
+        28224
+      ],
+      "inputs": [
+        13,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 860698397,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        7,
+        176400
+      ],
+      "inputs": [
+        13,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 18270403281,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        7,
+        705600
+      ],
+      "inputs": [
+        13,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 48407150961,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        7,
         49
       ],
       "inputs": [
@@ -933,6 +2125,81 @@
     },
     {
       "input_ranks": [
+        7,
+        441
+      ],
+      "inputs": [
+        169,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 9754849,
+      "rank": 441,
+      "square_rank_root": 21,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        7,
+        7056
+      ],
+      "inputs": [
+        169,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 4223115481,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        7,
+        28224
+      ],
+      "inputs": [
+        169,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 11189079161,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        7,
+        176400
+      ],
+      "inputs": [
+        169,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 237515242653,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        7,
+        705600
+      ],
+      "inputs": [
+        169,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 629292962493,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
         30,
         900
       ],
@@ -982,6 +2249,81 @@
         900
       ],
       "inputs": [
+        31,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 55831,
+      "rank": 900,
+      "square_rank_root": 30,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        30,
+        3600
+      ],
+      "inputs": [
+        31,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 395339311,
+      "rank": 3600,
+      "square_rank_root": 60,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        30,
+        14400
+      ],
+      "inputs": [
+        31,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 1047445391,
+      "rank": 14400,
+      "square_rank_root": 120,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        30,
+        176400
+      ],
+      "inputs": [
+        31,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 43567884747,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        30,
+        705600
+      ],
+      "inputs": [
+        31,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 115432436907,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        30,
+        900
+      ],
+      "inputs": [
         961,
         10877
       ],
@@ -1019,6 +2361,81 @@
       "product": 32234451093,
       "rank": 44100,
       "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        30,
+        900
+      ],
+      "inputs": [
+        961,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 1730761,
+      "rank": 900,
+      "square_rank_root": 30,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        30,
+        3600
+      ],
+      "inputs": [
+        961,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 12255518641,
+      "rank": 3600,
+      "square_rank_root": 60,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        30,
+        14400
+      ],
+      "inputs": [
+        961,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 32470807121,
+      "rank": 14400,
+      "square_rank_root": 120,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        30,
+        176400
+      ],
+      "inputs": [
+        961,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 1350604427157,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        30,
+        705600
+      ],
+      "inputs": [
+        961,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 3578405544117,
+      "rank": 705600,
+      "square_rank_root": 840,
       "status": "VERIFIED_COMPUTATION"
     },
     {
@@ -1158,6 +2575,66 @@
     },
     {
       "input_ranks": [
+        36,
+        9
+      ],
+      "inputs": [
+        73,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 14381,
+      "rank": 36,
+      "square_rank_root": 6,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        36,
+        441
+      ],
+      "inputs": [
+        73,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 4213633,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        36,
+        1
+      ],
+      "inputs": [
+        73,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 73,
+      "rank": 36,
+      "square_rank_root": 6,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        36,
+        900
+      ],
+      "inputs": [
+        73,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 131473,
+      "rank": 900,
+      "square_rank_root": 30,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
         75,
         1764
       ],
@@ -1274,6 +2751,171 @@
       "product": 4802933212857,
       "rank": 44100,
       "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        75,
+        9
+      ],
+      "inputs": [
+        149,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 29353,
+      "rank": 225,
+      "square_rank_root": 15,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        75,
+        144
+      ],
+      "inputs": [
+        149,
+        7081
+      ],
+      "kind": "square-lcm-product",
+      "product": 1055069,
+      "rank": 3600,
+      "square_rank_root": 60,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        75,
+        576
+      ],
+      "inputs": [
+        149,
+        18761
+      ],
+      "kind": "square-lcm-product",
+      "product": 2795389,
+      "rank": 14400,
+      "square_rank_root": 120,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        75,
+        441
+      ],
+      "inputs": [
+        149,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 8600429,
+      "rank": 11025,
+      "square_rank_root": 105,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        75,
+        900
+      ],
+      "inputs": [
+        149,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 268349,
+      "rank": 900,
+      "square_rank_root": 30,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        75,
+        3600
+      ],
+      "inputs": [
+        149,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 1900179269,
+      "rank": 3600,
+      "square_rank_root": 60,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        75,
+        7056
+      ],
+      "inputs": [
+        149,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 3723338501,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        75,
+        14400
+      ],
+      "inputs": [
+        149,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 5034495589,
+      "rank": 14400,
+      "square_rank_root": 120,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        75,
+        28224
+      ],
+      "inputs": [
+        149,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 9864927781,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        75,
+        176400
+      ],
+      "inputs": [
+        149,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 209406929913,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        75,
+        705600
+      ],
+      "inputs": [
+        149,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 554820422553,
+      "rank": 705600,
+      "square_rank_root": 840,
       "status": "VERIFIED_COMPUTATION"
     },
     {
@@ -1398,6 +3040,66 @@
     },
     {
       "input_ranks": [
+        900,
+        9
+      ],
+      "inputs": [
+        10877,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 2142769,
+      "rank": 900,
+      "square_rank_root": 30,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        900,
+        441
+      ],
+      "inputs": [
+        10877,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 627831317,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        900,
+        1
+      ],
+      "inputs": [
+        10877,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 10877,
+      "rank": 900,
+      "square_rank_root": 30,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        900,
+        900
+      ],
+      "inputs": [
+        10877,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 19589477,
+      "rank": 900,
+      "square_rank_root": 30,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
         49,
         1764
       ],
@@ -1499,6 +3201,171 @@
       "product": 9444694170249,
       "rank": 44100,
       "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        49,
+        9
+      ],
+      "inputs": [
+        293,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 57721,
+      "rank": 441,
+      "square_rank_root": 21,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        49,
+        144
+      ],
+      "inputs": [
+        293,
+        7081
+      ],
+      "kind": "square-lcm-product",
+      "product": 2074733,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        49,
+        576
+      ],
+      "inputs": [
+        293,
+        18761
+      ],
+      "kind": "square-lcm-product",
+      "product": 5496973,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        49,
+        1
+      ],
+      "inputs": [
+        293,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 293,
+      "rank": 49,
+      "square_rank_root": 7,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        49,
+        900
+      ],
+      "inputs": [
+        293,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 527693,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        49,
+        3600
+      ],
+      "inputs": [
+        293,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 3736594133,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        49,
+        7056
+      ],
+      "inputs": [
+        293,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 7321732757,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        49,
+        14400
+      ],
+      "inputs": [
+        293,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 9900048373,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        49,
+        28224
+      ],
+      "inputs": [
+        293,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 19398817717,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        49,
+        176400
+      ],
+      "inputs": [
+        293,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 411786781641,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        49,
+        705600
+      ],
+      "inputs": [
+        293,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 1091022710121,
+      "rank": 705600,
+      "square_rank_root": 840,
       "status": "VERIFIED_COMPUTATION"
     },
     {
@@ -1624,6 +3491,51 @@
     {
       "input_ranks": [
         1764,
+        9
+      ],
+      "inputs": [
+        21389,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 4213633,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        1
+      ],
+      "inputs": [
+        21389,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 21389,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        900
+      ],
+      "inputs": [
+        21389,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 38521589,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
         1764
       ],
       "inputs": [
@@ -1729,6 +3641,156 @@
     {
       "input_ranks": [
         1764,
+        9
+      ],
+      "inputs": [
+        3529,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 695213,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        144
+      ],
+      "inputs": [
+        3529,
+        7081
+      ],
+      "kind": "square-lcm-product",
+      "product": 24988849,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        576
+      ],
+      "inputs": [
+        3529,
+        18761
+      ],
+      "kind": "square-lcm-product",
+      "product": 66207569,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        441
+      ],
+      "inputs": [
+        3529,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 203697409,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        1
+      ],
+      "inputs": [
+        3529,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 3529,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        900
+      ],
+      "inputs": [
+        3529,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 6355729,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        3600
+      ],
+      "inputs": [
+        3529,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 45004917049,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        14400
+      ],
+      "inputs": [
+        3529,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 119239831769,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        176400
+      ],
+      "inputs": [
+        3529,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 4959711782973,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        705600
+      ],
+      "inputs": [
+        3529,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 13140679672413,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
         42
       ],
       "inputs": [
@@ -1739,6 +3801,156 @@
       "product": 1203930,
       "rank": 1764,
       "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        9
+      ],
+      "inputs": [
+        9261,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 1824417,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        144
+      ],
+      "inputs": [
+        9261,
+        7081
+      ],
+      "kind": "square-lcm-product",
+      "product": 65577141,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        576
+      ],
+      "inputs": [
+        9261,
+        18761
+      ],
+      "kind": "square-lcm-product",
+      "product": 173745621,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        441
+      ],
+      "inputs": [
+        9261,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 534554181,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        1
+      ],
+      "inputs": [
+        9261,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 9261,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        900
+      ],
+      "inputs": [
+        9261,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 16679061,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        3600
+      ],
+      "inputs": [
+        9261,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 118104430941,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        7056
+      ],
+      "inputs": [
+        9261,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 231421730589,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        14400
+      ],
+      "inputs": [
+        9261,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 312915863421,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        28224
+      ],
+      "inputs": [
+        9261,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 613148296509,
+      "rank": 28224,
+      "square_rank_root": 168,
       "status": "VERIFIED_COMPUTATION"
     },
     {
@@ -1770,68 +3982,1525 @@
       "rank": 44100,
       "square_rank_root": 210,
       "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        42,
+        7056
+      ],
+      "inputs": [
+        130,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 3248550370,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        42,
+        28224
+      ],
+      "inputs": [
+        130,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 8606983970,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        42,
+        176400
+      ],
+      "inputs": [
+        130,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 182704032810,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        42,
+        705600
+      ],
+      "inputs": [
+        130,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 484071509610,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        9
+      ],
+      "inputs": [
+        1203930,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 237174210,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        144
+      ],
+      "inputs": [
+        1203930,
+        7081
+      ],
+      "kind": "square-lcm-product",
+      "product": 8525028330,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        576
+      ],
+      "inputs": [
+        1203930,
+        18761
+      ],
+      "kind": "square-lcm-product",
+      "product": 22586930730,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        441
+      ],
+      "inputs": [
+        1203930,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 69492043530,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        1
+      ],
+      "inputs": [
+        1203930,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 1203930,
+      "rank": 1764,
+      "square_rank_root": 42,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        900
+      ],
+      "inputs": [
+        1203930,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 2168277930,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        3600
+      ],
+      "inputs": [
+        1203930,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 15353576022330,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        7056
+      ],
+      "inputs": [
+        1203930,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 30084824976570,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        14400
+      ],
+      "inputs": [
+        1203930,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 40679062244730,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1764,
+        28224
+      ],
+      "inputs": [
+        1203930,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 79709278546170,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        9
+      ],
+      "inputs": [
+        198477,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 39099969,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        144
+      ],
+      "inputs": [
+        198477,
+        7081
+      ],
+      "kind": "square-lcm-product",
+      "product": 1405415637,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        576
+      ],
+      "inputs": [
+        198477,
+        18761
+      ],
+      "kind": "square-lcm-product",
+      "product": 3723626997,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        441
+      ],
+      "inputs": [
+        198477,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 11456290917,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        1
+      ],
+      "inputs": [
+        198477,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 198477,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        900
+      ],
+      "inputs": [
+        198477,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 357457077,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        3600
+      ],
+      "inputs": [
+        198477,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 2531153562237,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        7056
+      ],
+      "inputs": [
+        198477,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 4959711782973,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        14400
+      ],
+      "inputs": [
+        198477,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 6706252221597,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        28224
+      ],
+      "inputs": [
+        198477,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 13140679672413,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        9
+      ],
+      "inputs": [
+        33542613,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 6607894761,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        144
+      ],
+      "inputs": [
+        33542613,
+        7081
+      ],
+      "kind": "square-lcm-product",
+      "product": 237515242653,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        576
+      ],
+      "inputs": [
+        33542613,
+        18761
+      ],
+      "kind": "square-lcm-product",
+      "product": 629292962493,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        441
+      ],
+      "inputs": [
+        33542613,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 1936113164973,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        1
+      ],
+      "inputs": [
+        33542613,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 33542613,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        900
+      ],
+      "inputs": [
+        33542613,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 60410246013,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        3600
+      ],
+      "inputs": [
+        33542613,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 427764952018053,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        7056
+      ],
+      "inputs": [
+        33542613,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 838191291322437,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        14400
+      ],
+      "inputs": [
+        33542613,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 1133356625449893,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        28224
+      ],
+      "inputs": [
+        33542613,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 2220774864637797,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        9
+      ],
+      "inputs": [
+        190736397,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 37575070209,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        144
+      ],
+      "inputs": [
+        190736397,
+        7081
+      ],
+      "kind": "square-lcm-product",
+      "product": 1350604427157,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        576
+      ],
+      "inputs": [
+        190736397,
+        18761
+      ],
+      "kind": "square-lcm-product",
+      "product": 3578405544117,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        441
+      ],
+      "inputs": [
+        190736397,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 11009495571237,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        1
+      ],
+      "inputs": [
+        190736397,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 190736397,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        900
+      ],
+      "inputs": [
+        190736397,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 343516250997,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        3600
+      ],
+      "inputs": [
+        190736397,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 2432438573309757,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        7056
+      ],
+      "inputs": [
+        190736397,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 4766283023437053,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        14400
+      ],
+      "inputs": [
+        190736397,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 6444708384954717,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        28224
+      ],
+      "inputs": [
+        190736397,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 12628193165188893,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        9
+      ],
+      "inputs": [
+        32234451093,
+        197
+      ],
+      "kind": "square-lcm-product",
+      "product": 6350186865321,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        144
+      ],
+      "inputs": [
+        32234451093,
+        7081
+      ],
+      "kind": "square-lcm-product",
+      "product": 228252148189533,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        576
+      ],
+      "inputs": [
+        32234451093,
+        18761
+      ],
+      "kind": "square-lcm-product",
+      "product": 604750536955773,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        441
+      ],
+      "inputs": [
+        32234451093,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 1860604751539053,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        1
+      ],
+      "inputs": [
+        32234451093,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 32234451093,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        900
+      ],
+      "inputs": [
+        32234451093,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 58054246418493,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        3600
+      ],
+      "inputs": [
+        32234451093,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 411082118889348933,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        7056
+      ],
+      "inputs": [
+        32234451093,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 805501830960861957,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        14400
+      ],
+      "inputs": [
+        32234451093,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 1089155717057347173,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        44100,
+        28224
+      ],
+      "inputs": [
+        32234451093,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 2134164644916922917,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        9,
+        144
+      ],
+      "inputs": [
+        197,
+        7081
+      ],
+      "kind": "square-lcm-product",
+      "product": 1394957,
+      "rank": 144,
+      "square_rank_root": 12,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        9,
+        576
+      ],
+      "inputs": [
+        197,
+        18761
+      ],
+      "kind": "square-lcm-product",
+      "product": 3695917,
+      "rank": 576,
+      "square_rank_root": 24,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        9,
+        1
+      ],
+      "inputs": [
+        197,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 197,
+      "rank": 9,
+      "square_rank_root": 3,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        9,
+        900
+      ],
+      "inputs": [
+        197,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 354797,
+      "rank": 900,
+      "square_rank_root": 30,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        9,
+        3600
+      ],
+      "inputs": [
+        197,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 2512317557,
+      "rank": 3600,
+      "square_rank_root": 60,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        9,
+        7056
+      ],
+      "inputs": [
+        197,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 4922803253,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        9,
+        14400
+      ],
+      "inputs": [
+        197,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 6656346517,
+      "rank": 14400,
+      "square_rank_root": 120,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        9,
+        28224
+      ],
+      "inputs": [
+        197,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 13042891093,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        9,
+        176400
+      ],
+      "inputs": [
+        197,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 276866880489,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        9,
+        705600
+      ],
+      "inputs": [
+        197,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 733554518409,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        144,
+        441
+      ],
+      "inputs": [
+        7081,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 408722401,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        144,
+        1
+      ],
+      "inputs": [
+        7081,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 7081,
+      "rank": 144,
+      "square_rank_root": 12,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        144,
+        900
+      ],
+      "inputs": [
+        7081,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 12752881,
+      "rank": 3600,
+      "square_rank_root": 60,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        576,
+        441
+      ],
+      "inputs": [
+        18761,
+        57721
+      ],
+      "kind": "square-lcm-product",
+      "product": 1082903681,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        576,
+        1
+      ],
+      "inputs": [
+        18761,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 18761,
+      "rank": 576,
+      "square_rank_root": 24,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        576,
+        900
+      ],
+      "inputs": [
+        18761,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 33788561,
+      "rank": 14400,
+      "square_rank_root": 120,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        441,
+        1
+      ],
+      "inputs": [
+        57721,
+        1
+      ],
+      "kind": "square-lcm-product",
+      "product": 57721,
+      "rank": 441,
+      "square_rank_root": 21,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        441,
+        900
+      ],
+      "inputs": [
+        57721,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 103955521,
+      "rank": 44100,
+      "square_rank_root": 210,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        441,
+        3600
+      ],
+      "inputs": [
+        57721,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 736109044201,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        441,
+        7056
+      ],
+      "inputs": [
+        57721,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 1442381353129,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        441,
+        14400
+      ],
+      "inputs": [
+        57721,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 1950309529481,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        441,
+        28224
+      ],
+      "inputs": [
+        57721,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 3821567090249,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        441,
+        176400
+      ],
+      "inputs": [
+        57721,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 81121995983277,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        441,
+        705600
+      ],
+      "inputs": [
+        57721,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 214931473893837,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1,
+        900
+      ],
+      "inputs": [
+        1,
+        1801
+      ],
+      "kind": "square-lcm-product",
+      "product": 1801,
+      "rank": 900,
+      "square_rank_root": 30,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1,
+        3600
+      ],
+      "inputs": [
+        1,
+        12752881
+      ],
+      "kind": "square-lcm-product",
+      "product": 12752881,
+      "rank": 3600,
+      "square_rank_root": 60,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1,
+        7056
+      ],
+      "inputs": [
+        1,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 24988849,
+      "rank": 7056,
+      "square_rank_root": 84,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1,
+        14400
+      ],
+      "inputs": [
+        1,
+        33788561
+      ],
+      "kind": "square-lcm-product",
+      "product": 33788561,
+      "rank": 14400,
+      "square_rank_root": 120,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1,
+        28224
+      ],
+      "inputs": [
+        1,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 66207569,
+      "rank": 28224,
+      "square_rank_root": 168,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1,
+        176400
+      ],
+      "inputs": [
+        1,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 1405415637,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        1,
+        705600
+      ],
+      "inputs": [
+        1,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 3723626997,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        900,
+        7056
+      ],
+      "inputs": [
+        1801,
+        24988849
+      ],
+      "kind": "square-lcm-product",
+      "product": 45004917049,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        900,
+        28224
+      ],
+      "inputs": [
+        1801,
+        66207569
+      ],
+      "kind": "square-lcm-product",
+      "product": 119239831769,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        900,
+        176400
+      ],
+      "inputs": [
+        1801,
+        1405415637
+      ],
+      "kind": "square-lcm-product",
+      "product": 2531153562237,
+      "rank": 176400,
+      "square_rank_root": 420,
+      "status": "VERIFIED_COMPUTATION"
+    },
+    {
+      "input_ranks": [
+        900,
+        705600
+      ],
+      "inputs": [
+        1801,
+        3723626997
+      ],
+      "kind": "square-lcm-product",
+      "product": 6706252221597,
+      "rank": 705600,
+      "square_rank_root": 840,
+      "status": "VERIFIED_COMPUTATION"
     }
   ],
   "verified_unstored_products": [
     3809,
+    14381,
+    29353,
     45877,
     49517,
+    55831,
     120393,
+    131473,
     257617,
+    268349,
     278057,
     337187,
+    354797,
     458770,
     525821,
+    527693,
     596401,
     676053,
+    695213,
+    750373,
     1033997,
+    1055069,
     1379889,
+    1394957,
     1565109,
+    1730761,
+    1824417,
+    2074733,
+    2142769,
     2580201,
     2713473,
     2780570,
+    2795389,
     3186961,
     3614741,
+    3695917,
+    4213633,
+    5496973,
     6152787,
+    6355729,
+    8600429,
+    9754849,
     10452797,
     14488821,
+    16679061,
+    19589477,
     25802010,
     29573073,
     32682069,
     38384933,
+    38521589,
+    39099969,
     58153761,
+    65577141,
     75481781,
     87886890,
     100731897,
+    103955521,
+    173745621,
     179385570,
     198083529,
+    203697409,
+    237174210,
+    324855037,
     352751490,
+    357457077,
+    395339311,
+    408722401,
+    534554181,
+    627831317,
     700425333,
+    860698397,
     1039821003,
+    1047445391,
+    1082903681,
+    1900179269,
     2158834329,
+    2168277930,
     2448610749,
     2479573161,
+    2512317557,
+    3248550370,
+    3723338501,
+    3736594133,
+    4223115481,
     4245224553,
     4248668970,
+    4922803253,
     4997849337,
+    5034495589,
+    6607894761,
+    6656346517,
+    7321732757,
+    8525028330,
+    8606983970,
     9827985609,
+    9864927781,
+    9900048373,
+    11189079161,
+    11456290917,
+    12255518641,
+    13042891093,
     13095146610,
     13923756981,
+    18270403281,
+    19398817717,
+    22586930730,
     24795731610,
     25750858770,
     28419723153,
+    32470807121,
+    37575070209,
+    43567884747,
+    45004917049,
+    48407150961,
     55885764321,
+    60410246013,
+    69492043530,
+    115432436907,
+    118104430941,
     118371881277,
+    119239831769,
+    182704032810,
+    209406929913,
+    231421730589,
+    237515242653,
+    276866880489,
+    312915863421,
+    343516250997,
     364843001601,
+    411786781641,
+    484071509610,
+    554820422553,
+    613148296509,
+    629292962493,
     673108745013,
     717442949457,
+    733554518409,
+    736109044201,
+    1091022710121,
+    1350604427157,
+    1442381353129,
+    1936113164973,
+    1950309529481,
     2074639790169,
     2353114929789,
+    2531153562237,
+    3578405544117,
+    3821567090249,
     4079660795433,
     4802933212857,
+    4959711782973,
+    6350186865321,
+    6706252221597,
     9444694170249,
+    11009495571237,
+    13140679672413,
+    15353576022330,
+    30084824976570,
+    40679062244730,
+    58054246418493,
+    79709278546170,
+    81121995983277,
     113755377907197,
+    214931473893837,
+    228252148189533,
     350614124538561,
-    689462674428177
+    427764952018053,
+    604750536955773,
+    689462674428177,
+    838191291322437,
+    1133356625449893,
+    1860604751539053,
+    2220774864637797,
+    2432438573309757,
+    4766283023437053,
+    6444708384954717,
+    12628193165188893,
+    411082118889348933,
+    805501830960861957,
+    1089155717057347173,
+    2134164644916922917
   ]
 }

@@ -2,12 +2,11 @@
 
 ## Unreleased
 
-- Adds a bidirectional Atlas query engine.
-- Adds automatic bridge discovery across stored verified records.
-- Distinguishes verified products not yet catalogued as Atlas records.
-- Expands regression coverage to 23 automated tests.
-- Adds the Brutus-Pell Rank Lattice with gcd/lcm closure and Hasse edges.
-- Expands regression coverage to 31 automated tests.
+- Adds the Signed Mirror Layer with fixed-width decimal reversal and independent sign operation.
+- Adds verified mirror-root fibers for roots 3, 12, 21, and 24.
+- Expands the Rank Lattice to 16 verified nodes and gives every node at least one Pell square-rank witness.
+- Refreshes bridge discovery to 230 square-LCM products, 169 rank-preserving products, and 3 mirror hosts within the current curated dataset.
+- Expands regression coverage beyond the original atlas tests.
 
 ## v1.0.0 — 2026-09-25
 
