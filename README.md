@@ -147,3 +147,14 @@ See `MIRROR_LAYER.md` and `reports/mirror_layer.json`.
 ## Fully inhabited lattice
 
 Every node in the current 16-node gcd/lcm Rank Lattice now has at least one stored exact Pell square-rank witness.
+
+## Mirror Frontier
+
+The first unpromoted mirror continuation is tracked separately from the 16-node core lattice:
+
+- `84 -> 48`, with prime witness `28,320,769` and exact rank `48^2 = 2304`;
+- `168 -> 861`, with structured witness `197 * 293 * P_1681` and exact rank `861^2 = 741321`.
+
+These roots are verified but remain frontier-only because automatic gcd/lcm closure would expand the lattice from 16 to 29 nodes.
+
+See `MIRROR_FRONTIER.md` and `reports/mirror_frontier.json`.

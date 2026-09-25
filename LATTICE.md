@@ -74,3 +74,13 @@ Static diagram: `figures/rank-lattice.svg`.
 ## Boundary
 
 The gcd/lcm lattice of positive integers is standard mathematics. `Brutus–Pell Rank Lattice` is the project classification obtained by attaching verified Pell square-rank fibers to that structure.
+
+## Universal non-emptiness note
+
+Every positive Pell rank is attained: for every `m >= 1`, the Pell number `P_m` itself satisfies `z_P(P_m)=m`. Therefore every Square-Rank Fiber `F_C` is nonempty.
+
+The Rank Lattice is consequently not about proving existence of fibers. Its purpose is to organize compact, structured, collision-rich, mirror-related, or otherwise informative witnesses.
+
+## Mirror frontier not yet promoted
+
+The verified roots `48` and `861` are currently kept outside the core lattice. Promoting both and closing under gcd/lcm would expand the node set from 16 to 29. See `MIRROR_FRONTIER.md`.

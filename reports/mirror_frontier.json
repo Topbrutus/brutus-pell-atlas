@@ -1,0 +1,73 @@
+{
+  "frontier": [
+    {
+      "exact_rank_verified": true,
+      "mirror_token": "48",
+      "root": 48,
+      "source_root": 84,
+      "target_rank": 2304,
+      "witness": "28320769",
+      "witness_digits": 8,
+      "witness_kind": "prime-direct",
+      "witness_prime_verified": true
+    },
+    {
+      "P_1681_digits": 643,
+      "P_1681_exact_rank_verified": true,
+      "component_rank_roots": [
+        3,
+        7,
+        41
+      ],
+      "construction": "197 * 293 * P_1681",
+      "exact_rank_verified": true,
+      "gcd_P1681_197": 1,
+      "gcd_P1681_293": 1,
+      "mirror_token": "861",
+      "root": 861,
+      "source_root": 168,
+      "target_rank": 741321,
+      "witness": "569791420895779696000568567213798464634150480742243627481838693276128796503264899671000305974681119889433510103267643646640580282767276254634941491892280132205581007086423041857791631350836422944039246652415389652238730929557611707608082991186829967490199377518741039806460112173860356369446893015212951770301580683945070511087821216690003864240816235740186633926280690495538616779833838936933096416173655583143407656650277027586714482495280390739173374259342598486905743609947106339845280634880237934074701963103081933938519826442719837179453978834857937609835639934689513555624420819574927465819945302980451470119449370325177712668140097193566121",
+      "witness_digits": 648,
+      "witness_kind": "structured-product"
+    }
+  ],
+  "name": "Brutus-Pell Mirror Frontier",
+  "principle": "Fiber non-emptiness is universal because z_P(P_m)=m; frontier interest is compact or structured witnesses.",
+  "promotion_effect": {
+    "current_lattice_nodes": 16,
+    "nodes_if_both_promoted": 29,
+    "policy": "frontier-only until deliberate promotion",
+    "promoted_nodes": [
+      1,
+      3,
+      6,
+      7,
+      12,
+      21,
+      24,
+      30,
+      42,
+      48,
+      60,
+      84,
+      120,
+      168,
+      210,
+      240,
+      336,
+      420,
+      840,
+      861,
+      1680,
+      1722,
+      3444,
+      6888,
+      8610,
+      13776,
+      17220,
+      34440,
+      68880
+    ]
+  }
+}
