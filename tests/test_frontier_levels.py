@@ -38,11 +38,12 @@ class FrontierLevel2Tests(unittest.TestCase):
             self.assertEqual(prime_factorization(n), factors)
 
     def test_unresolved_gate_compression(self):
-        self.assertEqual(self.report["unresolved_gate_count"], 1)
+        self.assertEqual(self.report["unresolved_gate_count"], 0)
         self.assertEqual(
             self.report["unresolved_gate_to_doors"],
-            {"211": [633, 67731]},
+            {},
         )
+        self.assertTrue(self.report["all_gates_resolved"])
 
     def test_107_prime_support_witness(self):
         row = self.report["prime_support_witnesses"]["107"]
@@ -50,6 +51,21 @@ class FrontierLevel2Tests(unittest.TestCase):
         self.assertEqual(row["rank"], 11_449)
         self.assertTrue(row["prime_verified"])
         self.assertTrue(row["exact_rank_verified"])
+
+    def test_211_prime_support_witness(self):
+        row = self.report["prime_support_witnesses"]["211"]
+        self.assertEqual(row["witness"], 172_757_248_399_252_109)
+        self.assertEqual(row["rank"], 44_521)
+        self.assertEqual(row["k"], 3_880_354_178_910)
+        self.assertEqual(row["sign"], -1)
+        self.assertTrue(row["prime_verified"])
+        self.assertTrue(row["exact_rank_verified"])
+
+    def test_633_and_67731_doors_are_ready(self):
+        by_root = {door["root"]: door for door in self.report["doors"]}
+        for root in (633, 67731):
+            self.assertTrue(by_root[root]["promotion_ready"])
+            self.assertEqual(by_root[root]["unresolved_prime_gates"], [])
 
     def test_757_prime_support_witness(self):
         row = self.report["prime_support_witnesses"]["757"]

@@ -161,17 +161,17 @@ See `MIRROR_FRONTIER.md` and `reports/mirror_frontier.json`.
 
 ## Frontier Level 2
 
-The mirror expansion is now controlled by a Prime-Support Gate. The five Level-2 mirror roots are `633`, `2271`, `4443`, `8886`, and `67731`; the new prime support is `107`, `211`, `757`, and `1481`. Gates `107`, `757`, and `1481` now have explicit verified witnesses; only `211` remains unresolved.
+The mirror expansion is controlled by a Prime-Support Gate. The five Level-2 mirror roots are `633`, `2271`, `4443`, `8886`, and `67731`; the new prime support is `107`, `211`, `757`, and `1481`. All four gates now have explicit verified prime witnesses, so Level 2 is closed at the prime-support layer while remaining outside the core Rank Lattice.
 
 See `FRONTIER_LEVELS.md` and `reports/frontier_level_2.json`.
 
 ## Gate 211
 
-Frontier Level 2 now isolates `211` as the first deep prime-support gate. Known primitive-divisor theory guarantees that a prime witness with Pell rank `211^2 = 44521` exists; the current computational task is to exhibit a compact explicit witness.
-
-A congruence-filtered scan has tested 33,061,422 admissible prime candidates through `k = 1,000,000,000` in `p = 44521*k +/- 1`, with no explicit hit in that bounded window. The exact primitive part `P_44521 / P_211` has 16,961 decimal digits and is now fingerprinted for the next dedicated-factorization stage.
+Gate `211` is resolved. A congruence-filtered scan tested 33,061,422 admissible prime candidates through `k = 1,000,000,000` without a hit; the search then pivoted to the exact 16,961-digit primitive quotient `P_44521 / P_211`. GMP-ECM 7.0.6 in P+1 mode exposed prime factor `172,757,248,399,252,109`, whose exact Pell rank is `44,521 = 211^2`. A second verified prime factor, `496,863,004,681,392,313`, has the same exact rank. These witnesses unlock explicit Level-2 witnesses for roots `633` and `67731`.
 
 See `GATE_211.md`, `reports/gate_211_scan.json`, and `reports/gate_211_primitive.json`.
+
+An optional validated OpenMP accelerator is available at `calculation/pell_gate211_native.cpp`; it reproduces the Python reference scan on the regression window and recovers the canonical witness in a local neighborhood test.
 
 ## Gate 757
 
@@ -185,6 +185,6 @@ See `GATE_757.md` and `reports/gate_757_scan.json`.
 
 Gate `1481` is resolved by the explicit prime witness `13,169,009,631,553`, with exact Pell rank `2,193,361 = 1481^2`. It unlocks explicit Level-2 witnesses for roots `4443` and `8886`.
 
-Only Gate `211` remains unresolved at Frontier Level 2.
+All Level-2 prime-support gates are now resolved; promotion into the core lattice remains a separate decision.
 
 See `GATE_1481.md` and `reports/gate_1481_scan.json`.

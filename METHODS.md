@@ -70,8 +70,26 @@ The 757 search used the same rule as Gate 211 and was parallelized only as an ex
 
 ## Primitive-part factorization pivot
 
-For Gate 211, the congruential scan reached `k = 1,000,000,000` without an explicit rank-44521 prime witness. The next stage therefore works with the Pell primitive part directly.
+For Gate 211, the congruential scan reached `k = 1,000,000,000` without an explicit rank-44521 prime witness. The computation therefore pivoted from candidate enumeration to the exact Pell primitive part.
 
-For `n = 44521 = 211^2`, OEIS A008555 gives the Sylvester?Pell cyclotomic/primitive-part construction; because 211 is prime, the relevant exact quotient is `P_44521 / P_211`. The repository computes this quotient exactly, records its decimal length and SHA-256 fingerprint, and verifies that it is coprime to `P_211`.
+For `n = 44521 = 211^2`, the relevant exact quotient is
 
-The quotient has 16,961 decimal digits. General-purpose pure-Python Pollard p-1 is not treated as a completed factorization stage at this size; a dedicated ECM/PARI/NTL-class factorization engine is the appropriate next computational tool.
+`Q = P_44521 / P_211`.
+
+The repository computes `Q` exactly, verifies exact division, records its 16,961-digit decimal length and SHA-256 fingerprint, and verifies `gcd(Q, P_211) = 1`.
+
+A local copy of GMP-ECM 7.0.6 was extracted without system installation. A Pollard P-1 profile with the known factor `44521` preloaded into the group-order condition produced no non-trivial factor. A Williams P+1 profile on the same exact quotient produced the prime factor `172,757,248,399,252,109`.
+
+That factor is then verified independently by deterministic 64-bit Miller?Rabin, SymPy primality, direct divisibility of `Q`, the fast exact-target Pell verifier, and the original iterative Pell-rank engine. Its exact rank is `44521`.
+
+A second verified prime divisor of `Q`, `496,863,004,681,392,313`, is likewise checked for primality, exact divisibility, and exact Pell rank `44521`.
+
+The primitive quotient is only partially factored. After removing both known prime factors, the residual cofactor has 16,926 decimal digits; no complete factorization is claimed.
+
+## Optional native Gate 211 scanner
+
+`calculation/pell_gate211_native.cpp` is an optional OpenMP accelerator for the Gate 211 congruence scan. It implements all four admissible `(k mod 8, sign)` classes, deterministic 64-bit Miller?Rabin, and exact Pell-rank testing by modular matrix exponentiation.
+
+Validation under WSL with `g++ -O3 -march=native -fopenmp` reproduces the Python reference count exactly on `k = 1..200000`: 9,177 admissible prime candidates, zero hits. On `k = 3,880,354,178,905..3,880,354,178,915`, it recovers the canonical Gate 211 witness at `k = 3,880,354,178,910`, sign `-1`.
+
+The native scanner is an execution accelerator only; the Python exact-rank verifier remains the reference validation path.

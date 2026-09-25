@@ -5,14 +5,31 @@
   "classification": "EXACT_COMPUTATION",
   "division_exact": true,
   "divisor_index": 211,
-  "factorization_status": "UNFACTORED_PRIMITIVE_PART",
+  "factorization_status": "PARTIALLY_FACTORED_PRIMITIVE_PART",
   "gcd_primitive_P_211": 1,
   "identity": "primitive_part = P_44521 / P_211",
   "index": 44521,
+  "known_factors_product_divides": true,
+  "known_prime_factors": [
+    {
+      "divides_primitive": true,
+      "factor": 172757248399252109,
+      "multiplicity": 1,
+      "prime_verified": true
+    },
+    {
+      "divides_primitive": true,
+      "factor": 496863004681392313,
+      "multiplicity": 1,
+      "prime_verified": true
+    }
+  ],
   "name": "Gate 211 Pell primitive part",
   "primitive_digits": 16961,
   "primitive_mod_211": 210,
   "primitive_prefix_80": "61747207383745251267551661356840012522616943992759108901102961712573129140142670",
   "primitive_sha256": "d516a24aaa5abcf58f1a232596db70b390174e74bab44b20ae0682896703321e",
-  "primitive_suffix_80": "97394859275614605027219034519231402753075009780246400409751793726060264771476949"
+  "primitive_suffix_80": "97394859275614605027219034519231402753075009780246400409751793726060264771476949",
+  "residual_digits": 16926,
+  "residual_sha256": "d098e9107d9521eee8f850115964662bf9bdb2c0df2b8c95b15d0aa4e44957e6"
 }

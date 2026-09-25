@@ -41,25 +41,28 @@ $$\boxed{z_P(82\,318\,309)=11449=107^2}.$$
 
 The witness is also verified prime by the repository's deterministic 64-bit Miller–Rabin implementation.
 
-## Remaining unresolved gates
+## Level 2 closure
 
-After resolving 107, 757, and 1481, five mirror doors compress to one unresolved prime gate:
+All four new prime-support gates are now resolved:
 
-| unresolved prime gate | affected mirror roots |
-|---:|---|
-| 211 | 633, 67731 |
+| gate | verified prime witness | affected mirror roots |
+|---:|---:|---|
+| 107 | 82,318,309 | 67731 |
+| 211 | 172,757,248,399,252,109 | 633, 67731 |
+| 757 | 21,855,419,538,769 | 2271 |
+| 1481 | 13,169,009,631,553 | 4443, 8886 |
 
-The `757` gate is resolved by prime witness `21,855,419,538,769`, unlocking `2271`. The `1481` gate is resolved by prime witness `13,169,009,631,553`, unlocking `4443` and `8886`. `67731` already has its 107 support but still depends on the only unresolved gate, `211`.
+Thus every Level-2 mirror root has all newly introduced prime support resolved. This closes the prime-support frontier at Level 2 without promoting those roots into the core Rank Lattice.
 
 ## Bounded searches
 
-For each unresolved prime root `q`, a direct-prime search was performed over candidates
+During gate resolution, direct-prime searches were performed over candidates
 
 $$p=kq^2\pm1,$$
 
-with $1\le k\le200000$. No exact-rank witness was found in the original `k <= 200,000` windows for 211, 757, or 1481. Deeper scans later resolved 757 at `k = 38,138,832` and 1481 at `k = 6,004,032`; only 211 remains unresolved as a compact-witness gate.
+with $1\le k\le200000$. No exact-rank witness was found in the original `k <= 200,000` windows for 211, 757, or 1481. Deeper scans resolved 757 at `k = 38,138,832` and 1481 at `k = 6,004,032`. Gate 211 resisted direct scanning through `k = 1,000,000,000` and was then resolved by factoring the exact Pell primitive quotient `P_44521 / P_211`.
 
-This is strictly a bounded computational observation. It is **not** a claim that no such prime witness exists.
+Each no-hit statement is strictly a bounded computational observation. Gate 211 was ultimately resolved by primitive-part factorization rather than by extending the direct scan to its much larger witness index.
 
 ## Reproduce the structural classification
 

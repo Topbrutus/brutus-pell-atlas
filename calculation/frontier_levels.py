@@ -16,6 +16,15 @@ PRIME_SUPPORT_WITNESSES = {
         "kind": "prime-direct",
         "status": "VERIFIED_COMPUTATION",
     },
+    211: {
+        "witness": 172_757_248_399_252_109,
+        "rank": 211 * 211,
+        "kind": "primitive-part-ecm-prime",
+        "status": "VERIFIED_COMPUTATION",
+        "k": 3_880_354_178_910,
+        "sign": -1,
+        "secondary_witness": 496_863_004_681_392_313,
+    },
     757: {
         "witness": 21_855_419_538_769,
         "rank": 757 * 757,
@@ -35,7 +44,7 @@ PRIME_SUPPORT_WITNESSES = {
 }
 
 BOUNDED_SEARCH_OBSERVATIONS = {
-    211: {"max_k": 200_000, "hits": [], "status": "NO_HIT_IN_WINDOW"},
+    211: {"max_k": 1_000_000_000, "hits": [], "status": "NO_HIT_IN_BRUTE_FORCE_WINDOW_RESOLVED_BY_ECM"},
     757: {"max_k": 38_138_832, "hits": [{"witness": 21_855_419_538_769, "k": 38_138_832, "sign": 1}], "status": "FOUND_DEEP_SCAN"},
     1481: {"max_k": 6_004_032, "hits": [{"witness": 13_169_009_631_553, "k": 6_004_032, "sign": 1}], "status": "FOUND_DEEP_SCAN"},
 }
@@ -168,6 +177,7 @@ def build_level_2() -> dict:
         },
         "bounded_search_observations": {str(k): v for k, v in BOUNDED_SEARCH_OBSERVATIONS.items()},
         "unresolved_gate_count": len(unresolved_gate_to_doors),
+        "all_gates_resolved": len(unresolved_gate_to_doors) == 0,
         "unresolved_gate_to_doors": {
             str(k): sorted(v) for k, v in sorted(unresolved_gate_to_doors.items())
         },

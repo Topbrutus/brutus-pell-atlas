@@ -1,103 +1,130 @@
 # Brutus–Pell Gate 211
 
-`211` is the first unresolved prime-support gate of Frontier Level 2.
+`211` was the last unresolved prime-support gate of Frontier Level 2. It is now resolved.
 
 ## Target
 
 $$\boxed{211^2=44521}.$$
 
-The computational target is an explicit prime $p$ satisfying
+The target is an explicit prime $p$ satisfying
 
 $$\boxed{z_P(p)=44521}.$$
 
-Such a prime would immediately provide explicit support for the Level-2 mirror roots `633` and `67731`.
+## Known-theory existence
 
-## Existence is known theory
+Primitive-divisor theory for Lucas sequences guarantees primitive prime divisors at this index; $44521$ is far beyond the exceptional small indices. Thus existence was not the unresolved question. The computational problem was to exhibit explicit compact factors and verify their exact Pell ranks.
 
-Carmichael's primitive-divisor theorem for Pell numbers implies that every Pell number $P_n$ with $n>1$ has a prime divisor that divides no earlier positive Pell term.
+References used by the project:
 
-For $n=44521$, any such primitive prime divisor $p$ has
+- R. D. Carmichael (1913), work on primitive divisors of Lucas sequences;
+- M. Yabuta (2001), a proof of Carmichael's primitive-divisor theorem;
+- Bilu, Hanrot, Voutier et al. (2001), primitive divisors of Lucas and Lehmer numbers.
 
-$$z_P(p)=44521.$$
+## Congruence-filtered scan
 
-Therefore the existence of a prime witness for the 211 gate is not an open question inside this project. The remaining task is computational: exhibit a sufficiently compact explicit witness.
+For Pell numbers, viewed as $U_n(2,-1)$ with discriminant $D=8$, a prime rank witness satisfies
 
-References:
+$$p\equiv\left(\frac{8}{p}\right)\pmod{z_P(p)}.$$
 
-- R. D. Carmichael (1913), *On the numerical factors of the arithmetic forms α^n ± β^n*.
-- M. Yabuta (2001), *A simple proof of Carmichael's theorem on primitive divisors*.
-- Bilu, Hanrot, Voutier et al. (2001), work on primitive divisors of Lucas and Lehmer numbers.
-## Lucas/Pell congruence filter
-
-For a prime $p$ away from the discriminant, the rank of appearance in a Lucas sequence satisfies
-
-$$p\equiv\left(\frac{D}{p}\right)\pmod{z_P(p)}.$$
-
-For Pell numbers the discriminant is $D=8$. Thus a prime with rank $44521$ must satisfy
+Hence a rank-$44521$ prime must have the form
 
 $$p=44521k\pm1$$
 
-with the sign matching the Legendre symbol $(8/p)$.
+with the sign matching $(8/p)$.
 
-This known-theory filter is applied before primality and exact-rank testing.
+The bounded scan covered
 
-## Deep scan
+$$1\le k\le1\,000\,000\,000$$
 
-Five verified scan segments together cover
+and tested **33,061,422** admissible prime candidates by exact Pell-rank verification, with zero hits in that window. The largest candidate bound was
 
-$$1\le k\le1\,000\,000\,000.$$
+$$44\,521\,000\,000\,001.$$
 
-Results:
-
-- `k = 1..200000`: 9,177 admissible prime candidates tested;
-- `k = 200001..5000000`: 190,833 tested;
-- `k = 5000001..100000000`: 3,374,781 tested;
-- `k = 100000001..500000000`: 13,342,466 tested;
-- `k = 500000001..1000000000`: 16,144,165 tested;
-- total exact-rank prime candidates tested: **33,061,422**;
-- explicit rank-$44521$ hits: **0**.
-
-The largest candidate bound reached is
-
-$$1\,000\,000\,000\cdot44521+1=44\,521\,000\,000\,001.$$
-
-The later windows used a segmented small-prime sieve as an execution optimization. Surviving integers were still subjected to deterministic 64-bit primality testing followed by the same exact Pell-rank criterion.
-
-Therefore the correct status remains
-
-$$\boxed{\text{NO EXPLICIT PRIME WITNESS IN THE SCANNED WINDOW}}.$$
-
-This is not a nonexistence statement.
+This remains a bounded negative search result only.
 
 ## Primitive-part pivot
 
-The OEIS primitive-part sequence for Pell numbers (A008555) defines the Sylvester?Pell cyclotomic part by removing the primitive parts attached to proper divisor indices. Since
+Because
 
 $$44521=211^2$$
 
-and `211` is prime, the relevant primitive part reduces here to
+the exact primitive Pell quotient used here is
 
-$$\boxed{\Phi^{(P)}_{44521}=\frac{P_{44521}}{P_{211}}}.$$
+$$\boxed{Q=\frac{P_{44521}}{P_{211}}}.$$
 
 Exact computation gives:
 
 - `P_211`: 81 decimal digits;
 - `P_44521`: 17,042 decimal digits;
-- primitive quotient: **16,961 decimal digits**;
-- division remainder: `0`;
-- `gcd(primitive quotient, P_211) = 1`;
-- SHA-256 of the decimal primitive quotient:
+- `Q`: 16,961 decimal digits;
+- exact division remainder: `0`;
+- `gcd(Q,P_211)=1`;
+- SHA-256 of the decimal expansion of `Q`:
 
 `d516a24aaa5abcf58f1a232596db70b390174e74bab44b20ae0682896703321e`.
 
-The primitive quotient is currently **unfactored** in this project. A direct SymPy Pollard p-1 attempt is operationally unsuitable at this size; the next factorization stage calls for a dedicated ECM/PARI/NTL-class engine rather than simply extending the congruential brute-force window.
+## Resolution
+
+Using GMP-ECM 7.0.6 in P+1 mode on the exact primitive quotient, the project recovered the prime factor
+
+$$\boxed{q_1=172\,757\,248\,399\,252\,109}.$$
+
+It satisfies
+
+$$q_1=3\,880\,354\,178\,910\cdot44521-1,$$
+
+is verified prime by two independent primality implementations, divides $Q$ exactly, and has
+
+$$\boxed{z_P(q_1)=44521}.$$
+
+A second verified prime factor of the same primitive quotient is
+
+$$\boxed{q_2=496\,863\,004\,681\,392\,313}.$$
+
+It satisfies
+
+$$q_2=11\,160\,194\,170\,872\cdot44521+1,$$
+
+divides $Q$ exactly, is verified prime, and also has
+
+$$\boxed{z_P(q_2)=44521}.$$
+
+After removing both known prime factors, the remaining cofactor of $Q$ has **16,926 decimal digits**. The primitive part is therefore only partially factored; complete factorization is not claimed.
+
+## Mirror doors unlocked
+
+Using the canonical witness $q_1$:
+
+$$N_{633}=197\cdot q_1$$
+
+$$\boxed{N_{633}=34\,033\,177\,934\,652\,665\,473},$$
+
+with
+
+$$\boxed{z_P(N_{633})=633^2=400689}.$$
+
+For the second affected root, using the verified root-$107$ witness $82\,318\,309$:
+
+$$N_{67731}=197\cdot82\,318\,309\cdot q_1$$
+
+$$\boxed{N_{67731}=2\,801\,553\,657\,476\,719\,924\,080\,045\,157},$$
+
+with exact fast modular verification
+
+$$\boxed{z_P(N_{67731})=67731^2=4\,587\,488\,361}.$$
+
+## Status
+
+- Gate `211`: **RESOLVED**.
+- Level-2 roots `633` and `67731`: **VERIFIED FRONTIER WITNESSES**.
+- Primitive quotient: **PARTIALLY FACTORED**, not fully factored.
+- Core Rank Lattice promotion: **not performed**.
 
 ## Reproduce
 
 ```bash
 python -m calculation.gate_211
+python -m calculation.gate_211_primitive
 ```
 
 Machine-readable reports: `reports/gate_211_scan.json` and `reports/gate_211_primitive.json`.
-
-Primitive-part fingerprint: `python -m calculation.gate_211_primitive`.

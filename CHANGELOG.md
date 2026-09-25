@@ -6,7 +6,7 @@
 - Adds verified mirror-root fibers for roots 3, 12, 21, and 24.
 - Expands the Rank Lattice to 16 verified nodes and gives every node at least one Pell square-rank witness.
 - Refreshes bridge discovery to 230 square-LCM products, 169 rank-preserving products, and 3 mirror hosts within the current curated dataset.
-- Expands regression coverage to 78 automated tests.
+- Expands regression coverage to 87 automated tests.
 - Adds a Mirror Frontier for roots 48 and 861 without auto-promoting them into the core lattice.
 - Verifies a prime witness for root 48 and a structured 648-digit witness for root 861.
 - Documents universal Pell-term witnesses `z_P(P_m)=m` and the fast exact-target verifier.
@@ -25,11 +25,16 @@
 - Adds explicit verified frontier witnesses for roots 4443 and 8886.
 - Reduces unresolved Level-2 prime-support gates to one: 211.
 - Computes and fingerprints the exact 16,961-digit primitive part `P_44521 / P_211` for the Gate 211 factorization pivot.
-- Records that the primitive quotient is coprime to `P_211` and remains unfactored in the current project toolchain.
+- Records that the primitive quotient is coprime to `P_211` and pivots Gate 211 to dedicated factorization tooling.
+- Resolves Gate 211 with verified primitive-part prime factor `172,757,248,399,252,109`; verifies a second prime factor `496,863,004,681,392,313`.
+- Adds explicit verified Level-2 witnesses for roots 633 and 67731.
+- Closes all four Level-2 prime-support gates while keeping Level 2 outside the core Rank Lattice.
+- Records the primitive quotient as partially factored, with a 16,926-digit residual cofactor.
+- Adds a validated optional OpenMP Gate 211 scanner that reproduces the Python reference window and canonical witness.
 
-## v1.0.0 — 2026-09-25
+## v1.0.0 â€” 2026-09-25
 
-- Creates the integrated Brutus–Pell Atlas.
+- Creates the integrated Brutusâ€“Pell Atlas.
 - Defines Square-Rank Fiber notation.
 - Adds verified F_30, F_42, and F_210 anchor records.
 - Adds verified rank-collision records.
