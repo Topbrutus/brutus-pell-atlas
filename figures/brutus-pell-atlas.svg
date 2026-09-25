@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#000"/>
+  <g fill="#fff" font-family="Georgia, Times New Roman, serif" text-anchor="middle">
+    <text x="800" y="85" font-size="52">Brutus–Pell Atlas</text>
+    <text x="800" y="145" font-size="30">Gabriel St-Pierre</text>
+    <text x="800" y="235" font-size="34">INPUT n ↔ PELL RANK zₚ(n) ↔ SQUARE-RANK FIBER F_C</text>
+    <text x="800" y="340" font-size="34">COLLISION ↔ MIRROR ↔ LIFT ↔ PRESERVING EXTENSION</text>
+    <rect x="260" y="405" width="1080" height="120" fill="none" stroke="#fff" stroke-width="2"/>
+    <text x="800" y="458" font-size="34">F₄₂: 73·293, 3529, 21³, 1 203 930</text>
+    <text x="800" y="505" font-size="30">zₚ = 1764 = 42²</text>
+    <rect x="260" y="575" width="1080" height="120" fill="none" stroke="#fff" stroke-width="2"/>
+    <text x="800" y="628" font-size="32">13² ↔ 198477 ↔ 31²</text>
+    <text x="800" y="675" font-size="30">four verified states: zₚ = 44100 = 210²</text>
+  </g>
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="24">
+    <text x="120" y="795">VERIFIED_COMPUTATION • DERIVED_RELATION • KNOWN_THEORY • RESEARCH_CANDIDATE</text>
+    <text x="120" y="840">Atlas organization is not a claim that standard Pell theory is new.</text>
+  </g>
+</svg>

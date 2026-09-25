@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this atlas, please cite the archived release."
+title: "Brutus–Pell Atlas: Square-Rank Fibers, Collisions, Mirror Structures, and Reproducible Pell-Rank Anchors"
+type: software
+authors:
+  - family-names: "St-Pierre"
+    given-names: "Gabriel"
+version: 1.0.0
+date-released: 2026-09-25
+license: MIT
+repository-code: "https://github.com/Topbrutus/brutus-pell-atlas"
+url: "https://github.com/Topbrutus/brutus-pell-atlas"
+abstract: >-
+  Reproducible atlas of verified Pell ranks organized into square-rank fibers,
+  collisions, mirror structures, and related research classifications.
+keywords:
+  - Brutus-Pell Atlas
+  - Pell sequence
+  - rank of apparition
+  - square-rank fiber
+  - reproducibility

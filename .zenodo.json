@@ -1,0 +1,21 @@
+{
+  "title": "Brutus–Pell Atlas: Square-Rank Fibers, Collisions, Mirror Structures, and Reproducible Pell-Rank Anchors",
+  "description": "An integrated reproducible atlas organizing verified Pell ranks into square-rank fibers, rank collisions, mirror-host structures, and rank-preserving constructions. The repository includes an exact modular rank engine, a curated anchor dataset, automated tests, validation labels, and explicit separation between computation, known theory, and research candidates.",
+  "creators": [
+    {"name": "St-Pierre, Gabriel"}
+  ],
+  "version": "1.0.0",
+  "access_right": "open",
+  "license": "mit",
+  "upload_type": "software",
+  "language": "eng",
+  "keywords": [
+    "Brutus-Pell Atlas",
+    "Pell sequence",
+    "rank of apparition",
+    "square-rank fiber",
+    "rank collision",
+    "mirror structure",
+    "reproducibility"
+  ]
+}
