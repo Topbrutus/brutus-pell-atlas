@@ -53,3 +53,11 @@ For a simulated mirror expansion, each new root is factored and compared with th
 A gate can be marked supported only after an exact square-rank witness for that prime root has been verified. Direct-prime searches use candidates `p = k*q^2 +/- 1`, deterministic Miller?Rabin primality for 64-bit candidates, and exact modular Pell-rank testing.
 
 A failed bounded search records only `NO_HIT_IN_WINDOW`; it never establishes nonexistence.
+
+## Gate 211 congruence-filtered scan
+
+For Pell numbers, viewed as the Lucas sequence `U_n(2,-1)`, the discriminant is `D = 8`. For odd primes away from the discriminant, standard Lucas theory gives `p ? (D/p) (mod rho(p))`, where `rho(p)` is the rank of appearance.
+
+For target rank `rho(p) = 44521`, candidate primes are therefore restricted to `p = 44521*k +/- 1`, with the sign required to equal the Legendre symbol `(8/p)`. The implementation applies this arithmetic filter first, then deterministic 64-bit Miller?Rabin primality, then exact modular Pell-rank verification.
+
+The stored deep-scan report records the performed windows and their tested-prime counts; regression tests verify the filter mechanics but intentionally do not rerun the entire five-million-`k` scan on every test suite invocation.

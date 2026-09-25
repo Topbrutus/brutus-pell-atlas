@@ -42,3 +42,12 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Prime gates 211, 757, 1481: unresolved compact-witness targets.
 - No-hit statements for `k <= 200,000`: bounded search observations only, never nonexistence claims.
 - Level 2 is not promoted into the core Rank Lattice.
+
+## Gate 211 status
+
+- Target rank: `44521 = 211^2`.
+- Existence of a prime with exact Pell rank 44521: `KNOWN_THEORY` via primitive prime divisors of Pell numbers.
+- Congruence restriction `p ? (8/p) mod z_P(p)`: `KNOWN_THEORY` for Lucas sequences.
+- Explicit compact prime witness: not yet found.
+- Deep bounded scan: 200,010 admissible prime candidates tested through `k = 5,000,000`; zero hits.
+- Interpretation: `NO_EXPLICIT_PRIME_WITNESS_IN_SCANNED_WINDOW`, not nonexistence.
