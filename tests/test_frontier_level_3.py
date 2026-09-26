@@ -33,13 +33,13 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
         self.assertEqual(self.report["next_unresolved_gate"], 47)
 
     def test_hard_unresolved_vs_unworked(self):
-        self.assertEqual(HARD_UNRESOLVED_LEVEL3_GATES, {47, 71, 83, 101})
+        self.assertEqual(HARD_UNRESOLVED_LEVEL3_GATES, {47, 71, 83, 101, 113})
         self.assertEqual(
             self.report["hard_unresolved_preview_gates"],
-            [47, 71, 83, 101],
+            [47, 71, 83, 101, 113],
         )
-        self.assertEqual(self.report["next_unworked_gate"], 113)
-        self.assertEqual(self.report["unworked_preview_gates"][0], 113)
+        self.assertEqual(self.report["next_unworked_gate"], 131)
+        self.assertEqual(self.report["unworked_preview_gates"][0], 131)
 
     def test_known_gate_witnesses(self):
         checks = self.report["verified_gate_witnesses"]

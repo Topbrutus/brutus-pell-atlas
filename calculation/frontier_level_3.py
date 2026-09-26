@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT_PATH = ROOT / "reports" / "frontier_level_3_preview.json"
 
 LEVEL2_ROOTS = [633, 2271, 4443, 8886, 67731]
-HARD_UNRESOLVED_LEVEL3_GATES = {47, 71, 83, 101}
+HARD_UNRESOLVED_LEVEL3_GATES = {47, 71, 83, 101, 113}
 
 KNOWN_LEVEL3_GATE_WITNESSES = {
     13: {"witness": 1013, "kind": "preexisting-prime-direct"},

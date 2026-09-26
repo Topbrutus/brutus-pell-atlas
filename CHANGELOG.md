@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Checkpoints Level-3 preview Gate 113 as hard-unresolved after a compiled scan through k = 10^10 and recorded P-1/P+1/ECM campaigns.
+- Advances the next never-worked Level-3 preview gate to 131.
+
 - Adds the exact odd-rank Pell filter `p ? 1 (mod 4)` before future prime-support scans.
 - Refines the Gate 47 C/OpenMP scanner to the only surviving `k mod 8` branches for odd square ranks.
 

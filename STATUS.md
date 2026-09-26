@@ -85,8 +85,8 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Novel prime-support gates: 210.
 - Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103`.
 - Next unresolved preview gate: `47`.
-- Hard-unresolved preview gates: `47, 71, 83, 101`.
-- Next never-worked preview gate: `109`.
+- Hard-unresolved preview gates: `47, 71, 83, 101, 113`.
+- Next never-worked preview gate: `131`.
 - No Level-2 or Level-3 root is promoted into the core lattice by this preview.
 
 ## Gate 47 status
@@ -206,3 +206,17 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Level-3 preview root `23,467,643,211` still requires gate `71,766,493`.
 - Gate `109`: resolved; Level 3 remains simulation-only.
 - Next never-worked Level-3 gate: `113`.
+
+
+## Gate 113 status
+
+- Target rank: `12,769 = 113^2`.
+- Explicit prime witness: not yet found.
+- Direct Python scan: `k <= 200,000`; 9,828 admissible prime candidates; zero hits.
+- Generic C/OpenMP exact Pell scan: `k <= 10,000,000,000`; 496,329,793 small-prime-sieve survivors; zero Pell-divisibility hits.
+- Primitive quotient: `P_12769 / P_113`, 4,845 decimal digits.
+- P-1: 10 runs at `B1=50,000`, effective `B2=14,856,276`; no factor.
+- P+1: 10 runs at `B1=50,000`, effective `B2=19,411,780`; no factor.
+- ECM: 12 curves at `B1=250,000`, `B2=40,000,000`; all normalized outputs equal the input quotient.
+- Status: `HARD_UNRESOLVED` / `DEEP_COMPUTATIONAL_FRONTIER`, never a nonexistence claim.
+- Next never-worked Level-3 gate: `131`.

@@ -264,3 +264,9 @@ Gate `109` is resolved by the explicit prime witness `12,203,170,399,877`, with 
 The generic C/OpenMP scanner is now available as `calculation/gate_scan_compiled.c` and was regression-validated by reproducing the known Gate 73 and Gate 103 witnesses before use on Gate 109.
 
 See `GATE_109.md` and `reports/gate_109.json`.
+
+## Gate 113
+
+Gate `113` is checkpointed as `HARD_UNRESOLVED`. The generic C/OpenMP scanner covered `k <= 10,000,000,000` with 496,329,793 small-prime-sieve survivors and zero exact Pell-divisibility hits. Recorded P-1, P+1, and ECM campaigns also found no factor of the 4,845-digit primitive quotient `P_12769 / P_113`.
+
+This is a bounded computational status, not a nonexistence claim. See `GATE_113.md` and `reports/gate_113_status.json`.
