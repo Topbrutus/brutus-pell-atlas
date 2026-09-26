@@ -277,3 +277,16 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Light P-1 and P+1 attempts at `B1=50,000`: no factor.
 - Affected preview root: `432,849 = 3*157*919`; gate `919` remains unresolved.
 - Next never-worked Level-3 gate: `163`.
+
+## Gate 163 status
+
+- Target rank: `26,569 = 163^2`.
+- Explicit prime witness: `2,247,896,813`.
+- Direct-search hit: `k = 84,606` in `p = k*26,569 - 1`.
+- Full `k <= 200,000` window: 4,716 admissible prime candidates; exactly one verified hit.
+- Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
+- Primitive quotient: `P_26569 / P_163`, 10,108 decimal digits; witness divides it exactly.
+- Preview root `2,820,552` is now promotion-ready because gate `103` was already resolved.
+- Preview root `29,770,544,451` remains blocked by gates `3,851` and `15,809`.
+- Gate `163`: resolved; Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `199`.

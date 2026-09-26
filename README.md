@@ -306,3 +306,11 @@ Gate `157` is checkpointed as `ACTIVE_UNRESOLVED`: exact scanning now reaches `k
 This moves the Level-3 preview to the next never-worked gate, `163`, while keeping Gate 157 visible as an active computational frontier.
 
 See `GATE_157.md` and `reports/gate_157_status.json`.
+
+## Gate 163
+
+Gate `163` is resolved by the direct prime witness `2,247,896,813`, with exact Pell rank `26,569 = 163^2`. The witness also divides the exact 10,108-digit primitive quotient `P_26569 / P_163`.
+
+This makes preview root `2,820,552` promotion-ready while root `29,770,544,451` remains blocked by gates `3,851` and `15,809`.
+
+See `GATE_163.md` and `reports/gate_163.json`.

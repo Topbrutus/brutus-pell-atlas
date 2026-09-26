@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 163 with prime witness 2,247,896,813 at k = 84,606.
+- Verifies exact rank `z_P(p)=26,569=163^2` and exact divisibility into the 10,108-digit primitive quotient `P_26569 / P_163`.
+- Marks preview root 2,820,552 promotion-ready and advances the next never-worked Level-3 gate to 199.
+
 - Checkpoints Level-3 preview Gate 157 as `ACTIVE_UNRESOLVED` after exact scanning through `k = 10^10` with zero Pell-divisibility hits.
 - Records the exact 9,375-digit primitive quotient `P_24649 / P_157`, its SHA-256 fingerprint, FactorDB status `U`, and light P-1/P+1 no-factor attempts.
 - Adds the `active_unresolved_preview_gates` state and advances the next never-worked Level-3 gate to 163.
