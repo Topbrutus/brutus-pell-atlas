@@ -302,3 +302,17 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Preview root `75,434,532` now has resolved novel support `{31,199}` and remains blocked only by gate `1019`.
 - Gate `199`: resolved; Level 3 remains simulation-only.
 - Next never-worked Level-3 gate: `227`.
+
+## Gate 227 status
+
+- Target rank: `51,529 = 227^2`.
+- Canonical prime witness: `309,173`, first hit at `k = 6` in `p = k*51,529 - 1`.
+- Exactly one admissible prime candidate was tested before the first hit.
+- Secondary verified prime witness: `105,428,333` at `k = 2,046`.
+- Full `k <= 200,000` window: 4,629 admissible prime candidates; exactly two verified hits.
+- Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
+- Primitive quotient: `P_51529 / P_227`, 19,638 decimal digits; both witnesses divide it exactly.
+- Preview root `49,713` is now promotion-ready because gate `73` was already resolved.
+- Preview root `61,455,314,793` remains blocked only by gate `90,242,753`.
+- Gate `227`: resolved; Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `229`.

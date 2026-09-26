@@ -1,0 +1,77 @@
+{
+  "first_hit_scan": {
+    "end_k": 6,
+    "hits": [
+      {
+        "k": 6,
+        "p": 309173,
+        "sign": -1
+      }
+    ],
+    "prime_candidates_tested": 1,
+    "start_k": 1
+  },
+  "full_scan": {
+    "end_k": 200000,
+    "hits": [
+      {
+        "k": 6,
+        "p": 309173,
+        "sign": -1
+      },
+      {
+        "k": 2046,
+        "p": 105428333,
+        "sign": -1
+      }
+    ],
+    "prime_candidates_tested": 4629,
+    "start_k": 1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      49713,
+      61455314793
+    ],
+    "promotion_ready_after_resolution": [
+      49713
+    ],
+    "still_blocked": {
+      "61455314793": [
+        90242753
+      ]
+    }
+  },
+  "name": "Brutus-Pell Gate 227",
+  "primitive_part": {
+    "decimal_digits": 19638,
+    "exact_division_verified": true,
+    "object": "P_51529 / P_227",
+    "sha256": "ae347e0dc8e9224d442ebcc22234e48cba2e680a831a5e36c051b9c038c794d5"
+  },
+  "root": 227,
+  "status": "RESOLVED",
+  "target_rank": 51529,
+  "verified_prime_witnesses": [
+    {
+      "divides_primitive": true,
+      "exact_rank_verified": true,
+      "identity_verified": true,
+      "k": 6,
+      "p": 309173,
+      "prime_verified": true,
+      "role": "canonical",
+      "sign": -1
+    },
+    {
+      "divides_primitive": true,
+      "exact_rank_verified": true,
+      "identity_verified": true,
+      "k": 2046,
+      "p": 105428333,
+      "prime_verified": true,
+      "role": "secondary",
+      "sign": -1
+    }
+  ]
+}

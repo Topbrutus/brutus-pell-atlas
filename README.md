@@ -322,3 +322,11 @@ Gate `199` is resolved by the direct prime witness `21,788,153,393`, with exact 
 Preview root `75,434,532` remains blocked only by gate `1019`. The next never-worked Level-3 gate is `227`.
 
 See `GATE_199.md` and `reports/gate_199.json`.
+
+## Gate 227
+
+Gate `227` is resolved by the direct prime witness `309,173`, with exact Pell rank `51,529 = 227^2`; a second verified witness is `105,428,333`.
+
+Resolving Gate 227 makes preview root `49,713` promotion-ready. Preview root `61,455,314,793` remains blocked only by gate `90,242,753`.
+
+See `GATE_227.md` and `reports/gate_227.json`.

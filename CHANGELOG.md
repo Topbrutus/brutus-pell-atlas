@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 227 with canonical prime witness 309,173 at k = 6 and secondary witness 105,428,333.
+- Verifies exact rank `z_P(p)=51,529=227^2` and exact divisibility into the 19,638-digit primitive quotient `P_51529 / P_227`.
+- Marks preview root 49,713 promotion-ready, leaves root 61,455,314,793 blocked only by gate 90,242,753, and advances the next never-worked Level-3 gate to 229.
+
 - Resolves Level-3 preview Gate 199 with prime witness 21,788,153,393 at k = 550,192.
 - Verifies exact rank `z_P(p)=39,601=199^2` and exact divisibility into the 15,083-digit primitive quotient `P_39601 / P_199`.
 - Reduces preview root 75,434,532 to the single remaining unresolved gate 1019 and advances the next never-worked Level-3 gate to 227.
