@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Audits Gate 113 factorization metadata from persistent reruns: P-1 and P+1 both use effective `B2=9,714,820` at `B1=50,000`, with exit status 0 and no factor; records audit paths and ECM exit statuses.
+
 - Resolves Level-3 preview Gate 131 with prime witness 2,745,761 at k = 160.
 - Records a second Gate-131 prime witness, 576,609,601.
 - Advances the next never-worked Level-3 preview gate to 137.

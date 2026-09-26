@@ -70,9 +70,14 @@ class Gate113Tests(unittest.TestCase):
             [row["method"] for row in attempts],
             ["P-1", "P+1", "ECM"],
         )
+        self.assertEqual(attempts[0]["effective_B2"], 9_714_820)
+        self.assertEqual(attempts[1]["effective_B2"], 9_714_820)
+        self.assertEqual(attempts[0]["exit_status"], 0)
+        self.assertEqual(attempts[1]["exit_status"], 0)
         self.assertEqual(attempts[2]["curves"], 12)
         self.assertEqual(attempts[2]["B1"], 250_000)
         self.assertEqual(attempts[2]["B2"], 40_000_000)
+        self.assertEqual(attempts[2]["exit_statuses"], [0] * 12)
 
     def test_level3_role(self):
         self.assertEqual(

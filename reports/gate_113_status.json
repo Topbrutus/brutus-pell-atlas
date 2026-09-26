@@ -19,14 +19,18 @@
   "factorization_attempts": [
     {
       "B1": 50000,
-      "effective_B2": 14856276,
+      "audit_log": "~/tools/gmp-ecm-local/gate113_pm1_50k.log",
+      "effective_B2": 9714820,
+      "exit_status": 0,
       "factor_found": false,
       "method": "P-1",
       "runs": 10
     },
     {
       "B1": 50000,
-      "effective_B2": 19411780,
+      "audit_log": "~/tools/gmp-ecm-local/gate113_pp1_50k.log",
+      "effective_B2": 9714820,
+      "exit_status": 0,
       "factor_found": false,
       "method": "P+1",
       "runs": 10
@@ -34,7 +38,22 @@
     {
       "B1": 250000,
       "B2": 40000000,
+      "audit_directory": "~/tools/gmp-ecm-local/gate113-ecm250k",
       "curves": 12,
+      "exit_statuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
       "factor_found": false,
       "method": "ECM",
       "output_check": "all 12 normalized outputs equal the input primitive quotient"

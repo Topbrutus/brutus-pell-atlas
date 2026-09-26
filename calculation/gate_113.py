@@ -33,16 +33,20 @@ FACTORIZATION_ATTEMPTS = [
     {
         "method": "P-1",
         "B1": 50_000,
-        "effective_B2": 14_856_276,
+        "effective_B2": 9_714_820,
         "runs": 10,
         "factor_found": False,
+        "audit_log": "~/tools/gmp-ecm-local/gate113_pm1_50k.log",
+        "exit_status": 0,
     },
     {
         "method": "P+1",
         "B1": 50_000,
-        "effective_B2": 19_411_780,
+        "effective_B2": 9_714_820,
         "runs": 10,
         "factor_found": False,
+        "audit_log": "~/tools/gmp-ecm-local/gate113_pp1_50k.log",
+        "exit_status": 0,
     },
     {
         "method": "ECM",
@@ -53,6 +57,8 @@ FACTORIZATION_ATTEMPTS = [
         "output_check": (
             "all 12 normalized outputs equal the input primitive quotient"
         ),
+        "audit_directory": "~/tools/gmp-ecm-local/gate113-ecm250k",
+        "exit_statuses": [0] * 12,
     },
 ]
 
