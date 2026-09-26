@@ -330,3 +330,11 @@ Gate `227` is resolved by the direct prime witness `309,173`, with exact Pell ra
 Resolving Gate 227 makes preview root `49,713` promotion-ready. Preview root `61,455,314,793` remains blocked only by gate `90,242,753`.
 
 See `GATE_227.md` and `reports/gate_227.json`.
+
+## Gate 229
+
+Gate `229` is resolved by the compiled-search prime witness `257,753,713,526,201`, with exact Pell rank `52,441 = 229^2`. The witness divides the exact 19,986-digit primitive quotient `P_52441 / P_229`.
+
+Resolving Gate 229 makes preview root `4,809` promotion-ready; root `8,008,342,512` remains blocked only by gate `728,561`.
+
+See `GATE_229.md` and `reports/gate_229.json`.

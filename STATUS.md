@@ -316,3 +316,17 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Preview root `61,455,314,793` remains blocked only by gate `90,242,753`.
 - Gate `227`: resolved; Level 3 remains simulation-only.
 - Next never-worked Level-3 gate: `229`.
+
+## Gate 229 status
+
+- Target rank: `52,441 = 229^2`.
+- Explicit prime witness: `257,753,713,526,201`.
+- Compiled-search hit: `k = 4,915,118,200` in `p = k*52,441 + 1`.
+- Python pre-scan: `k <= 200,000`; 4,529 admissible prime candidates; zero hits.
+- C/OpenMP extension: `200,001 <= k <= 10^10`; 246,915,578 small-prime-sieve survivors; exactly one Pell-divisibility hit and one prime hit.
+- Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
+- Primitive quotient: `P_52441 / P_229`, 19,986 decimal digits; witness divides it exactly.
+- Preview root `4,809` is now promotion-ready.
+- Preview root `8,008,342,512` remains blocked only by gate `728,561`.
+- Gate `229`: resolved; Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `233`.

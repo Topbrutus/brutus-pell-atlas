@@ -29,7 +29,7 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
     def test_resolved_gate_prefix(self):
         self.assertEqual(
             self.report["resolved_preview_gates"],
-            [13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103, 109, 131, 137, 139, 149, 163, 199, 227],
+            [13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103, 109, 131, 137, 139, 149, 163, 199, 227, 229],
         )
         self.assertEqual(self.report["next_unresolved_gate"], 47)
 
@@ -45,8 +45,8 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
             [157],
         )
         self.assertNotIn(157, self.report["unworked_preview_gates"])
-        self.assertEqual(self.report["next_unworked_gate"], 229)
-        self.assertEqual(self.report["unworked_preview_gates"][0], 229)
+        self.assertEqual(self.report["next_unworked_gate"], 233)
+        self.assertEqual(self.report["unworked_preview_gates"][0], 233)
 
     def test_known_gate_witnesses(self):
         checks = self.report["verified_gate_witnesses"]
@@ -72,6 +72,13 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
         row = self.report["verified_gate_witnesses"]["139"]
         self.assertEqual(row["witness"], 12_635_933)
         self.assertEqual(row["kind"], "prime-direct")
+        self.assertTrue(row["prime_verified"])
+        self.assertTrue(row["exact_rank_verified"])
+
+    def test_gate_229_compiled_direct_method(self):
+        row = self.report["verified_gate_witnesses"]["229"]
+        self.assertEqual(row["witness"], 257_753_713_526_201)
+        self.assertEqual(row["kind"], "compiled-prime-direct")
         self.assertTrue(row["prime_verified"])
         self.assertTrue(row["exact_rank_verified"])
 
@@ -132,7 +139,7 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
         self.assertTrue(row["exact_rank_verified"])
 
     def test_promotion_ready_roots(self):
-        self.assertEqual(self.report["promotion_ready_root_count"], 8)
+        self.assertEqual(self.report["promotion_ready_root_count"], 9)
         self.assertIn(711_474, self.report["promotion_ready_roots"])
         by_root = {door["root"]: door for door in self.report["doors"]}
         self.assertTrue(by_root[711_474]["promotion_ready"])
@@ -148,6 +155,10 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
         self.assertEqual(by_root[49_713]["unresolved_prime_gates"], [])
         self.assertEqual(by_root[61_455_314_793]["resolved_novel_support"], [227])
         self.assertEqual(by_root[61_455_314_793]["unresolved_prime_gates"], [90_242_753])
+        self.assertTrue(by_root[4_809]["promotion_ready"])
+        self.assertEqual(by_root[4_809]["unresolved_prime_gates"], [])
+        self.assertEqual(by_root[8_008_342_512]["resolved_novel_support"], [229])
+        self.assertEqual(by_root[8_008_342_512]["unresolved_prime_gates"], [728_561])
         self.assertFalse(by_root[4_276_191]["promotion_ready"])
         self.assertEqual(by_root[4_276_191]["unresolved_prime_gates"], [18_043])
         self.assertFalse(by_root[8_443_383]["promotion_ready"])

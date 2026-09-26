@@ -1,0 +1,53 @@
+{
+  "compiled_pell_scan": {
+    "best_k": 4915118200,
+    "best_p": 257753713526201,
+    "best_sign": 1,
+    "end_k": 10000000000,
+    "implementation": "calculation/gate_scan_compiled.c",
+    "largest_candidate_bound": 524410000000001,
+    "pell_divisibility_hits": 1,
+    "prime_hits": 1,
+    "small_prime_sieve_survivors": 246915578,
+    "start_k": 200001
+  },
+  "direct_scan": {
+    "end_k": 200000,
+    "hits": [],
+    "prime_candidates_tested": 4529,
+    "start_k": 1
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 4915118200,
+    "p": 257753713526201,
+    "prime_verified": true,
+    "sign": 1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      4809,
+      8008342512
+    ],
+    "promotion_ready_after_resolution": [
+      4809
+    ],
+    "still_blocked": {
+      "8008342512": [
+        728561
+      ]
+    }
+  },
+  "name": "Brutus-Pell Gate 229",
+  "primitive_part": {
+    "decimal_digits": 19986,
+    "exact_division_verified": true,
+    "object": "P_52441 / P_229",
+    "sha256": "8cc27fbbf87f1ab3b407a4e28695d3f654b7e0f0cefc792885ffd9eb188996e1",
+    "witness_divides_primitive": true
+  },
+  "root": 229,
+  "status": "RESOLVED",
+  "target_rank": 52441
+}
