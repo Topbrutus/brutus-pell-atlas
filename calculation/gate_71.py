@@ -23,7 +23,8 @@ def build_report() -> dict:
     q = primitive_quotient()
     return {
         "name": "Brutus-Pell Gate 71 Status",
-        "status": "ACTIVE_UNRESOLVED",
+        "status": "HARD_UNRESOLVED",
+        "frontier_class": "DEEP_COMPUTATIONAL_FRONTIER",
         "root": GATE_ROOT,
         "target_rank": TARGET_RANK,
         "direct_scan": {
@@ -41,11 +42,23 @@ def build_report() -> dict:
             "decimal_digits": len(str(q)),
             "exact_division_verified": True,
         },
+        "compiled_pell_scan": {
+            "implementation": "C/OpenMP exact modular Pell scanner derived from calculation/gate_47_scan.c",
+            "start_k": 100_000_001,
+            "end_k": 10_000_000_000,
+            "small_prime_sieve_survivors": 493_447_289,
+            "pell_divisibility_hits": 0,
+            "prime_hits": 0,
+            "largest_candidate_bound": 10_000_000_000 * TARGET_RANK + 1,
+            "interpretation": "NO_PELL_DIVISIBILITY_HIT_IN_COMPILED_WINDOW",
+        },
         "factorization_attempts": [
             {"method": "P-1", "B1": 50_000, "effective_B2": 6_303_568, "runs": 10, "factor_found": False},
             {"method": "P+1", "B1": 50_000, "effective_B2": 9_714_820, "runs": 10, "factor_found": False},
             {"method": "P-1", "B1": 250_000, "effective_B2": 39_925_198, "runs": 20, "factor_found": False},
             {"method": "P+1", "B1": 250_000, "effective_B2": 39_925_198, "runs": 20, "factor_found": False},
+            {"method": "P-1", "B1": 1_000_000, "B2": 100_000_000, "runs": 12, "factor_found": False},
+            {"method": "P+1", "B1": 1_000_000, "B2": 100_000_000, "runs": 12, "factor_found": False},
         ],
         "known_theory": {
             "primitive_prime_divisor_existence": True,
@@ -56,7 +69,7 @@ def build_report() -> dict:
             "affected_preview_roots": [222_916_002, 498_940_572, 679_699_401],
         },
         "boundary": (
-            "No hit in bounded direct scans and no factor in recorded P-1/P+1 attempts "
+            "No hit in bounded direct or compiled scans and no factor in recorded P-1/P+1 attempts "
             "do not establish nonexistence."
         ),
     }
@@ -72,6 +85,8 @@ def main() -> None:
     print(f"target_rank = {report['target_rank']}")
     print(f"direct_scan_max_k = {report['direct_scan']['max_k']}")
     print(f"direct_scan_prime_candidates = {report['direct_scan']['prime_candidates_tested']}")
+    print(f"compiled_scan_max_k = {report['compiled_pell_scan']['end_k']}")
+    print(f"compiled_pell_hits = {report['compiled_pell_scan']['pell_divisibility_hits']}")
     print(f"primitive_digits = {report['primitive_part']['decimal_digits']}")
     print(f"report = {REPORT_PATH}")
 

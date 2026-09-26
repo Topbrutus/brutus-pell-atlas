@@ -8,6 +8,8 @@
 
 - Adds an ACTIVE_UNRESOLVED checkpoint for Level-3 preview Gate 71.
 - Records direct scanning through k = 100,000,000 with 3,917,148 admissible prime candidates and four P-1/P+1 campaigns on the 1,903-digit primitive quotient.
+- Deepens Gate 71 with an independent C/OpenMP scan through k = 10^10 and 493,447,289 sieve survivors, with zero Pell-divisibility hits.
+- Extends Gate 71 P-1/P+1 campaigns through B1 = 1,000,000 and classifies it as a deep hard-unresolved frontier.
 
 - Resolves Level-3 preview Gate 67 with direct prime witness 454,134,173 at k = 101,166.
 - Verifies exact rank `z_P(454,134,173)=4489=67^2` and primitive-quotient divisibility.

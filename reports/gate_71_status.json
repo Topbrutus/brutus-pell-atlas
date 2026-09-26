@@ -1,5 +1,15 @@
 {
-  "boundary": "No hit in bounded direct scans and no factor in recorded P-1/P+1 attempts do not establish nonexistence.",
+  "boundary": "No hit in bounded direct or compiled scans and no factor in recorded P-1/P+1 attempts do not establish nonexistence.",
+  "compiled_pell_scan": {
+    "end_k": 10000000000,
+    "implementation": "C/OpenMP exact modular Pell scanner derived from calculation/gate_47_scan.c",
+    "interpretation": "NO_PELL_DIVISIBILITY_HIT_IN_COMPILED_WINDOW",
+    "largest_candidate_bound": 50410000000001,
+    "pell_divisibility_hits": 0,
+    "prime_hits": 0,
+    "small_prime_sieve_survivors": 493447289,
+    "start_k": 100000001
+  },
   "direct_scan": {
     "hits": [],
     "largest_candidate_bound": 504100000001,
@@ -46,8 +56,23 @@
       "factor_found": false,
       "method": "P+1",
       "runs": 20
+    },
+    {
+      "B1": 1000000,
+      "B2": 100000000,
+      "factor_found": false,
+      "method": "P-1",
+      "runs": 12
+    },
+    {
+      "B1": 1000000,
+      "B2": 100000000,
+      "factor_found": false,
+      "method": "P+1",
+      "runs": 12
     }
   ],
+  "frontier_class": "DEEP_COMPUTATIONAL_FRONTIER",
   "known_theory": {
     "classification": "KNOWN_THEORY",
     "consequence": "At least one prime p with z_P(p)=5041 exists.",
@@ -67,6 +92,6 @@
     "object": "P_5041 / P_71"
   },
   "root": 71,
-  "status": "ACTIVE_UNRESOLVED",
+  "status": "HARD_UNRESOLVED",
   "target_rank": 5041
 }

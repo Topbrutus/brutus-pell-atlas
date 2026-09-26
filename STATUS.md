@@ -132,10 +132,11 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 
 - Target rank: `5041 = 71^2`.
 - Explicit prime witness: not yet found.
-- Direct scan: `k <= 100,000,000`; 3,917,148 admissible prime candidates; zero hits.
+- Direct Python scan: `k <= 100,000,000`; 3,917,148 admissible prime candidates; zero hits.
+- Independent C/OpenMP scan: `100,000,001 <= k <= 10,000,000,000`; 493,447,289 small-prime-sieve survivors; zero Pell-divisibility hits.
 - Primitive quotient: `P_5041 / P_71`, 1,903 decimal digits.
-- P-1/P+1 campaigns through `B1=250,000`: no factor.
-- Status: `ACTIVE_UNRESOLVED`, never a nonexistence claim.
+- P-1/P+1 campaigns extended through `B1=1,000,000`, `B2=100,000,000`; no factor.
+- Status: `HARD_UNRESOLVED` / `DEEP_COMPUTATIONAL_FRONTIER`, never a nonexistence claim.
 
 ## Gate 73 status
 

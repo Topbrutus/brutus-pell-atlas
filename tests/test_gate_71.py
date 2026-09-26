@@ -16,7 +16,7 @@ class Gate71Tests(unittest.TestCase):
         self.assertEqual(TARGET_RANK, 5_041)
 
     def test_status_boundary(self):
-        self.assertEqual(self.report["status"], "ACTIVE_UNRESOLVED")
+        self.assertEqual(self.report["status"], "HARD_UNRESOLVED")
         self.assertTrue(self.report["known_theory"]["primitive_prime_divisor_existence"])
         self.assertIn("nonexistence", self.report["boundary"])
 
@@ -27,6 +27,13 @@ class Gate71Tests(unittest.TestCase):
         self.assertEqual(scan["largest_candidate_bound"], 504_100_000_001)
         self.assertEqual(scan["hits"], [])
 
+    def test_compiled_scan_checkpoint(self):
+        scan = self.report["compiled_pell_scan"]
+        self.assertEqual(scan["end_k"], 10_000_000_000)
+        self.assertEqual(scan["small_prime_sieve_survivors"], 493_447_289)
+        self.assertEqual(scan["pell_divisibility_hits"], 0)
+        self.assertEqual(scan["prime_hits"], 0)
+
     def test_primitive_quotient(self):
         q = primitive_quotient()
         self.assertEqual(len(str(q)), 1_903)
@@ -34,9 +41,9 @@ class Gate71Tests(unittest.TestCase):
 
     def test_factorization_attempts(self):
         attempts = self.report["factorization_attempts"]
-        self.assertEqual(len(attempts), 4)
+        self.assertEqual(len(attempts), 6)
         self.assertTrue(all(not row["factor_found"] for row in attempts))
-        self.assertEqual([row["B1"] for row in attempts], [50_000, 50_000, 250_000, 250_000])
+        self.assertEqual([row["B1"] for row in attempts], [50_000, 50_000, 250_000, 250_000, 1_000_000, 1_000_000])
 
 if __name__ == "__main__":
     unittest.main()
