@@ -199,9 +199,9 @@ See `reports/frontier_level_3_preview.json`.
 
 ## Gate 47
 
-Gate `47` is the first hard unresolved gate in the Level-3 preview. Direct congruence scanning now covers `k <= 1,000,000,000` with 37,316,974 admissible prime candidates exactly tested and no hit. The primitive quotient `P_2209 / P_47` has 828 digits; 1,224 archived factor-run outputs record no nontrivial factor.
+Gate `47` is the first hard unresolved gate in the Level-3 preview. The original Python prime-candidate scan covers `k <= 1,000,000,000` with 37,316,974 admissible prime candidates exactly tested and no hit. A separate C/OpenMP exact Pell-divisibility scan extends bounded no-hit coverage through `k = 10,000,000,000`; the extension from `10^9` to `10^10` tested 451,314,038 small-prime-sieve survivors and produced zero Pell-divisibility hits. The primitive quotient `P_2209 / P_47` has 828 digits; archived and newer P-1/P+1/ECM campaigns still record no nontrivial factor.
 
-Status: `HARD_UNRESOLVED`, not a nonexistence claim. See `GATE_47.md` and `reports/gate_47_status.json`.
+Status: `HARD_UNRESOLVED` / `DEEP_COMPUTATIONAL_FRONTIER`, not a nonexistence claim. See `GATE_47.md` and `reports/gate_47_status.json`.
 
 ## Gate 53
 

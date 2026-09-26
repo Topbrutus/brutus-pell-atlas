@@ -30,6 +30,46 @@ ARCHIVED_FACTOR_RUNS = {
     "gate47-pp1-250k": 240,
 }
 
+COMPILED_PELL_SCAN_WINDOWS = [
+    {
+        "start_k": 1,
+        "end_k": 500_000_000,
+        "small_prime_sieve_survivors": 24_393_032,
+        "pell_divisibility_hits": 0,
+        "prime_hits": 0,
+        "role": "independent cross-check of the Python-scanned region",
+    },
+    {
+        "start_k": 500_000_001,
+        "end_k": 1_000_000_000,
+        "small_prime_sieve_survivors": 24_814_387,
+        "pell_divisibility_hits": 0,
+        "prime_hits": 0,
+        "role": "independent cross-check of the Python-scanned region",
+    },
+    {
+        "start_k": 1_000_000_001,
+        "end_k": 10_000_000_000,
+        "small_prime_sieve_survivors": 451_314_038,
+        "pell_divisibility_hits": 0,
+        "prime_hits": 0,
+        "role": "compiled extension beyond the Python prime-candidate scan",
+    },
+]
+
+RECENT_FACTOR_CAMPAIGNS = [
+    {"method": "P+1", "B1": 10_000_000, "B2": 1_000_000_000, "completed_runs": 12, "factor_found": False},
+    {"method": "P-1", "B1": 10_000_000, "B2": 1_000_000_000, "completed_runs": 12, "factor_found": False},
+    {
+        "method": "ECM",
+        "B1": 3_000_000,
+        "B2": 300_000_000,
+        "completed_runs": 12,
+        "factor_found": False,
+        "note": "campaign deliberately stopped after the first 12 completed curves",
+    },
+]
+
 def primitive_quotient() -> int:
     p47 = pell_number(GATE_ROOT)
     p2209 = pell_number(TARGET_RANK)
@@ -42,9 +82,12 @@ def build_report() -> dict:
     q = primitive_quotient()
     direct_total = sum(w["prime_candidates_tested"] for w in DIRECT_SCAN_WINDOWS)
     archived_total = sum(ARCHIVED_FACTOR_RUNS.values())
+    compiled_survivors = sum(w["small_prime_sieve_survivors"] for w in COMPILED_PELL_SCAN_WINDOWS)
+    compiled_hits = sum(w["pell_divisibility_hits"] for w in COMPILED_PELL_SCAN_WINDOWS)
     return {
         "name": "Brutus-Pell Gate 47 Status",
         "status": "HARD_UNRESOLVED",
+        "frontier_class": "DEEP_COMPUTATIONAL_FRONTIER",
         "root": GATE_ROOT,
         "target_rank": TARGET_RANK,
         "direct_scan": {
@@ -55,6 +98,16 @@ def build_report() -> dict:
             "hits": [],
             "interpretation": "NO_EXPLICIT_PRIME_WITNESS_IN_SCANNED_WINDOW",
         },
+        "compiled_pell_scan": {
+            "implementation": "calculation/gate_47_scan.c (C/OpenMP, exact uint128 modular arithmetic)",
+            "windows": COMPILED_PELL_SCAN_WINDOWS,
+            "max_k": 10_000_000_000,
+            "largest_candidate_bound": 10_000_000_000 * TARGET_RANK + 1,
+            "small_prime_sieve_survivors": compiled_survivors,
+            "pell_divisibility_hits": compiled_hits,
+            "prime_hits": 0,
+            "interpretation": "NO_PELL_DIVISIBILITY_HIT_THROUGH_K_1E10",
+        },
         "primitive_part": {
             "object": "P_2209 / P_47",
             "decimal_digits": len(str(q)),
@@ -62,7 +115,13 @@ def build_report() -> dict:
             "archived_factor_run_outputs": archived_total,
             "archived_output_counts": ARCHIVED_FACTOR_RUNS,
             "archived_outputs_different_from_input": 0,
-            "interpretation": "NO_FACTOR_FOUND_IN_ARCHIVED_CAMPAIGNS",
+            "recent_factor_campaigns": RECENT_FACTOR_CAMPAIGNS,
+            "external_factordb_observation": {
+                "checked_date": "2026-09-25",
+                "status": "C",
+                "nontrivial_factor_returned": False,
+            },
+            "interpretation": "NO_FACTOR_FOUND_IN_RECORDED_CAMPAIGNS",
         },
         "known_theory": {
             "primitive_prime_divisor_existence": True,
@@ -84,10 +143,13 @@ def main() -> None:
     save_report(report)
     scan = report["direct_scan"]
     primitive = report["primitive_part"]
+    compiled = report["compiled_pell_scan"]
     print(f"status = {report['status']}")
     print(f"target_rank = {report['target_rank']}")
     print(f"direct_scan_max_k = {scan['max_k']}")
     print(f"direct_scan_prime_candidates = {scan['prime_candidates_tested']}")
+    print(f"compiled_scan_max_k = {compiled['max_k']}")
+    print(f"compiled_pell_hits = {compiled['pell_divisibility_hits']}")
     print(f"primitive_digits = {primitive['decimal_digits']}")
     print(f"archived_factor_outputs = {primitive['archived_factor_run_outputs']}")
     print(f"report = {REPORT_PATH}")

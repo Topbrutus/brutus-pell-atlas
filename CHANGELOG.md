@@ -17,6 +17,9 @@
 - Adds a formal Gate 47 hard-unresolved checkpoint.
 - Extends deterministic Gate 47 direct scanning through k = 1,000,000,000 with 37,316,974 admissible prime candidates tested and zero hits.
 - Records the 828-digit primitive quotient `P_2209 / P_47` and audits 1,224 archived factor-run outputs with no nontrivial factor recorded.
+- Extends Gate 47 bounded Pell-divisibility scanning through `k = 10^10` with the reproducible C/OpenMP scanner; the `10^9..10^10` extension yields zero Pell-divisibility hits among 451,314,038 sieve survivors.
+- Adds audited Gate 47 P-1/P+1 campaigns at `B1=10^7, B2=10^9` (12 runs each) and 12 ECM curves at `B1=3*10^6, B2=3*10^8`, all without a factor.
+- Classifies Gate 47 as a `DEEP_COMPUTATIONAL_FRONTIER` while retaining `HARD_UNRESOLVED` and the explicit nonexistence boundary.
 
 - Adds a simulation-only Frontier Level 3 preview: 326 closure nodes, 160 new mirror roots, and 210 novel prime-support gates.
 - Adds verified preview witnesses for gates 13, 17, 19, 23, 29, 31, 37, and 43.

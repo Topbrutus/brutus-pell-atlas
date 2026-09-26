@@ -33,6 +33,22 @@ $$\boxed{\text{NO EXPLICIT PRIME WITNESS IN THE SCANNED WINDOW}}.$$
 The largest direct candidate bound is
 
 $$\boxed{2\,209\,000\,000\,001}.$$
+
+## Compiled Pell-divisibility extension
+
+A separate C/OpenMP scanner (`calculation/gate_47_scan.c`) uses the same Lucas congruence restriction, a small-prime sieve, and exact `unsigned __int128` modular Pell arithmetic. It checks Pell divisibility before primality.
+
+The compiled scan independently cross-checks the Python-scanned region and extends the search through
+
+$$\boxed{k=10^{10}}.$$
+
+The new extension `1,000,000,001 <= k <= 10,000,000,000` sent **451,314,038** small-prime-sieve survivors to the exact Pell test. None satisfied the target Pell divisibility condition, so no prime witness can occur in that extension.
+
+The resulting candidate bound is
+
+$$\boxed{22\,090\,000\,000\,001}.$$
+
+The compiled no-hit statement is a bounded computation, not a nonexistence theorem.
 ## Primitive-part attack
 
 Because $2209=47^2$, the exact primitive target used for factorization is
@@ -47,7 +63,7 @@ Additional explicit logs include light and strong P−1/P+1 campaigns and ECM ca
 
 ## Current status
 
-$$\boxed{\text{HARD\_UNRESOLVED}}.$$
+$$\boxed{\text{HARD\_UNRESOLVED}}\qquad\text{(DEEP COMPUTATIONAL FRONTIER)}.$$
 
 This status means only that no explicit compact prime witness has been found by the recorded searches. It does **not** mean that a witness does not exist.
 

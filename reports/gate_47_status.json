@@ -1,5 +1,40 @@
 {
   "boundary": "Negative bounded searches and failed factorization campaigns do not establish nonexistence. Gate 47 remains unresolved only at the explicit-witness level.",
+  "compiled_pell_scan": {
+    "implementation": "calculation/gate_47_scan.c (C/OpenMP, exact uint128 modular arithmetic)",
+    "interpretation": "NO_PELL_DIVISIBILITY_HIT_THROUGH_K_1E10",
+    "largest_candidate_bound": 22090000000001,
+    "max_k": 10000000000,
+    "pell_divisibility_hits": 0,
+    "prime_hits": 0,
+    "small_prime_sieve_survivors": 500521457,
+    "windows": [
+      {
+        "end_k": 500000000,
+        "pell_divisibility_hits": 0,
+        "prime_hits": 0,
+        "role": "independent cross-check of the Python-scanned region",
+        "small_prime_sieve_survivors": 24393032,
+        "start_k": 1
+      },
+      {
+        "end_k": 1000000000,
+        "pell_divisibility_hits": 0,
+        "prime_hits": 0,
+        "role": "independent cross-check of the Python-scanned region",
+        "small_prime_sieve_survivors": 24814387,
+        "start_k": 500000001
+      },
+      {
+        "end_k": 10000000000,
+        "pell_divisibility_hits": 0,
+        "prime_hits": 0,
+        "role": "compiled extension beyond the Python prime-candidate scan",
+        "small_prime_sieve_survivors": 451314038,
+        "start_k": 1000000001
+      }
+    ]
+  },
   "direct_scan": {
     "hits": [],
     "interpretation": "NO_EXPLICIT_PRIME_WITNESS_IN_SCANNED_WINDOW",
@@ -29,6 +64,7 @@
       }
     ]
   },
+  "frontier_class": "DEEP_COMPUTATIONAL_FRONTIER",
   "known_theory": {
     "classification": "KNOWN_THEORY",
     "consequence": "At least one prime p with z_P(p)=2209 exists.",
@@ -50,8 +86,37 @@
     "archived_outputs_different_from_input": 0,
     "decimal_digits": 828,
     "exact_division_verified": true,
-    "interpretation": "NO_FACTOR_FOUND_IN_ARCHIVED_CAMPAIGNS",
-    "object": "P_2209 / P_47"
+    "external_factordb_observation": {
+      "checked_date": "2026-09-25",
+      "nontrivial_factor_returned": false,
+      "status": "C"
+    },
+    "interpretation": "NO_FACTOR_FOUND_IN_RECORDED_CAMPAIGNS",
+    "object": "P_2209 / P_47",
+    "recent_factor_campaigns": [
+      {
+        "B1": 10000000,
+        "B2": 1000000000,
+        "completed_runs": 12,
+        "factor_found": false,
+        "method": "P+1"
+      },
+      {
+        "B1": 10000000,
+        "B2": 1000000000,
+        "completed_runs": 12,
+        "factor_found": false,
+        "method": "P-1"
+      },
+      {
+        "B1": 3000000,
+        "B2": 300000000,
+        "completed_runs": 12,
+        "factor_found": false,
+        "method": "ECM",
+        "note": "campaign deliberately stopped after the first 12 completed curves"
+      }
+    ]
   },
   "root": 47,
   "status": "HARD_UNRESOLVED",

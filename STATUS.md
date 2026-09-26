@@ -92,10 +92,13 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Target rank: `2209 = 47^2`.
 - Known theory: a primitive prime divisor, hence an exact rank-2209 prime witness, exists.
 - Explicit witness: not yet found.
-- Direct scan: `k <= 1,000,000,000`; 37,316,974 admissible prime candidates tested; zero hits.
+- Direct Python scan: `k <= 1,000,000,000`; 37,316,974 admissible prime candidates tested; zero hits.
+- Independent C/OpenMP Pell-divisibility scan: bounded coverage through `k = 10,000,000,000`; the `10^9..10^10` extension tested 451,314,038 small-prime-sieve survivors and produced zero Pell-divisibility hits.
 - Primitive quotient: `P_2209 / P_47`, 828 decimal digits.
 - Archived factor-run outputs checked: 1,224; none differs from the input quotient.
-- Status: `HARD_UNRESOLVED`.
+- New audited campaigns: 12 P+1 runs at `B1=10^7, B2=10^9`; 12 P-1 runs at the same bounds; 12 ECM curves at `B1=3*10^6, B2=3*10^8`; no factor.
+- Dated FactorDB observation (2026-09-25): status `C`, no nontrivial factor returned.
+- Status: `HARD_UNRESOLVED` / `DEEP_COMPUTATIONAL_FRONTIER`.
 - No Level-3 promotion is implied.
 
 ## Gate 53 status
