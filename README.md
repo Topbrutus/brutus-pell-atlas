@@ -270,3 +270,9 @@ See `GATE_109.md` and `reports/gate_109.json`.
 Gate `113` is checkpointed as `HARD_UNRESOLVED`. The generic C/OpenMP scanner covered `k <= 10,000,000,000` with 496,329,793 small-prime-sieve survivors and zero exact Pell-divisibility hits. Recorded P-1, P+1, and ECM campaigns also found no factor of the 4,845-digit primitive quotient `P_12769 / P_113`.
 
 This is a bounded computational status, not a nonexistence claim. See `GATE_113.md` and `reports/gate_113_status.json`.
+
+## Gate 131
+
+Gate `131` is resolved by the prime witness `2,745,761`, with exact Pell rank `17,161 = 131^2`. The first hit occurs at `k = 160` after only six admissible prime candidates. A second verified witness, `576,609,601`, occurs at `k = 33,600`.
+
+See `GATE_131.md` and `reports/gate_131.json`.

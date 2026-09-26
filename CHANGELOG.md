@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 131 with prime witness 2,745,761 at k = 160.
+- Records a second Gate-131 prime witness, 576,609,601.
+- Advances the next never-worked Level-3 preview gate to 137.
+
 - Checkpoints Level-3 preview Gate 113 as hard-unresolved after a compiled scan through k = 10^10 and recorded P-1/P+1/ECM campaigns.
 - Advances the next never-worked Level-3 preview gate to 131.
 

@@ -1,0 +1,60 @@
+{
+  "direct_scan": {
+    "first_hit": {
+      "k": 160,
+      "p": 2745761,
+      "sign": 1
+    },
+    "first_hit_prime_candidates_tested": 6,
+    "reported_prime_candidates_tested": 4832,
+    "search_cap": 200000,
+    "verified_hit_count_in_full_window": 2,
+    "verified_hits": [
+      {
+        "k": 160,
+        "p": 2745761,
+        "sign": 1
+      },
+      {
+        "k": 33600,
+        "p": 576609601,
+        "sign": 1
+      }
+    ]
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 160,
+    "p": 2745761,
+    "prime_verified": true,
+    "sign": 1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      80777607891
+    ],
+    "promotion_effect": "prime support 131 resolved; affected preview root still requires gates 389 and 528383",
+    "remaining_novel_gates": [
+      389,
+      528383
+    ]
+  },
+  "name": "Brutus-Pell Gate 131",
+  "observation": "Two verified direct witnesses occur in the recorded k<=200000 window. This is a bounded computation, not a general relation involving root 131.",
+  "primitive_part": {
+    "decimal_digits": 6519,
+    "factor_divides_primitive_quotient": true,
+    "object": "P_17161 / P_131"
+  },
+  "root": 131,
+  "secondary_prime_witness": {
+    "exact_rank_verified": true,
+    "k": 33600,
+    "p": 576609601,
+    "prime_verified": true,
+    "sign": 1
+  },
+  "status": "RESOLVED",
+  "target_rank": 17161
+}

@@ -86,7 +86,7 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103`.
 - Next unresolved preview gate: `47`.
 - Hard-unresolved preview gates: `47, 71, 83, 101, 113`.
-- Next never-worked preview gate: `131`.
+- Next never-worked preview gate: `137`.
 - No Level-2 or Level-3 root is promoted into the core lattice by this preview.
 
 ## Gate 47 status
@@ -220,3 +220,15 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - ECM: 12 curves at `B1=250,000`, `B2=40,000,000`; all normalized outputs equal the input quotient.
 - Status: `HARD_UNRESOLVED` / `DEEP_COMPUTATIONAL_FRONTIER`, never a nonexistence claim.
 - Next never-worked Level-3 gate: `131`.
+
+
+## Gate 131 status
+
+- Target rank: `17,161 = 131^2`.
+- Canonical prime witness: `2,745,761`.
+- First hit: `k = 160` in `p = k*17,161 + 1`; 6 admissible prime candidates tested to the first hit.
+- Second verified prime witness: `576,609,601` at `k = 33,600`.
+- Primitive quotient `P_17161 / P_131`: 6,519 digits; canonical witness divides it exactly.
+- Affected Level-3 preview root `80,777,607,891` still requires gates `389` and `528,383`.
+- Gate `131`: resolved; Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `137`.
