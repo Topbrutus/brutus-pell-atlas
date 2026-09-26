@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 199 with prime witness 21,788,153,393 at k = 550,192.
+- Verifies exact rank `z_P(p)=39,601=199^2` and exact divisibility into the 15,083-digit primitive quotient `P_39601 / P_199`.
+- Reduces preview root 75,434,532 to the single remaining unresolved gate 1019 and advances the next never-worked Level-3 gate to 227.
+
 - Resolves Level-3 preview Gate 163 with prime witness 2,247,896,813 at k = 84,606.
 - Verifies exact rank `z_P(p)=26,569=163^2` and exact divisibility into the 10,108-digit primitive quotient `P_26569 / P_163`.
 - Marks preview root 2,820,552 promotion-ready and advances the next never-worked Level-3 gate to 199.

@@ -290,3 +290,15 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Preview root `29,770,544,451` remains blocked by gates `3,851` and `15,809`.
 - Gate `163`: resolved; Level 3 remains simulation-only.
 - Next never-worked Level-3 gate: `199`.
+
+## Gate 199 status
+
+- Target rank: `39,601 = 199^2`.
+- Explicit prime witness: `21,788,153,393`.
+- First hit: `k = 550,192` in `p = k*39,601 + 1`.
+- Admissible prime candidates tested to first hit: `12,199`.
+- Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
+- Primitive quotient: `P_39601 / P_199`, 15,083 decimal digits; witness divides it exactly.
+- Preview root `75,434,532` now has resolved novel support `{31,199}` and remains blocked only by gate `1019`.
+- Gate `199`: resolved; Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `227`.

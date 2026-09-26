@@ -314,3 +314,11 @@ Gate `163` is resolved by the direct prime witness `2,247,896,813`, with exact P
 This makes preview root `2,820,552` promotion-ready while root `29,770,544,451` remains blocked by gates `3,851` and `15,809`.
 
 See `GATE_163.md` and `reports/gate_163.json`.
+
+## Gate 199
+
+Gate `199` is resolved by the direct prime witness `21,788,153,393`, with exact Pell rank `39,601 = 199^2`. The witness also divides the exact 15,083-digit primitive quotient `P_39601 / P_199`.
+
+Preview root `75,434,532` remains blocked only by gate `1019`. The next never-worked Level-3 gate is `227`.
+
+See `GATE_199.md` and `reports/gate_199.json`.

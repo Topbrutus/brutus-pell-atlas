@@ -1,0 +1,50 @@
+{
+  "direct_scan_to_first_hit": {
+    "end_k": 550192,
+    "hits": [
+      {
+        "k": 550192,
+        "p": 21788153393,
+        "sign": 1
+      }
+    ],
+    "prime_candidates_tested": 12199,
+    "start_k": 1
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 550192,
+    "p": 21788153393,
+    "prime_verified": true,
+    "sign": 1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      75434532
+    ],
+    "resolved_support_after_resolution": {
+      "75434532": [
+        31,
+        199
+      ]
+    },
+    "still_blocked": {
+      "75434532": [
+        1019
+      ]
+    }
+  },
+  "name": "Brutus-Pell Gate 199",
+  "primitive_part": {
+    "decimal_digits": 15083,
+    "exact_division_verified": true,
+    "object": "P_39601 / P_199",
+    "residual_cofactor_digits": 15072,
+    "sha256": "d0bc5faf08dbd33260e366121957898bc2a64148a5d2b07f5d3c8667288abeea",
+    "witness_divides_primitive": true
+  },
+  "root": 199,
+  "status": "RESOLVED",
+  "target_rank": 39601
+}
