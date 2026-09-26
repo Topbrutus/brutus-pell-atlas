@@ -128,8 +128,11 @@ static int exact_target_rank(
     return 1;
 }
 
-static int sign_admissible(u64 p,int sign){
+static int sign_admissible(u64 p,int sign,u64 target){
     if(p<=2 || (p&1ULL)==0) return 0;
+    /* For odd Pell target rank n, p | P_n implies Q_n^2 = -1 (mod p),
+       hence -1 is a quadratic residue and p = 1 (mod 4). */
+    if((target&1ULL) && (p&3ULL)!=1ULL) return 0;
     return legendre8(p)==sign;
 }
 
@@ -228,7 +231,7 @@ int main(int argc,char **argv){
             u64 k=a+(u64)idx;
             if(!cp[idx]){
                 u64 p=k*target+1;
-                if(sign_admissible(p,1)){
+                if(sign_admissible(p,1,target)){
                     total_surv++;
                     if(exact_target_rank(
                         p,target,root_factors,nf)){
@@ -252,7 +255,7 @@ int main(int argc,char **argv){
             }
             if(!cm[idx]){
                 u64 p=k*target-1;
-                if(sign_admissible(p,-1)){
+                if(sign_admissible(p,-1,target)){
                     total_surv++;
                     if(exact_target_rank(
                         p,target,root_factors,nf)){
