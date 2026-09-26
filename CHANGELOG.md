@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 103 with direct prime witness 403,141 at k = 38.
+- Verifies exact rank `z_P(403,141)=10,609=103^2` and exact divisibility into the 4,022-digit primitive quotient `P_10609 / P_103`.
+- Records three verified direct hits in the full `k <= 200,000` window; `109` becomes the next never-worked Level-3 gate.
+
 - Adds a hard-unresolved checkpoint for Level-3 preview Gate 101.
 - Records compiled Pell-divisibility scanning through `k = 10^10` with 496,754,167 sieve survivors and zero Pell hits.
 - Records the 3,867-digit primitive quotient `P_10201 / P_101` and 12 P-1 plus 12 P+1 runs at `B1=10^6`, `B2=10^8`, with no factor.
@@ -48,7 +52,7 @@
 - Adds verified mirror-root fibers for roots 3, 12, 21, and 24.
 - Expands the Rank Lattice to 16 verified nodes and gives every node at least one Pell square-rank witness.
 - Refreshes bridge discovery to 230 square-LCM products, 169 rank-preserving products, and 3 mirror hosts within the current curated dataset.
-- Expands regression coverage to 147 automated tests.
+- Expands regression coverage to 154 automated tests.
 - Adds a Mirror Frontier for roots 48 and 861 without auto-promoting them into the core lattice.
 - Verifies a prime witness for root 48 and a structured 648-digit witness for root 861.
 - Documents universal Pell-term witnesses `z_P(P_m)=m` and the fast exact-target verifier.

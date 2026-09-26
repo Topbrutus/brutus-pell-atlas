@@ -83,10 +83,10 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Simulated closure: 326 nodes.
 - New mirror roots: 160.
 - Novel prime-support gates: 210.
-- Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79`.
+- Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103`.
 - Next unresolved preview gate: `47`.
 - Hard-unresolved preview gates: `47, 71, 83, 101`.
-- Next never-worked preview gate: `103`.
+- Next never-worked preview gate: `109`.
 - No Level-2 or Level-3 root is promoted into the core lattice by this preview.
 
 ## Gate 47 status
@@ -181,4 +181,16 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Strong campaigns: 12 P-1 and 12 P+1 runs at `B1=1,000,000`, `B2=100,000,000`; all outputs equal the unchanged primitive quotient.
 - Affected Level-3 preview roots: `76,327,215` and `299,902,623,543,471`.
 - Status: `HARD_UNRESOLVED` / `DEEP_COMPUTATIONAL_FRONTIER`, never a nonexistence claim.
-- Next never-worked Level-3 gate: `103`.
+- Next never-worked Level-3 gate: `109`.
+
+## Gate 103 status
+
+- Target rank: `10,609 = 103^2`.
+- Explicit prime witness: `403,141`.
+- First hit: `k = 38` in `p = k*10,609 - 1`; 2 admissible prime candidates tested to the first hit.
+- Full recorded window: `k <= 200,000`; 9,898 admissible prime candidates; 3 verified hits.
+- Exact rank: verified by fast target testing and the original iterative Pell-rank engine.
+- Primitive quotient `P_10609 / P_103`: 4,022 digits; witness divides it exactly.
+- Affected preview roots remain blocked by other novel prime gates.
+- Gate `103`: resolved; Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `109`.

@@ -49,6 +49,10 @@ KNOWN_LEVEL3_GATE_WITNESSES = {
         "kind": "primitive-part-pminus1-prime",
         "primitive_quotient": "P_6241 / P_79",
     },
+    103: {
+        "witness": 403_141,
+        "kind": "prime-direct",
+    },
 }
 
 def build_level_3_preview() -> dict:

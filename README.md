@@ -193,7 +193,7 @@ See `GATE_1481.md` and `reports/gate_1481_scan.json`.
 
 After closing Frontier Level 2, the next mirror expansion is kept as a simulation-only preview. The simulated gcd/lcm closure contains 326 nodes; mirroring it produces 160 roots outside that closure and 210 novel prime-support gates.
 
-Thirteen preview gates now have verified witnesses: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79`. Hard-unresolved gates are `47, 71, 83, 101`. Gate `47` remains the earliest unresolved gate, while `103` is the next gate that has not yet been worked.
+Fourteen preview gates now have verified witnesses: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103`. Hard-unresolved gates are `47, 71, 83, 101`. Gate `47` remains the earliest unresolved gate, while `109` is the next gate that has not yet been worked.
 
 See `reports/frontier_level_3_preview.json`.
 
@@ -246,4 +246,13 @@ Gate `83` is `HARD_UNRESOLVED`. Compiled Pell-divisibility scanning reaches `k =
 
 Gate `101` is `HARD_UNRESOLVED`. The compiled exact Pell scanner covers `k <= 10,000,000,000`, with 496,754,167 small-prime-sieve survivors and zero Pell-divisibility hits. The primitive quotient `P_10201 / P_101` has 3,867 digits. Twelve P-1 and twelve P+1 runs at `B1=1,000,000`, `B2=100,000,000` all returned the unchanged primitive quotient.
 
-This is not a nonexistence claim. The next never-worked Level-3 gate is `103`. See `reports/gate_101_status.json`.
+This is not a nonexistence claim. The next never-worked Level-3 gate is `109`. See `reports/gate_101_status.json`.
+
+
+## Gate 103
+
+Gate `103` is resolved by direct prime witness `403,141` at `k = 38`, with exact Pell rank `10,609 = 103^2`. Only two admissible prime candidates were tested before the first hit. Across the full `k <= 200,000` window, 9,898 admissible prime candidates produced three verified hits.
+
+The canonical witness divides the exact 4,022-digit primitive quotient `P_10609 / P_103`. Resolving support `103` does not yet make any of its four affected mirror roots promotion-ready because each still requires additional novel prime support.
+
+See `reports/gate_103.json`.

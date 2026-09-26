@@ -1,0 +1,57 @@
+{
+  "direct_scan": {
+    "first_hit": {
+      "k": 38,
+      "p": 403141,
+      "sign": -1
+    },
+    "first_hit_prime_candidates_tested": 2,
+    "reported_prime_candidates_tested": 9898,
+    "search_cap": 200000,
+    "verified_hit_count_in_full_window": 3,
+    "verified_hits": [
+      {
+        "k": 38,
+        "p": 403141,
+        "sign": -1
+      },
+      {
+        "k": 83904,
+        "p": 890137537,
+        "sign": 1
+      },
+      {
+        "k": 130080,
+        "p": 1380018721,
+        "sign": 1
+      }
+    ]
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 38,
+    "p": 403141,
+    "prime_verified": true,
+    "sign": -1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      2820552,
+      40435431,
+      79783491,
+      6726265341
+    ],
+    "promotion_effect": "prime support 103 resolved; affected roots still require other novel gates"
+  },
+  "name": "Brutus-Pell Gate 103",
+  "observation": "Three verified direct witnesses occur in the recorded k<=200000 window. This is a bounded computation, not a general relation involving root 103.",
+  "primitive_part": {
+    "decimal_digits": 4022,
+    "factor_divides_primitive_quotient": true,
+    "object": "P_10609 / P_103"
+  },
+  "root": 103,
+  "status": "RESOLVED",
+  "target_rank": 10609
+}

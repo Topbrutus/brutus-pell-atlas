@@ -1117,7 +1117,9 @@
         163
       ],
       "promotion_ready": false,
-      "resolved_novel_support": [],
+      "resolved_novel_support": [
+        103
+      ],
       "root": 2820552,
       "sources": [
         {
@@ -1130,7 +1132,6 @@
         }
       ],
       "unresolved_prime_gates": [
-        103,
         163
       ]
     },
@@ -1679,7 +1680,9 @@
         130859
       ],
       "promotion_ready": false,
-      "resolved_novel_support": [],
+      "resolved_novel_support": [
+        103
+      ],
       "root": 40435431,
       "sources": [
         {
@@ -1692,7 +1695,6 @@
         }
       ],
       "unresolved_prime_gates": [
-        103,
         130859
       ]
     },
@@ -1937,7 +1939,8 @@
       ],
       "promotion_ready": false,
       "resolved_novel_support": [
-        31
+        31,
+        103
       ],
       "root": 79783491,
       "sources": [
@@ -1951,7 +1954,6 @@
         }
       ],
       "unresolved_prime_gates": [
-        103,
         8329
       ]
     },
@@ -3109,7 +3111,9 @@
         74293
       ],
       "promotion_ready": false,
-      "resolved_novel_support": [],
+      "resolved_novel_support": [
+        103
+      ],
       "root": 6726265341,
       "sources": [
         {
@@ -3122,7 +3126,6 @@
         }
       ],
       "unresolved_prime_gates": [
-        103,
         293,
         74293
       ]
@@ -4565,7 +4568,7 @@
     489914256096843
   ],
   "next_unresolved_gate": 47,
-  "next_unworked_gate": 103,
+  "next_unworked_gate": 109,
   "novel_prime_gate_count": 210,
   "novel_prime_gates": [
     13,
@@ -4812,7 +4815,8 @@
     59,
     67,
     73,
-    79
+    79,
+    103
   ],
   "simulated_closure_count": 326,
   "simulated_closure_max_node": 1743453262099920,
@@ -4829,7 +4833,6 @@
     71,
     83,
     101,
-    103,
     109,
     113,
     131,
@@ -5024,7 +5027,6 @@
     2167585313087
   ],
   "unworked_preview_gates": [
-    103,
     109,
     113,
     131,
@@ -5219,6 +5221,13 @@
     2167585313087
   ],
   "verified_gate_witnesses": {
+    "103": {
+      "exact_rank_verified": true,
+      "kind": "prime-direct",
+      "prime_verified": true,
+      "rank": 10609,
+      "witness": 403141
+    },
     "13": {
       "exact_rank_verified": true,
       "kind": "preexisting-prime-direct",
