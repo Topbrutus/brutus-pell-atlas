@@ -276,3 +276,9 @@ This is a bounded computational status, not a nonexistence claim. See `GATE_113.
 Gate `131` is resolved by the prime witness `2,745,761`, with exact Pell rank `17,161 = 131^2`. The first hit occurs at `k = 160` after only six admissible prime candidates. A second verified witness, `576,609,601`, occurs at `k = 33,600`.
 
 See `GATE_131.md` and `reports/gate_131.json`.
+
+## Gate 137
+
+Gate `137` is resolved by prime witness `3,415,957`, with exact Pell rank `18,769 = 137^2`. The first hit occurs at `k = 182` after only five admissible prime candidates.
+
+See `GATE_137.md` and `reports/gate_137.json`.

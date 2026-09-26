@@ -1,0 +1,39 @@
+{
+  "direct_scan": {
+    "first_hit": {
+      "k": 182,
+      "p": 3415957,
+      "sign": -1
+    },
+    "first_hit_prime_candidates_tested": 5,
+    "reported_prime_candidates_tested": 4780,
+    "search_cap": 200000
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 182,
+    "p": 3415957,
+    "prime_verified": true,
+    "sign": -1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      80860962
+    ],
+    "promotion_effect": "prime support 137 resolved; affected preview root still requires hard-unresolved gate 47",
+    "remaining_novel_gates": [
+      47
+    ]
+  },
+  "name": "Brutus-Pell Gate 137",
+  "observation": "The witness is the first verified direct hit in the recorded bounded scan. This is not a general mirror theorem.",
+  "primitive_part": {
+    "decimal_digits": 7132,
+    "factor_divides_primitive_quotient": true,
+    "object": "P_18769 / P_137"
+  },
+  "root": 137,
+  "status": "RESOLVED",
+  "target_rank": 18769
+}

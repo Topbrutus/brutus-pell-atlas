@@ -86,7 +86,7 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103`.
 - Next unresolved preview gate: `47`.
 - Hard-unresolved preview gates: `47, 71, 83, 101, 113`.
-- Next never-worked preview gate: `137`.
+- Next never-worked preview gate: `139`.
 - No Level-2 or Level-3 root is promoted into the core lattice by this preview.
 
 ## Gate 47 status
@@ -232,3 +232,14 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Affected Level-3 preview root `80,777,607,891` still requires gates `389` and `528,383`.
 - Gate `131`: resolved; Level 3 remains simulation-only.
 - Next never-worked Level-3 gate: `137`.
+
+
+## Gate 137 status
+
+- Target rank: `18,769 = 137^2`.
+- Explicit prime witness: `3,415,957`.
+- First hit: `k = 182` in `p = k*18,769 - 1`; 5 admissible prime candidates tested to the first hit.
+- Primitive quotient `P_18769 / P_137`: 7,132 digits; witness divides it exactly.
+- Affected preview root `80,860,962` still requires hard-unresolved Gate `47`.
+- Gate `137`: resolved; Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `139`.
