@@ -83,11 +83,11 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Simulated closure: 326 nodes.
 - New mirror roots: 160.
 - Novel prime-support gates: 210.
-- Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103, 109, 131, 137, 139, 149, 157, 163, 199, 227, 229`.
+- Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103, 109, 131, 137, 139, 149, 157, 163, 199, 227, 229, 233`.
 - Hard-unresolved preview gates: `47, 71, 83, 101, 113`.
 - Active-unresolved preview gates: none.
 - Next unresolved preview gate: `47`.
-- Next never-worked preview gate: `233`.
+- Next never-worked preview gate: `251`.
 - No Level-2 or Level-3 root is promoted into the core lattice by this preview.
 
 ## Gate 47 status
@@ -334,3 +334,17 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Preview root `8,008,342,512` remains blocked only by gate `728,561`.
 - Gate `229`: resolved; Level 3 remains simulation-only.
 - Next never-worked Level-3 gate: `233`.
+
+## Gate 233 status
+
+- Target rank: `54,289 = 233^2`.
+- Explicit prime witness: `179,216,201,898,552,121`.
+- Witness identity: `p = 3,301,151,281,080 * 54,289 + 1`, with `k ? 0 (mod 8)`.
+- Python scan: `k <= 200,000`; 4,466 admissible prime candidates; zero hits.
+- C/OpenMP scan: `200,001 <= k <= 10^10`; 246,891,343 small-prime-sieve survivors; zero Pell-divisibility hits.
+- Primitive quotient: `P_54289 / P_233`, 20,692 digits, SHA-256 `489074e56744d22df377a0ce0c634d02ccfe7e89d015b0a9b0ef2eb22f873d3e`; witness divides it exactly.
+- Discovery: GMP-ECM P-1 with `B1=50,000`, `B2=10,000,000`, preloaded order factor `54,289`.
+- Exact rank: verified by fast exact-target testing and the original iterative Pell-rank engine.
+- Preview root `4,209,500,564,058` remains blocked by gate `3,011,087,671`.
+- Gate `233`: **resolved**; Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `251`.

@@ -29,7 +29,7 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
     def test_resolved_gate_prefix(self):
         self.assertEqual(
             self.report["resolved_preview_gates"],
-            [13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103, 109, 131, 137, 139, 149, 157, 163, 199, 227, 229],
+            [13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103, 109, 131, 137, 139, 149, 157, 163, 199, 227, 229, 233],
         )
         self.assertEqual(self.report["next_unresolved_gate"], 47)
 
@@ -45,8 +45,8 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
             [],
         )
         self.assertNotIn(157, self.report["unworked_preview_gates"])
-        self.assertEqual(self.report["next_unworked_gate"], 233)
-        self.assertEqual(self.report["unworked_preview_gates"][0], 233)
+        self.assertEqual(self.report["next_unworked_gate"], 251)
+        self.assertEqual(self.report["unworked_preview_gates"][0], 251)
 
     def test_known_gate_witnesses(self):
         checks = self.report["verified_gate_witnesses"]
@@ -79,6 +79,14 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
         row = self.report["verified_gate_witnesses"]["229"]
         self.assertEqual(row["witness"], 257_753_713_526_201)
         self.assertEqual(row["kind"], "compiled-prime-direct")
+        self.assertTrue(row["prime_verified"])
+        self.assertTrue(row["exact_rank_verified"])
+
+    def test_gate_233_primitive_pminus1_method(self):
+        row = self.report["verified_gate_witnesses"]["233"]
+        self.assertEqual(row["witness"], 179_216_201_898_552_121)
+        self.assertEqual(row["kind"], "primitive-part-pminus1-prime")
+        self.assertEqual(row["primitive_quotient"], "P_54289 / P_233")
         self.assertTrue(row["prime_verified"])
         self.assertTrue(row["exact_rank_verified"])
 
@@ -167,6 +175,9 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
         self.assertEqual(by_root[4_809]["unresolved_prime_gates"], [])
         self.assertEqual(by_root[8_008_342_512]["resolved_novel_support"], [229])
         self.assertEqual(by_root[8_008_342_512]["unresolved_prime_gates"], [728_561])
+        self.assertFalse(by_root[4_209_500_564_058]["promotion_ready"])
+        self.assertEqual(by_root[4_209_500_564_058]["resolved_novel_support"], [233])
+        self.assertEqual(by_root[4_209_500_564_058]["unresolved_prime_gates"], [3_011_087_671])
         self.assertFalse(by_root[4_276_191]["promotion_ready"])
         self.assertEqual(by_root[4_276_191]["unresolved_prime_gates"], [18_043])
         self.assertFalse(by_root[8_443_383]["promotion_ready"])

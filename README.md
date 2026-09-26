@@ -340,3 +340,11 @@ Gate `229` is resolved by the compiled-search prime witness `257,753,713,526,201
 Resolving Gate 229 makes preview root `4,809` promotion-ready; root `8,008,342,512` remains blocked only by gate `728,561`.
 
 See `GATE_229.md` and `reports/gate_229.json`.
+
+## Gate 233
+
+Gate `233` is resolved by the primitive-part P-1 prime witness `179,216,201,898,552,121`, with exact Pell rank `54,289 = 233^2`. The witness divides the exact 20,692-digit primitive quotient `P_54289 / P_233`.
+
+Preview root `4,209,500,564,058` now has support `233` resolved but remains blocked by gate `3,011,087,671`. The next never-worked Level-3 gate is `251`.
+
+See `GATE_233.md` and `reports/gate_233.json`.

@@ -1,0 +1,64 @@
+{
+  "compiled_pell_scan": {
+    "end_k": 10000000000,
+    "implementation": "calculation/gate_scan_compiled.c",
+    "interpretation": "NO_PELL_DIVISIBILITY_HIT_THROUGH_K_1E10",
+    "largest_candidate_bound": 542890000000001,
+    "pell_divisibility_hits": 0,
+    "prime_hits": 0,
+    "small_prime_sieve_survivors": 246891343,
+    "start_k": 200001
+  },
+  "direct_scan": {
+    "end_k": 200000,
+    "hits": [],
+    "prime_candidates_tested": 4466,
+    "start_k": 1
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 3301151281080,
+    "p": 179216201898552121,
+    "prime_verified": true,
+    "sign": 1
+  },
+  "factorization": {
+    "B1": 50000,
+    "B2": 10000000,
+    "audit_log": "~/tools/gmp-ecm-local/gate233_pm1.log",
+    "exit_status": 6,
+    "factor": 179216201898552121,
+    "factor_found": true,
+    "method": "P-1",
+    "preloaded_order_factor": 54289
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      4209500564058
+    ],
+    "promotion_effect": "prime support 233 resolved; affected preview root still requires gate 3011087671",
+    "remaining_other_gate_support": {
+      "4209500564058": [
+        3011087671
+      ]
+    }
+  },
+  "name": "Brutus-Pell Gate 233",
+  "observation": "Gate 233 is an exact computational result inside the simulation-only Level-3 preview; it does not promote any root into the core lattice.",
+  "primitive_part": {
+    "decimal_digits": 20692,
+    "exact_division_verified": true,
+    "factordb_observation": {
+      "checked_date": "2026-09-26",
+      "nontrivial_factor_returned_at_check": false,
+      "status": "U"
+    },
+    "object": "P_54289 / P_233",
+    "sha256": "489074e56744d22df377a0ce0c634d02ccfe7e89d015b0a9b0ef2eb22f873d3e",
+    "witness_divides_primitive": true
+  },
+  "root": 233,
+  "status": "RESOLVED",
+  "target_rank": 54289
+}

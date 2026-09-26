@@ -106,6 +106,11 @@ KNOWN_LEVEL3_GATE_WITNESSES = {
         "witness": 257_753_713_526_201,
         "kind": "compiled-prime-direct",
     },
+    233: {
+        "witness": 179_216_201_898_552_121,
+        "kind": "primitive-part-pminus1-prime",
+        "primitive_quotient": "P_54289 / P_233",
+    },
 }
 
 

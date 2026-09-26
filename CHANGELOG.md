@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 233 with primitive-part P-1 prime witness `179,216,201,898,552,121`.
+- Verifies `z_P(p)=54,289=233^2`, exact divisibility into the 20,692-digit primitive quotient, and advances the next never-worked gate to 251.
+- Leaves preview root `4,209,500,564,058` blocked only by gate `3,011,087,671`.
+
 - Resolves Level-3 preview Gate 157 with primitive-part ECM factor `42,720,756,963,545,450,051,849`.
 - Verifies `z_P(p)=24,649=157^2`, exact divisibility into the 9,375-digit primitive quotient, and a Pocklington primality certificate for the >64-bit witness.
 - Adds reusable Pocklington-certificate verification for future large witnesses; preview root `432,849` remains blocked only by gate `919`.
@@ -101,7 +105,7 @@
 - Adds verified mirror-root fibers for roots 3, 12, 21, and 24.
 - Expands the Rank Lattice to 16 verified nodes and gives every node at least one Pell square-rank witness.
 - Refreshes bridge discovery to 230 square-LCM products, 169 rank-preserving products, and 3 mirror hosts within the current curated dataset.
-- Expands regression coverage to 238 automated tests.
+- Expands regression coverage to 248 automated tests.
 - Adds a Mirror Frontier for roots 48 and 861 without auto-promoting them into the core lattice.
 - Verifies a prime witness for root 48 and a structured 648-digit witness for root 861.
 - Documents universal Pell-term witnesses `z_P(P_m)=m` and the fast exact-target verifier.
@@ -127,9 +131,9 @@
 - Records the primitive quotient as partially factored, with a 16,926-digit residual cofactor.
 - Adds a validated optional OpenMP Gate 211 scanner that reproduces the Python reference window and canonical witness.
 
-## v1.0.0 â€” 2026-09-25
+## v1.0.0 Ã¢â‚¬â€ 2026-09-25
 
-- Creates the integrated Brutusâ€“Pell Atlas.
+- Creates the integrated BrutusÃ¢â‚¬â€œPell Atlas.
 - Defines Square-Rank Fiber notation.
 - Adds verified F_30, F_42, and F_210 anchor records.
 - Adds verified rank-collision records.

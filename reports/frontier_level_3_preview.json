@@ -4156,7 +4156,9 @@
         3011087671
       ],
       "promotion_ready": false,
-      "resolved_novel_support": [],
+      "resolved_novel_support": [
+        233
+      ],
       "root": 4209500564058,
       "sources": [
         {
@@ -4165,7 +4167,6 @@
         }
       ],
       "unresolved_prime_gates": [
-        233,
         3011087671
       ]
     },
@@ -4573,7 +4574,7 @@
     489914256096843
   ],
   "next_unresolved_gate": 47,
-  "next_unworked_gate": 233,
+  "next_unworked_gate": 251,
   "novel_prime_gate_count": 210,
   "novel_prime_gates": [
     13,
@@ -4835,7 +4836,8 @@
     163,
     199,
     227,
-    229
+    229,
+    233
   ],
   "simulated_closure_count": 326,
   "simulated_closure_max_node": 1743453262099920,
@@ -4853,7 +4855,6 @@
     83,
     101,
     113,
-    233,
     251,
     269,
     277,
@@ -5036,7 +5037,6 @@
     2167585313087
   ],
   "unworked_preview_gates": [
-    233,
     251,
     269,
     277,
@@ -5349,6 +5349,14 @@
       "prime_verified": true,
       "rank": 529,
       "witness": 20101
+    },
+    "233": {
+      "exact_rank_verified": true,
+      "kind": "primitive-part-pminus1-prime",
+      "prime_verified": true,
+      "primitive_quotient": "P_54289 / P_233",
+      "rank": 54289,
+      "witness": 179216201898552121
     },
     "29": {
       "exact_rank_verified": true,
