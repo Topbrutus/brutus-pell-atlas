@@ -1,4 +1,7 @@
 {
+  "active_unresolved_preview_gates": [
+    157
+  ],
   "doors": [
     {
       "factorization": {
@@ -4570,7 +4573,7 @@
     489914256096843
   ],
   "next_unresolved_gate": 47,
-  "next_unworked_gate": 157,
+  "next_unworked_gate": 163,
   "novel_prime_gate_count": 210,
   "novel_prime_gates": [
     13,
@@ -5030,7 +5033,6 @@
     2167585313087
   ],
   "unworked_preview_gates": [
-    157,
     163,
     199,
     227,

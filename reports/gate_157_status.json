@@ -1,0 +1,70 @@
+{
+  "boundary": "No hit in bounded scans and no factor in the recorded light P-1/P+1 attempts do not establish nonexistence. Gate 157 is worked but not yet classified as a hard computational frontier.",
+  "compiled_pell_scan": {
+    "end_k": 10000000000,
+    "implementation": "calculation/gate_scan_compiled.c",
+    "interpretation": "NO_PELL_DIVISIBILITY_HIT_THROUGH_K_1E10",
+    "largest_candidate_bound": 246490000000001,
+    "pell_divisibility_hits": 0,
+    "prime_hits": 0,
+    "small_prime_sieve_survivors": 247573895,
+    "start_k": 200001
+  },
+  "direct_scan": {
+    "end_k": 200000,
+    "hits": [],
+    "prime_candidates_tested": 4725,
+    "start_k": 1
+  },
+  "factorization_attempts": [
+    {
+      "B1": 50000,
+      "audit_log": "~/tools/gmp-ecm-local/gate157_pm1.log",
+      "effective_B2": 14856276,
+      "exit_status": 0,
+      "factor_found": false,
+      "method": "P-1",
+      "runs": 1
+    },
+    {
+      "B1": 50000,
+      "audit_log": "~/tools/gmp-ecm-local/gate157_pp1.log",
+      "effective_B2": 19411780,
+      "exit_status": 0,
+      "factor_found": false,
+      "method": "P+1",
+      "runs": 1
+    }
+  ],
+  "frontier_class": "ACTIVE_COMPUTATIONAL_FRONTIER",
+  "known_theory": {
+    "classification": "KNOWN_THEORY",
+    "consequence": "At least one prime p with z_P(p)=24649 exists.",
+    "primitive_prime_divisor_existence": true
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      432849
+    ],
+    "other_unresolved_support": {
+      "432849": [
+        919
+      ]
+    }
+  },
+  "name": "Brutus-Pell Gate 157 Status",
+  "primitive_part": {
+    "decimal_digits": 9375,
+    "exact_division_verified": true,
+    "factordb_observation": {
+      "checked_date": "2026-09-25",
+      "nontrivial_factor_returned": false,
+      "status": "U"
+    },
+    "object": "P_24649 / P_157",
+    "sha256": "af8f60fea2efe11b26aa3d863d7bf2aac31b7e587830b539f3b572819d113621"
+  },
+  "root": 157,
+  "status": "ACTIVE_UNRESOLVED",
+  "target_rank": 24649
+}

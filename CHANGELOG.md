@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Checkpoints Level-3 preview Gate 157 as `ACTIVE_UNRESOLVED` after exact scanning through `k = 10^10` with zero Pell-divisibility hits.
+- Records the exact 9,375-digit primitive quotient `P_24649 / P_157`, its SHA-256 fingerprint, FactorDB status `U`, and light P-1/P+1 no-factor attempts.
+- Adds the `active_unresolved_preview_gates` state and advances the next never-worked Level-3 gate to 163.
+
 - Resolves Level-3 preview Gate 149 with prime witness 5,328,241 at k = 240; records a second verified witness and the 8,441-digit primitive quotient.
 - Updates preview root 8,443,383 so that only gate 1453 remains unresolved.
 

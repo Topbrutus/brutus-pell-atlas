@@ -265,3 +265,15 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Preview root `8,443,383`: support `149` resolved, but gate `1453` remains unresolved.
 - Gate `149`: resolved; Level 3 remains simulation-only.
 - Next never-worked Level-3 gate: `157`.
+
+## Gate 157 status
+
+- Target rank: `24,649 = 157^2`.
+- Status: `ACTIVE_UNRESOLVED`, deliberately not yet `HARD_UNRESOLVED`.
+- Python scan: `k <= 200,000`; 4,725 admissible prime candidates; zero hits.
+- C/OpenMP scan: `200,001 <= k <= 10^10`; 247,573,895 small-prime-sieve survivors; zero Pell-divisibility hits.
+- Primitive quotient: `P_24649 / P_157`, 9,375 digits, SHA-256 `af8f60fea2efe11b26aa3d863d7bf2aac31b7e587830b539f3b572819d113621`.
+- FactorDB observation on 2026-09-25: status `U`; no nontrivial factor returned.
+- Light P-1 and P+1 attempts at `B1=50,000`: no factor.
+- Affected preview root: `432,849 = 3*157*919`; gate `919` remains unresolved.
+- Next never-worked Level-3 gate: `163`.

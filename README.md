@@ -298,3 +298,11 @@ Gate `149` is resolved by prime witness `5,328,241`, with exact Pell rank `22,20
 Gate `149` affects preview root `8,443,383 = 3*13*149*1453`. Support `1453` remains unresolved, so this root is not promotion-ready yet.
 
 See `GATE_149.md` and `reports/gate_149.json`.
+
+## Gate 157
+
+Gate `157` is checkpointed as `ACTIVE_UNRESOLVED`: exact scanning now reaches `k = 10^10` with zero Pell-divisibility hits, and the exact 9,375-digit primitive quotient `P_24649 / P_157` has recorded light P-1/P+1 attempts with no factor.
+
+This moves the Level-3 preview to the next never-worked gate, `163`, while keeping Gate 157 visible as an active computational frontier.
+
+See `GATE_157.md` and `reports/gate_157_status.json`.
