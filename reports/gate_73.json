@@ -1,0 +1,40 @@
+{
+  "direct_scan": {
+    "first_hit": {
+      "k": 30,
+      "p": 159869,
+      "sign": -1
+    },
+    "first_hit_prime_candidates_tested": 3,
+    "reported_prime_candidates_tested": 10250,
+    "search_cap": 200000,
+    "verified_hit_count_in_full_window": 1
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 30,
+    "p": 159869,
+    "prime_verified": true,
+    "sign": -1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      49713,
+      6759910011,
+      2114411978523,
+      69940136627178
+    ],
+    "promotion_effect": "prime support 73 resolved; affected roots still require other novel gates"
+  },
+  "name": "Brutus-Pell Gate 73",
+  "observation": "The first verified direct witness occurs at k=30. This is recorded as a computation, not as a general relation between root 73 and root 30.",
+  "primitive_part": {
+    "decimal_digits": 2012,
+    "factor_divides_primitive_quotient": true,
+    "object": "P_5329 / P_73"
+  },
+  "root": 73,
+  "status": "RESOLVED",
+  "target_rank": 5329
+}

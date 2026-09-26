@@ -193,7 +193,7 @@ See `GATE_1481.md` and `reports/gate_1481_scan.json`.
 
 After closing Frontier Level 2, the next mirror expansion is kept as a simulation-only preview. The simulated gcd/lcm closure contains 326 nodes; mirroring it produces 160 roots outside that closure and 210 novel prime-support gates.
 
-Eight preview gates already have verified witnesses: `13, 17, 19, 23, 29, 31, 37, 43`. The next unresolved preview gate is `47`.
+Twelve preview gates now have verified witnesses: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73`. Gate `47` remains the earliest hard-unresolved gate; Gate `71` is tracked separately as active-unresolved.
 
 See `reports/frontier_level_3_preview.json`.
 
@@ -226,3 +226,9 @@ See `GATE_67.md` and `reports/gate_67.json`.
 Gate `71` is currently `ACTIVE_UNRESOLVED`: direct scanning through `k = 100,000,000` tested 3,917,148 admissible prime candidates with no hit, and four recorded P-1/P+1 campaigns on `P_5041 / P_71` found no factor.
 
 This is a bounded-search status, not a nonexistence claim. See `GATE_71.md` and `reports/gate_71_status.json`.
+
+## Gate 73
+
+Gate `73` is resolved by direct prime witness `159,869` at `k = 30`, with exact Pell rank `5329 = 73^2`. The full `k <= 200,000` window contains 10,250 admissible prime candidates and exactly one verified hit. The witness divides the exact 2,012-digit primitive quotient `P_5329 / P_73`.
+
+See `GATE_73.md` and `reports/gate_73.json`.

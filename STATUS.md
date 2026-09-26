@@ -83,7 +83,7 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Simulated closure: 326 nodes.
 - New mirror roots: 160.
 - Novel prime-support gates: 210.
-- Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43`.
+- Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73`.
 - Next unresolved preview gate: `47`.
 - No Level-2 or Level-3 root is promoted into the core lattice by this preview.
 
@@ -136,3 +136,13 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Primitive quotient: `P_5041 / P_71`, 1,903 decimal digits.
 - P-1/P+1 campaigns through `B1=250,000`: no factor.
 - Status: `ACTIVE_UNRESOLVED`, never a nonexistence claim.
+
+## Gate 73 status
+
+- Target rank: `5329 = 73^2`.
+- Explicit prime witness: `159,869`.
+- First hit: `k = 30` in `p = k*5329 - 1`; 3 admissible prime candidates tested to the first hit.
+- Full recorded window: `k <= 200,000`; 10,250 admissible prime candidates; exactly one verified hit.
+- Exact rank: verified by fast target testing and the original iterative Pell-rank engine.
+- Primitive quotient `P_5329 / P_73`: 2,012 digits; witness divides it exactly.
+- Gate `73`: resolved; Level 3 remains simulation-only.

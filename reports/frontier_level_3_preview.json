@@ -3820,7 +3820,8 @@
     43,
     53,
     59,
-    67
+    67,
+    73
   ],
   "simulated_closure_count": 326,
   "simulated_closure_max_node": 1743453262099920,
@@ -3835,7 +3836,6 @@
   "unresolved_preview_gates": [
     47,
     71,
-    73,
     79,
     83,
     101,
@@ -4112,6 +4112,13 @@
       "prime_verified": true,
       "rank": 4489,
       "witness": 454134173
+    },
+    "73": {
+      "exact_rank_verified": true,
+      "kind": "prime-direct",
+      "prime_verified": true,
+      "rank": 5329,
+      "witness": 159869
     }
   }
 }

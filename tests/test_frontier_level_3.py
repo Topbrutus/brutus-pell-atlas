@@ -27,7 +27,7 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
     def test_resolved_gate_prefix(self):
         self.assertEqual(
             self.report["resolved_preview_gates"],
-            [13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67],
+            [13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73],
         )
         self.assertEqual(self.report["next_unresolved_gate"], 47)
 
@@ -43,6 +43,13 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
     def test_iterative_ranks_for_small_gate_witnesses(self):
         for gate, data in KNOWN_LEVEL3_GATE_WITNESSES.items():
             self.assertEqual(pell_rank(data["witness"], gate * gate), gate * gate)
+
+    def test_gate_73_direct_method(self):
+        row = self.report["verified_gate_witnesses"]["73"]
+        self.assertEqual(row["witness"], 159_869)
+        self.assertEqual(row["kind"], "prime-direct")
+        self.assertTrue(row["prime_verified"])
+        self.assertTrue(row["exact_rank_verified"])
 
     def test_gate_67_direct_method(self):
         row = self.report["verified_gate_witnesses"]["67"]
