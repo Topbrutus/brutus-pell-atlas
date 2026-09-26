@@ -93,3 +93,9 @@ The primitive quotient is only partially factored. After removing both known pri
 Validation under WSL with `g++ -O3 -march=native -fopenmp` reproduces the Python reference count exactly on `k = 1..200000`: 9,177 admissible prime candidates, zero hits. On `k = 3,880,354,178,905..3,880,354,178,915`, it recovers the canonical Gate 211 witness at `k = 3,880,354,178,910`, sign `-1`.
 
 The native scanner is an execution accelerator only; the Python exact-rank verifier remains the reference validation path.
+
+## Generic compiled prime-support scanner
+
+`calculation/gate_scan_compiled.c` generalizes the earlier Gate-47 C/OpenMP scanner. It accepts a root and a bounded `k` interval, computes the square target `root^2`, applies the Lucas/Pell congruence sign filter, sieves candidates by small primes, verifies exact Pell rank using the distinct prime divisors of the target, and applies deterministic 64-bit Miller?Rabin only to Pell-rank hits.
+
+Before first use on Gate 109, the compiled scanner reproduced the known witnesses for Gate 73 (`159,869`, `k=30`, sign `-1`) and Gate 103 (`403,141`, `k=38`, sign `-1`).

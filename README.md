@@ -256,3 +256,11 @@ Gate `103` is resolved by direct prime witness `403,141` at `k = 38`, with exact
 The canonical witness divides the exact 4,022-digit primitive quotient `P_10609 / P_103`. Resolving support `103` does not yet make any of its four affected mirror roots promotion-ready because each still requires additional novel prime support.
 
 See `reports/gate_103.json`.
+
+## Gate 109
+
+Gate `109` is resolved by the explicit prime witness `12,203,170,399,877`, with exact Pell rank `11,881 = 109^2`. The first recorded compiled hit occurs at `k = 1,027,116,438` in `p = k*11,881 - 1`.
+
+The generic C/OpenMP scanner is now available as `calculation/gate_scan_compiled.c` and was regression-validated by reproducing the known Gate 73 and Gate 103 witnesses before use on Gate 109.
+
+See `GATE_109.md` and `reports/gate_109.json`.

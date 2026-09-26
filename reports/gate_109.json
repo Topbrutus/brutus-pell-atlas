@@ -1,0 +1,45 @@
+{
+  "discovery": {
+    "compiled_scan": {
+      "end_k": 1027116438,
+      "pell_divisibility_hits": 1,
+      "prime_hits": 1,
+      "segment": 1000000,
+      "small_prime_sieve_survivors": 50631383,
+      "start_k": 1
+    },
+    "first_hit": {
+      "k": 1027116438,
+      "p": 12203170399877,
+      "sign": -1
+    },
+    "implementation": "calculation/gate_scan_compiled.c",
+    "method": "generic C/OpenMP exact Pell scan"
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 1027116438,
+    "p": 12203170399877,
+    "prime_verified": true,
+    "sign": -1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      23467643211
+    ],
+    "promotion_effect": "prime support 109 resolved; affected preview root still requires gate 71766493",
+    "remaining_novel_gate_for_affected_root": 71766493
+  },
+  "name": "Brutus-Pell Gate 109",
+  "observation": "The witness is the first exact Pell-rank hit in the recorded compiled scan through k=1027116438. This is a bounded computational result, not a general mirror theorem.",
+  "primitive_part": {
+    "decimal_digits": 4507,
+    "factor_divides_primitive_quotient": true,
+    "object": "P_11881 / P_109",
+    "residual_cofactor_digits": 4493
+  },
+  "root": 109,
+  "status": "RESOLVED",
+  "target_rank": 11881
+}

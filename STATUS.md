@@ -194,3 +194,14 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Affected preview roots remain blocked by other novel prime gates.
 - Gate `103`: resolved; Level 3 remains simulation-only.
 - Next never-worked Level-3 gate: `109`.
+
+## Gate 109 status
+
+- Target rank: `11,881 = 109^2`.
+- Explicit prime witness: `12,203,170,399,877`.
+- First recorded compiled hit: `k = 1,027,116,438` in `p = k*11,881 - 1`.
+- Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
+- Primitive quotient `P_11881 / P_109`: 4,507 digits; witness divides it exactly.
+- Level-3 preview root `23,467,643,211` still requires gate `71,766,493`.
+- Gate `109`: resolved; Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `113`.

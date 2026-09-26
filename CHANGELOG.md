@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Adds a reusable generic C/OpenMP prime-support scanner with exact Pell-rank verification.
+- Resolves Level-3 preview Gate 109 with prime witness 12,203,170,399,877 at k = 1,027,116,438.
+- Advances the next never-worked Level-3 preview gate to 113.
+
 - Resolves Level-3 preview Gate 103 with direct prime witness 403,141 at k = 38.
 - Verifies exact rank `z_P(403,141)=10,609=103^2` and exact divisibility into the 4,022-digit primitive quotient `P_10609 / P_103`.
 - Records three verified direct hits in the full `k <= 200,000` window; `109` becomes the next never-worked Level-3 gate.
