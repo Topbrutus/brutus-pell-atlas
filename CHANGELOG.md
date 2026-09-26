@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Adds an ACTIVE_UNRESOLVED checkpoint for Level-3 preview Gate 71.
+- Records direct scanning through k = 100,000,000 with 3,917,148 admissible prime candidates and four P-1/P+1 campaigns on the 1,903-digit primitive quotient.
+
 - Resolves Level-3 preview Gate 67 with direct prime witness 454,134,173 at k = 101,166.
 - Verifies exact rank `z_P(454,134,173)=4489=67^2` and primitive-quotient divisibility.
 

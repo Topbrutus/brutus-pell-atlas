@@ -1,0 +1,72 @@
+{
+  "boundary": "No hit in bounded direct scans and no factor in recorded P-1/P+1 attempts do not establish nonexistence.",
+  "direct_scan": {
+    "hits": [],
+    "largest_candidate_bound": 504100000001,
+    "max_k": 100000000,
+    "prime_candidates_tested": 3917148,
+    "windows": [
+      {
+        "end_k": 200000,
+        "prime_candidates_tested": 10187,
+        "start_k": 1
+      },
+      {
+        "end_k": 100000000,
+        "prime_candidates_tested": 3906961,
+        "start_k": 200001
+      }
+    ]
+  },
+  "factorization_attempts": [
+    {
+      "B1": 50000,
+      "effective_B2": 6303568,
+      "factor_found": false,
+      "method": "P-1",
+      "runs": 10
+    },
+    {
+      "B1": 50000,
+      "effective_B2": 9714820,
+      "factor_found": false,
+      "method": "P+1",
+      "runs": 10
+    },
+    {
+      "B1": 250000,
+      "effective_B2": 39925198,
+      "factor_found": false,
+      "method": "P-1",
+      "runs": 20
+    },
+    {
+      "B1": 250000,
+      "effective_B2": 39925198,
+      "factor_found": false,
+      "method": "P+1",
+      "runs": 20
+    }
+  ],
+  "known_theory": {
+    "classification": "KNOWN_THEORY",
+    "consequence": "At least one prime p with z_P(p)=5041 exists.",
+    "primitive_prime_divisor_existence": true
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      222916002,
+      498940572,
+      679699401
+    ]
+  },
+  "name": "Brutus-Pell Gate 71 Status",
+  "primitive_part": {
+    "decimal_digits": 1903,
+    "exact_division_verified": true,
+    "object": "P_5041 / P_71"
+  },
+  "root": 71,
+  "status": "ACTIVE_UNRESOLVED",
+  "target_rank": 5041
+}

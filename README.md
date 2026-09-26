@@ -220,3 +220,9 @@ Level 3 remains simulation-only. See `GATE_59.md` and `reports/gate_59.json`.
 Gate `67` is resolved by direct prime witness `454,134,173` at `k = 101,166`, with exact Pell rank `4489 = 67^2`.
 
 See `GATE_67.md` and `reports/gate_67.json`.
+
+## Gate 71
+
+Gate `71` is currently `ACTIVE_UNRESOLVED`: direct scanning through `k = 100,000,000` tested 3,917,148 admissible prime candidates with no hit, and four recorded P-1/P+1 campaigns on `P_5041 / P_71` found no factor.
+
+This is a bounded-search status, not a nonexistence claim. See `GATE_71.md` and `reports/gate_71_status.json`.

@@ -124,3 +124,12 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
 - Primitive quotient `P_4489 / P_67`: 1,693 digits; witness divides it exactly.
 - Gate `67`: resolved; affected Level-3 preview roots still require other novel prime support.
+
+## Gate 71 status
+
+- Target rank: `5041 = 71^2`.
+- Explicit prime witness: not yet found.
+- Direct scan: `k <= 100,000,000`; 3,917,148 admissible prime candidates; zero hits.
+- Primitive quotient: `P_5041 / P_71`, 1,903 decimal digits.
+- P-1/P+1 campaigns through `B1=250,000`: no factor.
+- Status: `ACTIVE_UNRESOLVED`, never a nonexistence claim.
