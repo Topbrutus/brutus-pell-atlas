@@ -138,6 +138,16 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - P-1/P+1 campaigns extended through `B1=1,000,000`, `B2=100,000,000`; no factor.
 - Status: `HARD_UNRESOLVED` / `DEEP_COMPUTATIONAL_FRONTIER`, never a nonexistence claim.
 
+## Gate 83 status
+
+- Target rank: `6889 = 83^2`.
+- Explicit prime witness: not yet found.
+- Direct Python scan: `k <= 200,000`; 10,113 admissible prime candidates; zero hits.
+- Independent C/OpenMP scan: `k <= 10,000,000,000`; 497,549,028 small-prime-sieve survivors across recorded windows; zero Pell-divisibility hits.
+- Primitive quotient: `P_6889 / P_83`, 2,606 decimal digits.
+- P-1/P+1 campaigns through `B1=250,000`, `B2=40,000,000`; no factor.
+- Status: `HARD_UNRESOLVED` / `DEEP_COMPUTATIONAL_FRONTIER`, never a nonexistence claim.
+
 ## Gate 79 status
 
 - Target rank: `6241 = 79^2`.

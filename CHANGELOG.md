@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Adds a hard-unresolved checkpoint for Level-3 preview Gate 83.
+- Records compiled Pell-divisibility scanning through k = 10^10 with 497,549,028 sieve survivors and zero Pell hits.
+- Records the 2,606-digit primitive quotient `P_6889 / P_83` and P-1/P+1 campaigns through `B1=250,000`, `B2=40,000,000`, with no factor.
+
 - Resolves Level-3 preview Gate 79 with primitive-part P-1 prime witness 2,266,870,750,557,409.
 - Verifies exact rank `z_P(p)=6241=79^2` and exact divisibility into the 2,359-digit primitive quotient `P_6241 / P_79`.
 - Adds per-door resolved/unresolved prime-support state to the Level-3 preview; root 711474 becomes promotion-ready while root 4276191 remains blocked by gate 18043.

@@ -1,0 +1,80 @@
+{
+  "boundary": "No hit in bounded scans and no factor in recorded P-1/P+1 campaigns do not establish nonexistence.",
+  "compiled_pell_scan": {
+    "implementation": "C/OpenMP exact modular Pell scanner derived from calculation/gate_47_scan.c",
+    "max_k": 10000000000,
+    "pell_divisibility_hits": 0,
+    "windows": [
+      {
+        "end_k": 1000000000,
+        "pell_divisibility_hits": 0,
+        "small_prime_sieve_survivors": 49255590,
+        "start_k": 1
+      },
+      {
+        "end_k": 10000000000,
+        "pell_divisibility_hits": 0,
+        "small_prime_sieve_survivors": 448293438,
+        "start_k": 1000000001
+      }
+    ]
+  },
+  "direct_scan": {
+    "end_k": 200000,
+    "hits": [],
+    "prime_candidates_tested": 10113,
+    "start_k": 1
+  },
+  "factorization_attempts": [
+    {
+      "B1": 50000,
+      "B2": 10000000,
+      "factor_found": false,
+      "method": "P-1",
+      "runs": 10
+    },
+    {
+      "B1": 50000,
+      "B2": 10000000,
+      "factor_found": false,
+      "method": "P+1",
+      "runs": 10
+    },
+    {
+      "B1": 250000,
+      "B2": 40000000,
+      "factor_found": false,
+      "method": "P-1",
+      "runs": 12
+    },
+    {
+      "B1": 250000,
+      "B2": 40000000,
+      "factor_found": false,
+      "method": "P+1",
+      "runs": 12
+    }
+  ],
+  "frontier_class": "DEEP_COMPUTATIONAL_FRONTIER",
+  "known_theory": {
+    "classification": "KNOWN_THEORY",
+    "consequence": "At least one prime p with z_P(p)=6889 exists.",
+    "primitive_prime_divisor_existence": true
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      76327215,
+      205901835,
+      6773594061
+    ]
+  },
+  "name": "Brutus-Pell Gate 83 Status",
+  "primitive_part": {
+    "decimal_digits": 2606,
+    "exact_division_verified": true,
+    "object": "P_6889 / P_83"
+  },
+  "root": 83,
+  "status": "HARD_UNRESOLVED",
+  "target_rank": 6889
+}
