@@ -97,3 +97,12 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Archived factor-run outputs checked: 1,224; none differs from the input quotient.
 - Status: `HARD_UNRESOLVED`.
 - No Level-3 promotion is implied.
+
+## Gate 53 status
+
+- Target rank: `2809 = 53^2`.
+- Explicit prime witness: `13,747,841,783,933,689`.
+- Primitive quotient: `P_2809 / P_53`, 1,055 digits.
+- Discovery: GMP-ECM P-1, stage 2, `B1=50,000`, effective `B2=6,303,568`, preloaded order factor `2809`.
+- Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
+- Gate `53`: resolved; affected Level-3 preview roots still require other novel prime support.

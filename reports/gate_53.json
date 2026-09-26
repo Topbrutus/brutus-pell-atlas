@@ -1,0 +1,44 @@
+{
+  "direct_scan": {
+    "hits": [],
+    "max_k": 200000,
+    "prime_candidates_tested": 10593,
+    "status": "NO_HIT_IN_WINDOW"
+  },
+  "discovery": {
+    "B1": 50000,
+    "effective_B2": 6303568,
+    "engine": "GMP-ECM 7.0.6",
+    "exit_status": 14,
+    "method": "P-1",
+    "preloaded_order_factor": 2809,
+    "stage": 2
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 4894212098232,
+    "p": 13747841783933689,
+    "prime_verified": true,
+    "sign": 1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      42771,
+      8633541,
+      116903001,
+      639871014,
+      679699401
+    ],
+    "promotion_effect": "prime support 53 resolved; affected roots still require other novel gates"
+  },
+  "name": "Brutus-Pell Gate 53",
+  "primitive_part": {
+    "decimal_digits": 1055,
+    "factor_divides_primitive_quotient": true,
+    "object": "P_2809 / P_53"
+  },
+  "root": 53,
+  "status": "RESOLVED",
+  "target_rank": 2809
+}

@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 53 with prime witness 13,747,841,783,933,689 from the primitive quotient `P_2809 / P_53`.
+- Records the GMP-ECM P-1 stage-2 discovery and independent exact-rank verification `z_P(p)=2809=53^2`.
+
 - Adds a formal Gate 47 hard-unresolved checkpoint.
 - Extends deterministic Gate 47 direct scanning through k = 1,000,000,000 with 37,316,974 admissible prime candidates tested and zero hits.
 - Records the 828-digit primitive quotient `P_2209 / P_47` and audits 1,224 archived factor-run outputs with no nontrivial factor recorded.

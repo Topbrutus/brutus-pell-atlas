@@ -202,3 +202,9 @@ See `reports/frontier_level_3_preview.json`.
 Gate `47` is the first hard unresolved gate in the Level-3 preview. Direct congruence scanning now covers `k <= 1,000,000,000` with 37,316,974 admissible prime candidates exactly tested and no hit. The primitive quotient `P_2209 / P_47` has 828 digits; 1,224 archived factor-run outputs record no nontrivial factor.
 
 Status: `HARD_UNRESOLVED`, not a nonexistence claim. See `GATE_47.md` and `reports/gate_47_status.json`.
+
+## Gate 53
+
+Gate `53` is resolved by the prime witness `13,747,841,783,933,689`, extracted from the exact primitive quotient `P_2809 / P_53` by GMP-ECM P-1. Its exact Pell rank is `2809 = 53^2`.
+
+Gate `47` remains hard-unresolved; Level 3 remains simulation-only. See `GATE_53.md` and `reports/gate_53.json`.
