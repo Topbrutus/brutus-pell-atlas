@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 139 with prime witness 12,635,933 at k = 654.
+- Adds an explicit verified square-rank witness for preview root 2,989,473 and marks that root promotion-ready inside the simulation-only preview.
+
 - Resolves Level-3 preview Gate 137 with prime witness 3,415,957 at k = 182.
 - Advances the next never-worked Level-3 preview gate to 139.
 

@@ -1146,9 +1146,10 @@
         67,
         139
       ],
-      "promotion_ready": false,
+      "promotion_ready": true,
       "resolved_novel_support": [
-        67
+        67,
+        139
       ],
       "root": 2989473,
       "sources": [
@@ -1161,9 +1162,7 @@
           "source_root": 37498920
         }
       ],
-      "unresolved_prime_gates": [
-        139
-      ]
+      "unresolved_prime_gates": []
     },
     {
       "factorization": {
@@ -4571,7 +4570,7 @@
     489914256096843
   ],
   "next_unresolved_gate": 47,
-  "next_unworked_gate": 139,
+  "next_unworked_gate": 149,
   "novel_prime_gate_count": 210,
   "novel_prime_gates": [
     13,
@@ -4797,13 +4796,14 @@
     757,
     1481
   ],
-  "promotion_ready_root_count": 5,
+  "promotion_ready_root_count": 6,
   "promotion_ready_roots": [
     1344,
     2352,
     2688,
     88536,
-    711474
+    711474,
+    2989473
   ],
   "resolved_preview_gates": [
     13,
@@ -4822,7 +4822,8 @@
     103,
     109,
     131,
-    137
+    137,
+    139
   ],
   "simulated_closure_count": 326,
   "simulated_closure_max_node": 1743453262099920,
@@ -4840,7 +4841,6 @@
     83,
     101,
     113,
-    139,
     149,
     157,
     163,
@@ -5030,7 +5030,6 @@
     2167585313087
   ],
   "unworked_preview_gates": [
-    139,
     149,
     157,
     163,
@@ -5254,6 +5253,13 @@
       "prime_verified": true,
       "rank": 18769,
       "witness": 3415957
+    },
+    "139": {
+      "exact_rank_verified": true,
+      "kind": "prime-direct",
+      "prime_verified": true,
+      "rank": 19321,
+      "witness": 12635933
     },
     "17": {
       "exact_rank_verified": true,

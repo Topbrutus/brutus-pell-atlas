@@ -243,3 +243,14 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Affected preview root `80,860,962` still requires hard-unresolved Gate `47`.
 - Gate `137`: resolved; Level 3 remains simulation-only.
 - Next never-worked Level-3 gate: `139`.
+
+## Gate 139 status
+
+- Target rank: `19,321 = 139^2`.
+- Explicit prime witness: `12,635,933`.
+- First hit: `k = 654` in `p = k*19,321 - 1`, after 24 admissible prime candidates.
+- Full recorded window: `k <= 200,000`; 4,830 admissible prime candidates; two verified hits.
+- Primitive quotient `P_19321 / P_139`: 7,343 decimal digits; first witness divides it exactly.
+- Preview root `2,989,473`: explicit verified witness `93,058,096,395,323,907,653,285,057`, exact rank `2,989,473^2`.
+- Gate `139`: resolved; preview root `2,989,473` is promotion-ready, but Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `149`.

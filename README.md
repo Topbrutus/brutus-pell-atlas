@@ -282,3 +282,11 @@ See `GATE_131.md` and `reports/gate_131.json`.
 Gate `137` is resolved by prime witness `3,415,957`, with exact Pell rank `18,769 = 137^2`. The first hit occurs at `k = 182` after only five admissible prime candidates.
 
 See `GATE_137.md` and `reports/gate_137.json`.
+
+## Gate 139
+
+Gate `139` is resolved by prime witness `12,635,933`, with exact Pell rank `19,321 = 139^2`. The first hit occurs at `k = 654` after 24 admissible prime candidates under the exact odd-rank filter.
+
+Gate `139` completes the novel prime support of preview root `2,989,473 = 3*67*107*139`. A 26-digit explicit product witness is verified to have exact Pell rank `2,989,473^2`, so this root is now promotion-ready inside the simulation-only Level-3 preview.
+
+See `GATE_139.md` and `reports/gate_139.json`.
