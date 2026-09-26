@@ -1,0 +1,85 @@
+{
+  "archived_light_attempts": [
+    {
+      "B1": 50000,
+      "factor_found": false,
+      "method": "P-1",
+      "note": "B2 was not preserved in the archived light-run artifact.",
+      "output_equal_to_primitive_input": true
+    },
+    {
+      "B1": 50000,
+      "factor_found": false,
+      "method": "P+1",
+      "note": "B2 was not preserved in the archived light-run artifact.",
+      "output_equal_to_primitive_input": true
+    }
+  ],
+  "boundary": "No hit in bounded compiled scans and no factor in recorded P-1/P+1 campaigns do not establish nonexistence.",
+  "compiled_pell_scan": {
+    "implementation": "C/OpenMP exact modular Pell scanner derived from calculation/gate_47_scan.c",
+    "interpretation": "NO_PELL_DIVISIBILITY_HIT_THROUGH_K_1E10",
+    "largest_candidate_bound": 102010000000001,
+    "max_k": 10000000000,
+    "pell_divisibility_hits": 0,
+    "prime_hits": 0,
+    "small_prime_sieve_survivors": 496754167,
+    "windows": [
+      {
+        "end_k": 1000000000,
+        "pell_divisibility_hits": 0,
+        "prime_hits": 0,
+        "small_prime_sieve_survivors": 49278561,
+        "start_k": 1
+      },
+      {
+        "end_k": 10000000000,
+        "pell_divisibility_hits": 0,
+        "prime_hits": 0,
+        "small_prime_sieve_survivors": 447475606,
+        "start_k": 1000000001
+      }
+    ]
+  },
+  "frontier_class": "DEEP_COMPUTATIONAL_FRONTIER",
+  "known_theory": {
+    "classification": "KNOWN_THEORY",
+    "consequence": "At least one prime p with z_P(p)=10201 exists.",
+    "primitive_prime_divisor_existence": true
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      76327215,
+      299902623543471
+    ]
+  },
+  "name": "Brutus-Pell Gate 101 Status",
+  "primitive_part": {
+    "decimal_digits": 3867,
+    "exact_division_verified": true,
+    "object": "P_10201 / P_101"
+  },
+  "root": 101,
+  "status": "HARD_UNRESOLVED",
+  "strong_factorization_attempts": [
+    {
+      "B1": 1000000,
+      "B2": 100000000,
+      "completed_runs": 12,
+      "factor_found": false,
+      "method": "P-1",
+      "outputs_equal_to_primitive_input": 12,
+      "runs": 12
+    },
+    {
+      "B1": 1000000,
+      "B2": 100000000,
+      "completed_runs": 12,
+      "factor_found": false,
+      "method": "P+1",
+      "outputs_equal_to_primitive_input": 12,
+      "runs": 12
+    }
+  ],
+  "target_rank": 10201
+}

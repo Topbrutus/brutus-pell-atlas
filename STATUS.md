@@ -83,8 +83,10 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Simulated closure: 326 nodes.
 - New mirror roots: 160.
 - Novel prime-support gates: 210.
-- Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73`.
+- Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79`.
 - Next unresolved preview gate: `47`.
+- Hard-unresolved preview gates: `47, 71, 83, 101`.
+- Next never-worked preview gate: `103`.
 - No Level-2 or Level-3 root is promoted into the core lattice by this preview.
 
 ## Gate 47 status
@@ -168,3 +170,15 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Exact rank: verified by fast target testing and the original iterative Pell-rank engine.
 - Primitive quotient `P_5329 / P_73`: 2,012 digits; witness divides it exactly.
 - Gate `73`: resolved; Level 3 remains simulation-only.
+
+## Gate 101 status
+
+- Target rank: `10201 = 101^2`.
+- Explicit prime witness: not yet found.
+- C/OpenMP exact Pell-divisibility scan: `k <= 10,000,000,000`; 496,754,167 small-prime-sieve survivors; zero Pell-divisibility hits.
+- Primitive quotient: `P_10201 / P_101`, 3,867 decimal digits.
+- Archived light P-1/P+1 attempts found no factor.
+- Strong campaigns: 12 P-1 and 12 P+1 runs at `B1=1,000,000`, `B2=100,000,000`; all outputs equal the unchanged primitive quotient.
+- Affected Level-3 preview roots: `76,327,215` and `299,902,623,543,471`.
+- Status: `HARD_UNRESOLVED` / `DEEP_COMPUTATIONAL_FRONTIER`, never a nonexistence claim.
+- Next never-worked Level-3 gate: `103`.

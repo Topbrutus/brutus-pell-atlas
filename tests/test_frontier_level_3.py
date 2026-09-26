@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from calculation.frontier_level_3 import (
+    HARD_UNRESOLVED_LEVEL3_GATES,
     KNOWN_LEVEL3_GATE_WITNESSES,
     build_level_3_preview,
 )
@@ -30,6 +31,15 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
             [13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79],
         )
         self.assertEqual(self.report["next_unresolved_gate"], 47)
+
+    def test_hard_unresolved_vs_unworked(self):
+        self.assertEqual(HARD_UNRESOLVED_LEVEL3_GATES, {47, 71, 83, 101})
+        self.assertEqual(
+            self.report["hard_unresolved_preview_gates"],
+            [47, 71, 83, 101],
+        )
+        self.assertEqual(self.report["next_unworked_gate"], 103)
+        self.assertEqual(self.report["unworked_preview_gates"][0], 103)
 
     def test_known_gate_witnesses(self):
         checks = self.report["verified_gate_witnesses"]

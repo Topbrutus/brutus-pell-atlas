@@ -193,7 +193,7 @@ See `GATE_1481.md` and `reports/gate_1481_scan.json`.
 
 After closing Frontier Level 2, the next mirror expansion is kept as a simulation-only preview. The simulated gcd/lcm closure contains 326 nodes; mirroring it produces 160 roots outside that closure and 210 novel prime-support gates.
 
-Twelve preview gates now have verified witnesses: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73`. Gate `47` remains the earliest hard-unresolved gate; Gate `71` is tracked separately as active-unresolved.
+Thirteen preview gates now have verified witnesses: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79`. Hard-unresolved gates are `47, 71, 83, 101`. Gate `47` remains the earliest unresolved gate, while `103` is the next gate that has not yet been worked.
 
 See `reports/frontier_level_3_preview.json`.
 
@@ -223,12 +223,27 @@ See `GATE_67.md` and `reports/gate_67.json`.
 
 ## Gate 71
 
-Gate `71` is currently `ACTIVE_UNRESOLVED`: direct scanning through `k = 100,000,000` tested 3,917,148 admissible prime candidates with no hit, and four recorded P-1/P+1 campaigns on `P_5041 / P_71` found no factor.
+Gate `71` is `HARD_UNRESOLVED`: direct and compiled scanning reaches `k = 10,000,000,000` with zero Pell-divisibility hits in the compiled extension. The 1,903-digit primitive quotient `P_5041 / P_71` has also survived recorded P-1/P+1 campaigns through `B1=1,000,000`, `B2=100,000,000`.
 
-This is a bounded-search status, not a nonexistence claim. See `GATE_71.md` and `reports/gate_71_status.json`.
+This is a bounded computational frontier, not a nonexistence claim. See `GATE_71.md` and `reports/gate_71_status.json`.
 
 ## Gate 73
 
 Gate `73` is resolved by direct prime witness `159,869` at `k = 30`, with exact Pell rank `5329 = 73^2`. The full `k <= 200,000` window contains 10,250 admissible prime candidates and exactly one verified hit. The witness divides the exact 2,012-digit primitive quotient `P_5329 / P_73`.
 
 See `GATE_73.md` and `reports/gate_73.json`.
+
+
+## Gate 79
+
+Gate `79` is resolved by prime witness `2,266,870,750,557,409`, extracted from the primitive quotient `P_6241 / P_79`; its exact Pell rank is `6241 = 79^2`.
+
+## Gate 83
+
+Gate `83` is `HARD_UNRESOLVED`. Compiled Pell-divisibility scanning reaches `k = 10,000,000,000` with zero hits; the primitive quotient `P_6889 / P_83` has 2,606 digits and recorded P-1/P+1 campaigns have found no factor.
+
+## Gate 101
+
+Gate `101` is `HARD_UNRESOLVED`. The compiled exact Pell scanner covers `k <= 10,000,000,000`, with 496,754,167 small-prime-sieve survivors and zero Pell-divisibility hits. The primitive quotient `P_10201 / P_101` has 3,867 digits. Twelve P-1 and twelve P+1 runs at `B1=1,000,000`, `B2=100,000,000` all returned the unchanged primitive quotient.
+
+This is not a nonexistence claim. The next never-worked Level-3 gate is `103`. See `reports/gate_101_status.json`.

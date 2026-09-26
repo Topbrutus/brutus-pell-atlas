@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT_PATH = ROOT / "reports" / "frontier_level_3_preview.json"
 
 LEVEL2_ROOTS = [633, 2271, 4443, 8886, 67731]
+HARD_UNRESOLVED_LEVEL3_GATES = {47, 71, 83, 101}
 
 KNOWN_LEVEL3_GATE_WITNESSES = {
     13: {"witness": 1013, "kind": "preexisting-prime-direct"},
@@ -96,6 +97,8 @@ def build_level_3_preview() -> dict:
 
     resolved = sorted(set(novel_gates) & set(KNOWN_LEVEL3_GATE_WITNESSES))
     unresolved = sorted(set(novel_gates) - set(KNOWN_LEVEL3_GATE_WITNESSES))
+    hard_unresolved = sorted(set(unresolved) & HARD_UNRESOLVED_LEVEL3_GATES)
+    unworked = sorted(set(unresolved) - HARD_UNRESOLVED_LEVEL3_GATES)
     ready_roots = sorted(d["root"] for d in doors if d["promotion_ready"])
     return {
         "name": "Brutus-Pell Frontier Level 3 Preview",
@@ -112,7 +115,10 @@ def build_level_3_preview() -> dict:
         "verified_gate_witnesses": witness_checks,
         "resolved_preview_gates": resolved,
         "unresolved_preview_gates": unresolved,
+        "hard_unresolved_preview_gates": hard_unresolved,
+        "unworked_preview_gates": unworked,
         "next_unresolved_gate": unresolved[0] if unresolved else None,
+        "next_unworked_gate": unworked[0] if unworked else None,
         "promotion_ready_root_count": len(ready_roots),
         "promotion_ready_roots": ready_roots,
         "policy": (
@@ -133,6 +139,7 @@ def main() -> None:
     print(f"novel_prime_gate_count = {report['novel_prime_gate_count']}")
     print(f"resolved_preview_gates = {report['resolved_preview_gates']}")
     print(f"next_unresolved_gate = {report['next_unresolved_gate']}")
+    print(f"next_unworked_gate = {report['next_unworked_gate']}")
     print(f"report = {REPORT_PATH}")
 
 if __name__ == "__main__":
