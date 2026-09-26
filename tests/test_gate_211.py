@@ -44,7 +44,12 @@ class Gate211Tests(unittest.TestCase):
         for k in range(1, 80):
             for sign in (-1, 1):
                 p = k * TARGET_RANK + sign
-                expected = p > 2 and p % 2 == 1 and legendre_8_for_odd_prime_candidate(p) == sign
+                expected = (
+                    p > 2
+                    and p % 2 == 1
+                    and p % 4 == 1
+                    and legendre_8_for_odd_prime_candidate(p) == sign
+                )
                 self.assertEqual(lucas_rank_congruence_admissible(k, sign), expected)
 
     def test_small_scan_reproducible(self):

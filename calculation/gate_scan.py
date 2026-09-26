@@ -22,6 +22,11 @@ def lucas_rank_congruence_admissible(root: int, k: int, sign: int) -> bool:
     p = k * target + sign
     if p <= 2 or p % 2 == 0:
         return False
+    # If the target rank is odd and p divides P_target, then the Pell identity
+    # Q_target^2 - 2 P_target^2 = -1 makes -1 a quadratic residue mod p.
+    # Hence p == 1 (mod 4). This is an additional exact filter.
+    if target % 2 == 1 and p % 4 != 1:
+        return False
     return legendre_8_for_odd_prime_candidate(p) == sign
 
 def scan_window(root: int, start_k: int, end_k: int, stop_after: int = 1) -> dict:

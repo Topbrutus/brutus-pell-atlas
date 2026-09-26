@@ -99,3 +99,15 @@ The native scanner is an execution accelerator only; the Python exact-rank verif
 `calculation/gate_scan_compiled.c` generalizes the earlier Gate-47 C/OpenMP scanner. It accepts a root and a bounded `k` interval, computes the square target `root^2`, applies the Lucas/Pell congruence sign filter, sieves candidates by small primes, verifies exact Pell rank using the distinct prime divisors of the target, and applies deterministic 64-bit Miller?Rabin only to Pell-rank hits.
 
 Before first use on Gate 109, the compiled scanner reproduced the known witnesses for Gate 73 (`159,869`, `k=30`, sign `-1`) and Gate 103 (`403,141`, `k=38`, sign `-1`).
+
+## Odd-rank quadratic-residue filter
+
+For an odd target rank `n`, if an odd prime `p` divides the Pell number `P_n`, the Pell identity
+
+`Q_n^2 - 2*P_n^2 = (-1)^n = -1`
+
+reduces modulo `p` to `Q_n^2 = -1 (mod p)`. Therefore `-1` is a quadratic residue modulo `p`, so necessarily `p = 1 (mod 4)`.
+
+For odd square-rank gate targets `n = q^2`, this exact condition is applied in addition to the standard Lucas congruence `p = n*k +/- 1` with the sign matching `(8/p)`. Since `n = 1 (mod 8)` for the currently scanned odd prime gates, the surviving branch residues reduce to `k = 0 (mod 8)` for `+1` and `k = 6 (mod 8)` for `-1`.
+
+Historical scan counts are not recomputed retroactively; the stronger filter applies only to future scans.

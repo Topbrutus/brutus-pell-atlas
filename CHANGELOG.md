@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Adds the exact odd-rank Pell filter `p ? 1 (mod 4)` before future prime-support scans.
+- Refines the Gate 47 C/OpenMP scanner to the only surviving `k mod 8` branches for odd square ranks.
+
 - Adds a reusable generic C/OpenMP prime-support scanner with exact Pell-rank verification.
 - Resolves Level-3 preview Gate 109 with prime witness 12,203,170,399,877 at k = 1,027,116,438.
 - Advances the next never-worked Level-3 preview gate to 113.
@@ -56,7 +59,7 @@
 - Adds verified mirror-root fibers for roots 3, 12, 21, and 24.
 - Expands the Rank Lattice to 16 verified nodes and gives every node at least one Pell square-rank witness.
 - Refreshes bridge discovery to 230 square-LCM products, 169 rank-preserving products, and 3 mirror hosts within the current curated dataset.
-- Expands regression coverage to 154 automated tests.
+- Expands regression coverage to 161 automated tests.
 - Adds a Mirror Frontier for roots 48 and 861 without auto-promoting them into the core lattice.
 - Verifies a prime witness for root 48 and a structured 648-digit witness for root 861.
 - Documents universal Pell-term witnesses `z_P(P_m)=m` and the fast exact-target verifier.

@@ -132,7 +132,7 @@ int main(int argc, char **argv){
         for(size_t idx=0;idx<L;idx++){
             u64 k=a+(u64)idx;
             int r=(int)(k&7ULL);
-            if((r==0||r==6) && !cp[idx]){
+            if(r==0 && !cp[idx]){
                 u64 p=k*N+1;
                 total_surv++;
                 if(pell_mod(2209,p)==0 && pell_mod(47,p)!=0){
@@ -150,7 +150,7 @@ int main(int argc, char **argv){
                     }
                 }
             }
-            if((r==4||r==6) && !cm[idx]){
+            if(r==6 && !cm[idx]){
                 u64 p=k*N-1;
                 total_surv++;
                 if(pell_mod(2209,p)==0 && pell_mod(47,p)!=0){

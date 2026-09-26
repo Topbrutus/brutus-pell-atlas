@@ -95,6 +95,7 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Known theory: a primitive prime divisor, hence an exact rank-2209 prime witness, exists.
 - Explicit witness: not yet found.
 - Direct Python scan: `k <= 1,000,000,000`; 37,316,974 admissible prime candidates tested; zero hits.
+- Future odd-rank scans now also enforce the exact quadratic-residue filter `p ? 1 (mod 4)`; historical counts above remain unchanged.
 - Independent C/OpenMP Pell-divisibility scan: bounded coverage through `k = 10,000,000,000`; the `10^9..10^10` extension tested 451,314,038 small-prime-sieve survivors and produced zero Pell-divisibility hits.
 - Primitive quotient: `P_2209 / P_47`, 828 decimal digits.
 - Archived factor-run outputs checked: 1,224; none differs from the input quotient.
