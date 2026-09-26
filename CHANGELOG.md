@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 149 with prime witness 5,328,241 at k = 240; records a second verified witness and the 8,441-digit primitive quotient.
+- Updates preview root 8,443,383 so that only gate 1453 remains unresolved.
+
 - Resolves Level-3 preview Gate 139 with prime witness 12,635,933 at k = 654.
 - Adds an explicit verified square-rank witness for preview root 2,989,473 and marks that root promotion-ready inside the simulation-only preview.
 

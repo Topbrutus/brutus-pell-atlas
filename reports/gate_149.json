@@ -1,0 +1,55 @@
+{
+  "direct_scan": {
+    "first_hit_prime_candidates_tested": 8,
+    "hits": [
+      {
+        "k": 240,
+        "p": 5328241,
+        "sign": 1
+      },
+      {
+        "k": 13734,
+        "p": 304908533,
+        "sign": -1
+      }
+    ],
+    "prime_candidates_tested": 4773,
+    "search_cap": 200000
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 240,
+    "p": 5328241,
+    "prime_verified": true,
+    "sign": 1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      8443383
+    ],
+    "promotion_effect": "prime support 149 resolved; affected preview root still requires gate 1453",
+    "remaining_novel_gates": [
+      1453
+    ]
+  },
+  "name": "Brutus-Pell Gate 149",
+  "observation": "Gate 149 is an exact computational result inside the simulation-only Level-3 preview.",
+  "primitive_part": {
+    "decimal_digits": 8441,
+    "first_witness_divides": true,
+    "object": "P_22201 / P_149",
+    "second_witness_divides": true
+  },
+  "root": 149,
+  "secondary_verified_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 13734,
+    "p": 304908533,
+    "prime_verified": true,
+    "sign": -1
+  },
+  "status": "RESOLVED",
+  "target_rank": 22201
+}

@@ -254,3 +254,14 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Preview root `2,989,473`: explicit verified witness `93,058,096,395,323,907,653,285,057`, exact rank `2,989,473^2`.
 - Gate `139`: resolved; preview root `2,989,473` is promotion-ready, but Level 3 remains simulation-only.
 - Next never-worked Level-3 gate: `149`.
+
+## Gate 149 status
+
+- Target rank: `22,201 = 149^2`.
+- Explicit prime witness: `5,328,241`.
+- First hit: `k = 240` in `p = k*22,201 + 1`, after 8 admissible prime candidates.
+- Full recorded window: `k <= 200,000`; 4,773 admissible prime candidates; two verified hits.
+- Primitive quotient `P_22201 / P_149`: 8,441 decimal digits; both witnesses divide it exactly.
+- Preview root `8,443,383`: support `149` resolved, but gate `1453` remains unresolved.
+- Gate `149`: resolved; Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `157`.
