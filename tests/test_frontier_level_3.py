@@ -29,7 +29,7 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
     def test_resolved_gate_prefix(self):
         self.assertEqual(
             self.report["resolved_preview_gates"],
-            [13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103, 109, 131, 137, 139, 149, 163, 199, 227, 229],
+            [13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103, 109, 131, 137, 139, 149, 157, 163, 199, 227, 229],
         )
         self.assertEqual(self.report["next_unresolved_gate"], 47)
 
@@ -39,10 +39,10 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
             self.report["hard_unresolved_preview_gates"],
             [47, 71, 83, 101, 113],
         )
-        self.assertEqual(ACTIVE_UNRESOLVED_LEVEL3_GATES, {157})
+        self.assertEqual(ACTIVE_UNRESOLVED_LEVEL3_GATES, set())
         self.assertEqual(
             self.report["active_unresolved_preview_gates"],
-            [157],
+            [],
         )
         self.assertNotIn(157, self.report["unworked_preview_gates"])
         self.assertEqual(self.report["next_unworked_gate"], 233)
@@ -100,6 +100,14 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
         row = self.report["verified_gate_witnesses"]["163"]
         self.assertEqual(row["witness"], 2_247_896_813)
         self.assertEqual(row["kind"], "prime-direct")
+        self.assertTrue(row["prime_verified"])
+        self.assertTrue(row["exact_rank_verified"])
+
+    def test_gate_157_ecm_pocklington_method(self):
+        row = self.report["verified_gate_witnesses"]["157"]
+        self.assertEqual(row["witness"], 42_720_756_963_545_450_051_849)
+        self.assertEqual(row["kind"], "primitive-part-ecm-prime")
+        self.assertEqual(row["primitive_quotient"], "P_24649 / P_157")
         self.assertTrue(row["prime_verified"])
         self.assertTrue(row["exact_rank_verified"])
 
@@ -163,6 +171,9 @@ class FrontierLevel3PreviewTests(unittest.TestCase):
         self.assertEqual(by_root[4_276_191]["unresolved_prime_gates"], [18_043])
         self.assertFalse(by_root[8_443_383]["promotion_ready"])
         self.assertEqual(by_root[8_443_383]["unresolved_prime_gates"], [1_453])
+        self.assertFalse(by_root[432_849]["promotion_ready"])
+        self.assertEqual(by_root[432_849]["resolved_novel_support"], [157])
+        self.assertEqual(by_root[432_849]["unresolved_prime_gates"], [919])
 
     def test_gate_73_direct_method(self):
         row = self.report["verified_gate_witnesses"]["73"]

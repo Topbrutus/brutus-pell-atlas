@@ -1,7 +1,5 @@
 {
-  "active_unresolved_preview_gates": [
-    157
-  ],
+  "active_unresolved_preview_gates": [],
   "doors": [
     {
       "factorization": {
@@ -778,7 +776,9 @@
         919
       ],
       "promotion_ready": false,
-      "resolved_novel_support": [],
+      "resolved_novel_support": [
+        157
+      ],
       "root": 432849,
       "sources": [
         {
@@ -791,7 +791,6 @@
         }
       ],
       "unresolved_prime_gates": [
-        157,
         919
       ]
     },
@@ -4832,6 +4831,7 @@
     137,
     139,
     149,
+    157,
     163,
     199,
     227,
@@ -4853,7 +4853,6 @@
     83,
     101,
     113,
-    157,
     233,
     251,
     269,
@@ -5268,6 +5267,39 @@
       "prime_verified": true,
       "rank": 22201,
       "witness": 5328241
+    },
+    "157": {
+      "exact_rank_verified": true,
+      "kind": "primitive-part-ecm-prime",
+      "pocklington_certificate": {
+        "base": 3,
+        "factors": [
+          [
+            2,
+            3
+          ],
+          [
+            31,
+            1
+          ],
+          [
+            157,
+            2
+          ],
+          [
+            335957,
+            1
+          ],
+          [
+            20801960107,
+            1
+          ]
+        ]
+      },
+      "prime_verified": true,
+      "primitive_quotient": "P_24649 / P_157",
+      "rank": 24649,
+      "witness": 42720756963545450051849
     },
     "163": {
       "exact_rank_verified": true,

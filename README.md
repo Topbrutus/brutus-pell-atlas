@@ -301,9 +301,11 @@ See `GATE_149.md` and `reports/gate_149.json`.
 
 ## Gate 157
 
-Gate `157` is checkpointed as `ACTIVE_UNRESOLVED`: exact scanning now reaches `k = 10^10` with zero Pell-divisibility hits, and the exact 9,375-digit primitive quotient `P_24649 / P_157` has recorded light P-1/P+1 attempts with no factor.
+Gate `157` is resolved by the 23-digit prime witness `42,720,756,963,545,450,051,849`, a factor of the exact primitive quotient `P_24649 / P_157`. The witness has exact Pell rank `24,649 = 157^2`.
 
-This moves the Level-3 preview to the next never-worked gate, `163`, while keeping Gate 157 visible as an active computational frontier.
+The factor was discovered on curve 3 of a 12-curve GMP-ECM campaign at `B1 = 100,000`, `B2 = 10,000,000`. Because the witness exceeds 64 bits, the repository verifies its primality with an autonomous Pocklington certificate based on the complete factorization of `p-1`.
+
+Gate `157` resolves one support of preview root `432,849 = 3*157*919`; gate `919` remains unresolved, so the root is not promotion-ready.
 
 See `GATE_157.md` and `reports/gate_157_status.json`.
 

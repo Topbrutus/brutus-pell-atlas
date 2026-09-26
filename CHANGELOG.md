@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 157 with primitive-part ECM factor `42,720,756,963,545,450,051,849`.
+- Verifies `z_P(p)=24,649=157^2`, exact divisibility into the 9,375-digit primitive quotient, and a Pocklington primality certificate for the >64-bit witness.
+- Adds reusable Pocklington-certificate verification for future large witnesses; preview root `432,849` remains blocked only by gate `919`.
+
 - Resolves Level-3 preview Gate 229 with compiled-search prime witness 257,753,713,526,201 at k = 4,915,118,200.
 - Verifies exact rank `z_P(p)=52,441=229^2` and exact divisibility into the 19,986-digit primitive quotient `P_52441 / P_229`.
 - Marks preview root 4,809 promotion-ready, leaves root 8,008,342,512 blocked only by gate 728,561, and advances the next never-worked Level-3 gate to 233.
@@ -97,7 +101,7 @@
 - Adds verified mirror-root fibers for roots 3, 12, 21, and 24.
 - Expands the Rank Lattice to 16 verified nodes and gives every node at least one Pell square-rank witness.
 - Refreshes bridge discovery to 230 square-LCM products, 169 rank-preserving products, and 3 mirror hosts within the current curated dataset.
-- Expands regression coverage to 161 automated tests.
+- Expands regression coverage to 238 automated tests.
 - Adds a Mirror Frontier for roots 48 and 861 without auto-promoting them into the core lattice.
 - Verifies a prime witness for root 48 and a structured 648-digit witness for root 861.
 - Documents universal Pell-term witnesses `z_P(P_m)=m` and the fast exact-target verifier.

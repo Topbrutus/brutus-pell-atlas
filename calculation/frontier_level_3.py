@@ -7,13 +7,14 @@ from pathlib import Path
 from calculation.frontier_levels import is_prime_64, mirror_value, prime_factorization, prime_support
 from calculation.mirror_frontier import build_frontier, exact_rank_target
 from calculation.rank_lattice import closure_under_gcd_lcm
+from calculation.primality import verify_pocklington_certificate
 
 ROOT = Path(__file__).resolve().parents[1]
 REPORT_PATH = ROOT / "reports" / "frontier_level_3_preview.json"
 
 LEVEL2_ROOTS = [633, 2271, 4443, 8886, 67731]
 HARD_UNRESOLVED_LEVEL3_GATES = {47, 71, 83, 101, 113}
-ACTIVE_UNRESOLVED_LEVEL3_GATES = {157}
+ACTIVE_UNRESOLVED_LEVEL3_GATES = set()
 
 KNOWN_LEVEL3_GATE_WITNESSES = {
     13: {"witness": 1013, "kind": "preexisting-prime-direct"},
@@ -74,6 +75,21 @@ KNOWN_LEVEL3_GATE_WITNESSES = {
         "witness": 5_328_241,
         "kind": "prime-direct",
     },
+    157: {
+        "witness": 42_720_756_963_545_450_051_849,
+        "kind": "primitive-part-ecm-prime",
+        "primitive_quotient": "P_24649 / P_157",
+        "pocklington_certificate": {
+            "base": 3,
+            "factors": [
+                [2, 3],
+                [31, 1],
+                [157, 2],
+                [335_957, 1],
+                [20_801_960_107, 1],
+            ],
+        },
+    },
     163: {
         "witness": 2_247_896_813,
         "kind": "prime-direct",
@@ -91,6 +107,21 @@ KNOWN_LEVEL3_GATE_WITNESSES = {
         "kind": "compiled-prime-direct",
     },
 }
+
+
+def _verify_known_witness_prime(data: dict) -> bool:
+    witness = int(data["witness"])
+    cert = data.get("pocklington_certificate")
+    if cert is not None:
+        factors = [(int(q), int(e)) for q, e in cert["factors"]]
+        return verify_pocklington_certificate(
+            witness,
+            factors,
+            int(cert["base"]),
+        )
+    if witness >= 1 << 64:
+        return False
+    return is_prime_64(witness)
 
 def build_level_3_preview() -> dict:
     level1_promoted = build_frontier()["promotion_effect"]["promoted_nodes"]
@@ -132,7 +163,7 @@ def build_level_3_preview() -> dict:
         witness_checks[str(gate)] = {
             **data,
             "rank": target_rank,
-            "prime_verified": is_prime_64(witness),
+            "prime_verified": _verify_known_witness_prime(data),
             "exact_rank_verified": exact_rank_target(witness, target_rank),
         }
 

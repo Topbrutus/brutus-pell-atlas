@@ -111,3 +111,11 @@ reduces modulo `p` to `Q_n^2 = -1 (mod p)`. Therefore `-1` is a quadratic residu
 For odd square-rank gate targets `n = q^2`, this exact condition is applied in addition to the standard Lucas congruence `p = n*k +/- 1` with the sign matching `(8/p)`. Since `n = 1 (mod 8)` for the currently scanned odd prime gates, the surviving branch residues reduce to `k = 0 (mod 8)` for `+1` and `k = 6 (mod 8)` for `-1`.
 
 Historical scan counts are not recomputed retroactively; the stronger filter applies only to future scans.
+
+## Pocklington certificates for large witnesses
+
+The repository's deterministic Miller-Rabin implementation is intentionally scoped to 64-bit integers. When a verified Pell witness exceeds that range, the Atlas does not silently reuse the 64-bit guarantee.
+
+For a candidate prime `n`, `calculation/primality.py` can verify a Pocklington certificate from a known factored divisor `F` of `n-1`, requiring `F > sqrt(n)`. Each prime factor of `F` must itself be deterministically verified within 64 bits. The verifier checks `a^(n-1) = 1 (mod n)` and `gcd(a^((n-1)/q)-1,n)=1` for every distinct certified prime divisor `q` of `F`.
+
+Gate 157 uses a complete factorization of `p-1` and base `3`, providing an autonomous primality proof for its 23-digit witness.

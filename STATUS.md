@@ -83,10 +83,11 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Simulated closure: 326 nodes.
 - New mirror roots: 160.
 - Novel prime-support gates: 210.
-- Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103`.
-- Next unresolved preview gate: `47`.
+- Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43, 53, 59, 67, 73, 79, 103, 109, 131, 137, 139, 149, 157, 163, 199, 227, 229`.
 - Hard-unresolved preview gates: `47, 71, 83, 101, 113`.
-- Next never-worked preview gate: `139`.
+- Active-unresolved preview gates: none.
+- Next unresolved preview gate: `47`.
+- Next never-worked preview gate: `233`.
 - No Level-2 or Level-3 root is promoted into the core lattice by this preview.
 
 ## Gate 47 status
@@ -269,14 +270,17 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 ## Gate 157 status
 
 - Target rank: `24,649 = 157^2`.
-- Status: `ACTIVE_UNRESOLVED`, deliberately not yet `HARD_UNRESOLVED`.
+- Explicit prime witness: `42,720,756,963,545,450,051,849`.
+- Witness identity: `p = 1,733,163,899,693,514,952 * 24,649 + 1`, with `k ? 0 (mod 8)`.
 - Python scan: `k <= 200,000`; 4,725 admissible prime candidates; zero hits.
 - C/OpenMP scan: `200,001 <= k <= 10^10`; 247,573,895 small-prime-sieve survivors; zero Pell-divisibility hits.
-- Primitive quotient: `P_24649 / P_157`, 9,375 digits, SHA-256 `af8f60fea2efe11b26aa3d863d7bf2aac31b7e587830b539f3b572819d113621`.
-- FactorDB observation on 2026-09-25: status `U`; no nontrivial factor returned.
-- Light P-1 and P+1 attempts at `B1=50,000`: no factor.
+- Primitive quotient: `P_24649 / P_157`, 9,375 digits, SHA-256 `af8f60fea2efe11b26aa3d863d7bf2aac31b7e587830b539f3b572819d113621`; witness divides it exactly.
+- Discovery: GMP-ECM curve 3 (`sigma = 15,700,003`), `B1 = 100,000`, `B2 = 10,000,000`.
+- Primality: verified by a repository Pocklington certificate using the complete factorization `p-1 = 2^3 * 31 * 157^2 * 335957 * 20801960107` and base `3`.
+- Exact rank: verified by fast exact-target testing and the original iterative Pell-rank engine.
 - Affected preview root: `432,849 = 3*157*919`; gate `919` remains unresolved.
-- Next never-worked Level-3 gate: `163`.
+- Gate `157`: **resolved**; Level 3 remains simulation-only.
+- Next never-worked Level-3 gate: `233`.
 
 ## Gate 163 status
 

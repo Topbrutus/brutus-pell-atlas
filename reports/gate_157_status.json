@@ -1,5 +1,30 @@
 {
-  "boundary": "No hit in bounded scans and no factor in the recorded light P-1/P+1 attempts do not establish nonexistence. Gate 157 is worked but not yet classified as a hard computational frontier.",
+  "aborted_attempts": [
+    {
+      "B1": 1000000,
+      "B2": 100000000,
+      "audit_directory": "~/tools/gmp-ecm-local/gate157-ecm",
+      "completed_curves": 0,
+      "curves_started": 12,
+      "exit_statuses": [
+        143,
+        143,
+        143,
+        143,
+        143,
+        143,
+        143,
+        143,
+        143,
+        143,
+        143,
+        143
+      ],
+      "interpretation": "not counted as a negative factorization result",
+      "method": "ECM",
+      "status": "ABORTED_INCOMPLETE"
+    }
+  ],
   "compiled_pell_scan": {
     "end_k": 10000000000,
     "implementation": "calculation/gate_scan_compiled.c",
@@ -16,55 +41,141 @@
     "prime_candidates_tested": 4725,
     "start_k": 1
   },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 1733163899693514952,
+    "p": 42720756963545450051849,
+    "prime_proof": {
+      "base": 3,
+      "fully_factored_p_minus_1": true,
+      "method": "Pocklington",
+      "p_minus_1_factors": [
+        [
+          2,
+          3
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          157,
+          2
+        ],
+        [
+          335957,
+          1
+        ],
+        [
+          20801960107,
+          1
+        ]
+      ]
+    },
+    "prime_verified": true,
+    "sign": 1
+  },
   "factorization_attempts": [
     {
-      "B1": 50000,
-      "audit_log": "~/tools/gmp-ecm-local/gate157_pm1.log",
-      "effective_B2": 14856276,
+      "B1": 100000,
+      "B2": 10000000,
+      "audit_directory": "~/tools/gmp-ecm-local/gate157-pm1pp1",
       "exit_status": 0,
       "factor_found": false,
       "method": "P-1",
-      "runs": 1
+      "runs": 8
     },
     {
-      "B1": 50000,
-      "audit_log": "~/tools/gmp-ecm-local/gate157_pp1.log",
-      "effective_B2": 19411780,
+      "B1": 100000,
+      "B2": 10000000,
+      "audit_directory": "~/tools/gmp-ecm-local/gate157-pm1pp1",
       "exit_status": 0,
       "factor_found": false,
       "method": "P+1",
-      "runs": 1
+      "runs": 8
+    },
+    {
+      "B1": 250000,
+      "B2": 40000000,
+      "audit_directory": "~/tools/gmp-ecm-local/gate157-ecm250k",
+      "curves": 12,
+      "exit_statuses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "factor_found": false,
+      "method": "ECM",
+      "output_check": "all 12 normalized outputs equal the input primitive quotient",
+      "profile": "checkpoint-250k"
+    },
+    {
+      "B1": 100000,
+      "B2": 10000000,
+      "audit_directory": "~/tools/gmp-ecm-local/gate157-ecm-light",
+      "curves": 12,
+      "exit_statuses": [
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "factor": 42720756963545450051849,
+      "factor_curve": 3,
+      "factor_found": true,
+      "method": "ECM",
+      "profile": "factor-discovery-100k",
+      "sigma": 15700003
     }
   ],
-  "frontier_class": "ACTIVE_COMPUTATIONAL_FRONTIER",
   "known_theory": {
     "classification": "KNOWN_THEORY",
-    "consequence": "At least one prime p with z_P(p)=24649 exists.",
     "primitive_prime_divisor_existence": true
   },
   "level3_role": {
     "affected_preview_roots": [
       432849
     ],
-    "other_unresolved_support": {
+    "promotion_effect": "prime support 157 resolved; preview root 432849 still requires gate 919",
+    "remaining_other_gate_support": {
       "432849": [
         919
       ]
     }
   },
-  "name": "Brutus-Pell Gate 157 Status",
+  "name": "Brutus-Pell Gate 157",
+  "observation": "Gate 157 is an exact computational result inside the simulation-only Level-3 preview; it does not promote any root into the core lattice.",
   "primitive_part": {
     "decimal_digits": 9375,
     "exact_division_verified": true,
     "factordb_observation": {
-      "checked_date": "2026-09-25",
-      "nontrivial_factor_returned": false,
-      "status": "U"
+      "checked_date": "2026-09-26",
+      "nontrivial_factor_returned_at_check": false,
+      "status": "C"
     },
     "object": "P_24649 / P_157",
-    "sha256": "af8f60fea2efe11b26aa3d863d7bf2aac31b7e587830b539f3b572819d113621"
+    "sha256": "af8f60fea2efe11b26aa3d863d7bf2aac31b7e587830b539f3b572819d113621",
+    "witness_divides": true
   },
   "root": 157,
-  "status": "ACTIVE_UNRESOLVED",
+  "status": "RESOLVED",
   "target_rank": 24649
 }
