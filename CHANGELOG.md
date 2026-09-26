@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 67 with direct prime witness 454,134,173 at k = 101,166.
+- Verifies exact rank `z_P(454,134,173)=4489=67^2` and primitive-quotient divisibility.
+
 - Resolves Level-3 preview Gate 59 with direct prime witness 31,217,609 at k = 8,968.
 - Verifies exact rank `z_P(31,217,609)=3481=59^2` and divisibility into `P_3481 / P_59`.
 

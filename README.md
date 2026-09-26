@@ -214,3 +214,9 @@ Gate `47` remains hard-unresolved; Level 3 remains simulation-only. See `GATE_53
 Gate `59` is resolved by the direct prime witness `31,217,609`, found at `k = 8,968` and independently verified to have exact Pell rank `3481 = 59^2`.
 
 Level 3 remains simulation-only. See `GATE_59.md` and `reports/gate_59.json`.
+
+## Gate 67
+
+Gate `67` is resolved by direct prime witness `454,134,173` at `k = 101,166`, with exact Pell rank `4489 = 67^2`.
+
+See `GATE_67.md` and `reports/gate_67.json`.

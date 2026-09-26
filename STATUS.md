@@ -115,3 +115,12 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
 - Primitive quotient `P_3481 / P_59`: 1,310 digits; witness divides it exactly.
 - Gate `59`: resolved; affected preview roots still require other novel prime support.
+
+## Gate 67 status
+
+- Target rank: `4489 = 67^2`.
+- Explicit prime witness: `454,134,173`.
+- Direct-search hit: `k = 101,166` in `p = k*4489 - 1`.
+- Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
+- Primitive quotient `P_4489 / P_67`: 1,693 digits; witness divides it exactly.
+- Gate `67`: resolved; affected Level-3 preview roots still require other novel prime support.

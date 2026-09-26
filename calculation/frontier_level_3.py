@@ -35,6 +35,10 @@ KNOWN_LEVEL3_GATE_WITNESSES = {
         "witness": 31_217_609,
         "kind": "prime-direct",
     },
+    67: {
+        "witness": 454_134_173,
+        "kind": "prime-direct",
+    },
 }
 
 def build_level_3_preview() -> dict:
