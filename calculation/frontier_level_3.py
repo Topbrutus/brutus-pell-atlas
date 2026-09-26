@@ -43,6 +43,11 @@ KNOWN_LEVEL3_GATE_WITNESSES = {
         "witness": 159_869,
         "kind": "prime-direct",
     },
+    79: {
+        "witness": 2_266_870_750_557_409,
+        "kind": "primitive-part-pminus1-prime",
+        "primitive_quotient": "P_6241 / P_79",
+    },
 }
 
 def build_level_3_preview() -> dict:
@@ -66,11 +71,16 @@ def build_level_3_preview() -> dict:
         factors = prime_factorization(target)
         novel = sorted(set(factors) - support_before)
         novel_gates.update(novel)
+        resolved_support = sorted(p for p in novel if p in KNOWN_LEVEL3_GATE_WITNESSES)
+        unresolved_support = sorted(p for p in novel if p not in KNOWN_LEVEL3_GATE_WITNESSES)
         doors.append({
             "root": target,
             "factorization": {str(p): e for p, e in factors.items()},
             "sources": sources_by_target[target],
             "novel_prime_support": novel,
+            "resolved_novel_support": resolved_support,
+            "unresolved_prime_gates": unresolved_support,
+            "promotion_ready": len(unresolved_support) == 0,
         })
 
     witness_checks = {}
@@ -86,6 +96,7 @@ def build_level_3_preview() -> dict:
 
     resolved = sorted(set(novel_gates) & set(KNOWN_LEVEL3_GATE_WITNESSES))
     unresolved = sorted(set(novel_gates) - set(KNOWN_LEVEL3_GATE_WITNESSES))
+    ready_roots = sorted(d["root"] for d in doors if d["promotion_ready"])
     return {
         "name": "Brutus-Pell Frontier Level 3 Preview",
         "status": "SIMULATION_ONLY_NOT_PROMOTED",
@@ -102,6 +113,8 @@ def build_level_3_preview() -> dict:
         "resolved_preview_gates": resolved,
         "unresolved_preview_gates": unresolved,
         "next_unresolved_gate": unresolved[0] if unresolved else None,
+        "promotion_ready_root_count": len(ready_roots),
+        "promotion_ready_roots": ready_roots,
         "policy": (
             "Level 3 is a preview only. No Level-2 root or Level-3 mirror root is promoted "
             "into the core lattice by this report."

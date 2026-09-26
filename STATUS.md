@@ -138,6 +138,17 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - P-1/P+1 campaigns extended through `B1=1,000,000`, `B2=100,000,000`; no factor.
 - Status: `HARD_UNRESOLVED` / `DEEP_COMPUTATIONAL_FRONTIER`, never a nonexistence claim.
 
+## Gate 79 status
+
+- Target rank: `6241 = 79^2`.
+- Explicit prime witness: `2,266,870,750,557,409`.
+- Witness identity: `p = 363,222,360,288 * 6241 + 1`.
+- Primitive quotient: `P_6241 / P_79`, 2,359 decimal digits; witness divides it exactly.
+- Discovery: GMP-ECM P-1 with `B1=50,000`, `B2=10,000,000`, preloaded order factor `6241`.
+- Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
+- Level-3 preview root `711474` is now promotion-ready; `4276191` still requires gate `18043`.
+- Gate `79`: resolved; Level 3 remains simulation-only.
+
 ## Gate 73 status
 
 - Target rank: `5329 = 73^2`.

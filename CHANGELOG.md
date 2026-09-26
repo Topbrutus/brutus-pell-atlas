@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 79 with primitive-part P-1 prime witness 2,266,870,750,557,409.
+- Verifies exact rank `z_P(p)=6241=79^2` and exact divisibility into the 2,359-digit primitive quotient `P_6241 / P_79`.
+- Adds per-door resolved/unresolved prime-support state to the Level-3 preview; root 711474 becomes promotion-ready while root 4276191 remains blocked by gate 18043.
+
 - Resolves Level-3 preview Gate 73 with direct prime witness 159,869 at k = 30.
 - Verifies exact rank `z_P(159,869)=5329=73^2` and exact divisibility into the 2,012-digit primitive quotient `P_5329 / P_73`.
 - Records 3 admissible prime candidates to the first hit and 10,250 across the full k <= 200,000 window.

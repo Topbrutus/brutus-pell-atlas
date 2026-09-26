@@ -7,6 +7,8 @@
         "7": 1
       },
       "novel_prime_support": [],
+      "promotion_ready": true,
+      "resolved_novel_support": [],
       "root": 1344,
       "sources": [
         {
@@ -17,7 +19,8 @@
           "mirror_token": "01344",
           "source_root": 44310
         }
-      ]
+      ],
+      "unresolved_prime_gates": []
     },
     {
       "factorization": {
@@ -26,6 +29,8 @@
         "7": 2
       },
       "novel_prime_support": [],
+      "promotion_ready": true,
+      "resolved_novel_support": [],
       "root": 2352,
       "sources": [
         {
@@ -36,7 +41,8 @@
           "mirror_token": "02352",
           "source_root": 25320
         }
-      ]
+      ],
+      "unresolved_prime_gates": []
     },
     {
       "factorization": {
@@ -47,6 +53,8 @@
       "novel_prime_support": [
         409
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 2454,
       "sources": [
         {
@@ -57,6 +65,9 @@
           "mirror_token": "02454",
           "source_root": 45420
         }
+      ],
+      "unresolved_prime_gates": [
+        409
       ]
     },
     {
@@ -66,6 +77,8 @@
         "7": 1
       },
       "novel_prime_support": [],
+      "promotion_ready": true,
+      "resolved_novel_support": [],
       "root": 2688,
       "sources": [
         {
@@ -76,7 +89,8 @@
           "mirror_token": "02688",
           "source_root": 88620
         }
-      ]
+      ],
+      "unresolved_prime_gates": []
     },
     {
       "factorization": {
@@ -87,6 +101,8 @@
       "novel_prime_support": [
         307
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4605,
       "sources": [
         {
@@ -97,6 +113,9 @@
           "mirror_token": "04605",
           "source_root": 50640
         }
+      ],
+      "unresolved_prime_gates": [
+        307
       ]
     },
     {
@@ -108,6 +127,8 @@
       "novel_prime_support": [
         229
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4809,
       "sources": [
         {
@@ -118,6 +139,9 @@
           "mirror_token": "04809",
           "source_root": 90840
         }
+      ],
+      "unresolved_prime_gates": [
+        229
       ]
     },
     {
@@ -128,6 +152,8 @@
       "novel_prime_support": [
         2207
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 6621,
       "sources": [
         {
@@ -138,6 +164,9 @@
           "mirror_token": "06621",
           "source_root": 12660
         }
+      ],
+      "unresolved_prime_gates": [
+        2207
       ]
     },
     {
@@ -148,6 +177,8 @@
       "novel_prime_support": [
         3371
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 10113,
       "sources": [
         {
@@ -158,6 +189,9 @@
           "mirror_token": "010113",
           "source_root": 311010
         }
+      ],
+      "unresolved_prime_gates": [
+        3371
       ]
     },
     {
@@ -169,6 +203,8 @@
       "novel_prime_support": [
         3371
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 20226,
       "sources": [
         {
@@ -179,6 +215,9 @@
           "mirror_token": "020226",
           "source_root": 622020
         }
+      ],
+      "unresolved_prime_gates": [
+        3371
       ]
     },
     {
@@ -189,6 +228,8 @@
       "novel_prime_support": [
         9257
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 27771,
       "sources": [
         {
@@ -199,6 +240,9 @@
           "mirror_token": "027771",
           "source_root": 177720
         }
+      ],
+      "unresolved_prime_gates": [
+        9257
       ]
     },
     {
@@ -211,6 +255,10 @@
         53,
         269
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        53
+      ],
       "root": 42771,
       "sources": [
         {
@@ -221,6 +269,9 @@
           "mirror_token": "042771",
           "source_root": 177240
         }
+      ],
+      "unresolved_prime_gates": [
+        269
       ]
     },
     {
@@ -231,6 +282,8 @@
       "novel_prime_support": [
         14851
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 44553,
       "sources": [
         {
@@ -241,6 +294,9 @@
           "mirror_token": "044553",
           "source_root": 355440
         }
+      ],
+      "unresolved_prime_gates": [
+        14851
       ]
     },
     {
@@ -253,6 +309,10 @@
         73,
         227
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        73
+      ],
       "root": 49713,
       "sources": [
         {
@@ -263,6 +323,9 @@
           "mirror_token": "049713",
           "source_root": 317940
         }
+      ],
+      "unresolved_prime_gates": [
+        227
       ]
     },
     {
@@ -273,12 +336,17 @@
       "novel_prime_support": [
         21121
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 63363,
       "sources": [
         {
           "mirror_token": "63363",
           "source_root": 36336
         }
+      ],
+      "unresolved_prime_gates": [
+        21121
       ]
     },
     {
@@ -289,12 +357,17 @@
       "novel_prime_support": [
         23269
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 69807,
       "sources": [
         {
           "mirror_token": "69807",
           "source_root": 70896
         }
+      ],
+      "unresolved_prime_gates": [
+        23269
       ]
     },
     {
@@ -307,6 +380,10 @@
         43,
         619
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        43
+      ],
       "root": 79851,
       "sources": [
         {
@@ -317,6 +394,9 @@
           "mirror_token": "079851",
           "source_root": 158970
         }
+      ],
+      "unresolved_prime_gates": [
+        619
       ]
     },
     {
@@ -327,12 +407,17 @@
       "novel_prime_support": [
         27367
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 82101,
       "sources": [
         {
           "mirror_token": "82101",
           "source_root": 10128
         }
+      ],
+      "unresolved_prime_gates": [
+        27367
       ]
     },
     {
@@ -343,6 +428,8 @@
       "novel_prime_support": [
         28151
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 84453,
       "sources": [
         {
@@ -353,6 +440,9 @@
           "mirror_token": "084453",
           "source_root": 354480
         }
+      ],
+      "unresolved_prime_gates": [
+        28151
       ]
     },
     {
@@ -365,6 +455,10 @@
         23,
         1249
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        23
+      ],
       "root": 86181,
       "sources": [
         {
@@ -375,6 +469,9 @@
           "mirror_token": "086181",
           "source_root": 181680
         }
+      ],
+      "unresolved_prime_gates": [
+        1249
       ]
     },
     {
@@ -385,12 +482,17 @@
       "novel_prime_support": [
         29339
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 88017,
       "sources": [
         {
           "mirror_token": "88017",
           "source_root": 71088
         }
+      ],
+      "unresolved_prime_gates": [
+        29339
       ]
     },
     {
@@ -405,6 +507,11 @@
         17,
         31
       ],
+      "promotion_ready": true,
+      "resolved_novel_support": [
+        17,
+        31
+      ],
       "root": 88536,
       "sources": [
         {
@@ -415,7 +522,8 @@
           "mirror_token": "088536",
           "source_root": 635880
         }
-      ]
+      ],
+      "unresolved_prime_gates": []
     },
     {
       "factorization": {
@@ -425,6 +533,8 @@
       "novel_prime_support": [
         58727
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 176181,
       "sources": [
         {
@@ -435,6 +545,9 @@
           "mirror_token": "0176181",
           "source_root": 1816710
         }
+      ],
+      "unresolved_prime_gates": [
+        58727
       ]
     },
     {
@@ -448,6 +561,10 @@
         13,
         2333
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13
+      ],
       "root": 181974,
       "sources": [
         {
@@ -458,6 +575,9 @@
           "mirror_token": "0181974",
           "source_root": 4791810
         }
+      ],
+      "unresolved_prime_gates": [
+        2333
       ]
     },
     {
@@ -470,6 +590,10 @@
         23,
         3527
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        23
+      ],
       "root": 243363,
       "sources": [
         {
@@ -480,6 +604,9 @@
           "mirror_token": "0243363",
           "source_root": 3633420
         }
+      ],
+      "unresolved_prime_gates": [
+        3527
       ]
     },
     {
@@ -491,12 +618,17 @@
       "novel_prime_support": [
         21121
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 253452,
       "sources": [
         {
           "mirror_token": "253452",
           "source_root": 254352
         }
+      ],
+      "unresolved_prime_gates": [
+        21121
       ]
     },
     {
@@ -509,6 +641,8 @@
         281,
         313
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 263859,
       "sources": [
         {
@@ -519,6 +653,10 @@
           "mirror_token": "0263859",
           "source_root": 9583620
         }
+      ],
+      "unresolved_prime_gates": [
+        281,
+        313
       ]
     },
     {
@@ -529,6 +667,8 @@
       "novel_prime_support": [
         88177
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 264531,
       "sources": [
         {
@@ -539,6 +679,9 @@
           "mirror_token": "0264531",
           "source_root": 1354620
         }
+      ],
+      "unresolved_prime_gates": [
+        88177
       ]
     },
     {
@@ -551,6 +694,10 @@
         23,
         5431
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        23
+      ],
       "root": 374739,
       "sources": [
         {
@@ -561,6 +708,9 @@
           "mirror_token": "0374739",
           "source_root": 9374730
         }
+      ],
+      "unresolved_prime_gates": [
+        5431
       ]
     },
     {
@@ -571,6 +721,8 @@
       "novel_prime_support": [
         134807
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 404421,
       "sources": [
         {
@@ -581,6 +733,9 @@
           "mirror_token": "0404421",
           "source_root": 1244040
         }
+      ],
+      "unresolved_prime_gates": [
+        134807
       ]
     },
     {
@@ -593,6 +748,8 @@
       "novel_prime_support": [
         1277
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 429072,
       "sources": [
         {
@@ -603,6 +760,9 @@
           "mirror_token": "0429072",
           "source_root": 2709240
         }
+      ],
+      "unresolved_prime_gates": [
+        1277
       ]
     },
     {
@@ -615,6 +775,8 @@
         157,
         919
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 432849,
       "sources": [
         {
@@ -625,6 +787,10 @@
           "mirror_token": "0432849",
           "source_root": 9482340
         }
+      ],
+      "unresolved_prime_gates": [
+        157,
+        919
       ]
     },
     {
@@ -635,6 +801,8 @@
       "novel_prime_support": [
         162209
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 486627,
       "sources": [
         {
@@ -645,6 +813,9 @@
           "mirror_token": "0486627",
           "source_root": 7266840
         }
+      ],
+      "unresolved_prime_gates": [
+        162209
       ]
     },
     {
@@ -658,12 +829,19 @@
         17,
         6047
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        17
+      ],
       "root": 616794,
       "sources": [
         {
           "mirror_token": "616794",
           "source_root": 497616
         }
+      ],
+      "unresolved_prime_gates": [
+        6047
       ]
     },
     {
@@ -676,6 +854,10 @@
         17,
         13171
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        17
+      ],
       "root": 671721,
       "sources": [
         {
@@ -686,6 +868,9 @@
           "mirror_token": "0671721",
           "source_root": 1271760
         }
+      ],
+      "unresolved_prime_gates": [
+        13171
       ]
     },
     {
@@ -699,6 +884,11 @@
         19,
         79
       ],
+      "promotion_ready": true,
+      "resolved_novel_support": [
+        19,
+        79
+      ],
       "root": 711474,
       "sources": [
         {
@@ -709,7 +899,8 @@
           "mirror_token": "0711474",
           "source_root": 4741170
         }
-      ]
+      ],
+      "unresolved_prime_gates": []
     },
     {
       "factorization": {
@@ -720,6 +911,8 @@
       "novel_prime_support": [
         64763
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 777156,
       "sources": [
         {
@@ -730,6 +923,9 @@
           "mirror_token": "0777156",
           "source_root": 6517770
         }
+      ],
+      "unresolved_prime_gates": [
+        64763
       ]
     },
     {
@@ -741,6 +937,8 @@
       "novel_prime_support": [
         134807
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 808842,
       "sources": [
         {
@@ -751,6 +949,9 @@
           "mirror_token": "0808842",
           "source_root": 2488080
         }
+      ],
+      "unresolved_prime_gates": [
+        134807
       ]
     },
     {
@@ -762,6 +963,8 @@
       "novel_prime_support": [
         56543
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 848145,
       "sources": [
         {
@@ -772,6 +975,9 @@
           "mirror_token": "0848145",
           "source_root": 5418480
         }
+      ],
+      "unresolved_prime_gates": [
+        56543
       ]
     },
     {
@@ -784,6 +990,8 @@
       "novel_prime_support": [
         3371
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 1132656,
       "sources": [
         {
@@ -794,6 +1002,9 @@
           "mirror_token": "01132656",
           "source_root": 65623110
         }
+      ],
+      "unresolved_prime_gates": [
+        3371
       ]
     },
     {
@@ -804,6 +1015,8 @@
       "novel_prime_support": [
         471907
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 1415721,
       "sources": [
         {
@@ -814,6 +1027,9 @@
           "mirror_token": "01415721",
           "source_root": 12751410
         }
+      ],
+      "unresolved_prime_gates": [
+        471907
       ]
     },
     {
@@ -824,6 +1040,8 @@
       "novel_prime_support": [
         511211
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 1533633,
       "sources": [
         {
@@ -834,6 +1052,9 @@
           "mirror_token": "01533633",
           "source_root": 33633510
         }
+      ],
+      "unresolved_prime_gates": [
+        511211
       ]
     },
     {
@@ -845,6 +1066,8 @@
       "novel_prime_support": [
         173023
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 2076276,
       "sources": [
         {
@@ -855,6 +1078,9 @@
           "mirror_token": "02076276",
           "source_root": 67267020
         }
+      ],
+      "unresolved_prime_gates": [
+        173023
       ]
     },
     {
@@ -865,12 +1091,17 @@
       "novel_prime_support": [
         928619
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 2785857,
       "sources": [
         {
           "mirror_token": "2785857",
           "source_root": 7585872
         }
+      ],
+      "unresolved_prime_gates": [
+        928619
       ]
     },
     {
@@ -885,6 +1116,8 @@
         103,
         163
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 2820552,
       "sources": [
         {
@@ -895,6 +1128,10 @@
           "mirror_token": "02820552",
           "source_root": 25502820
         }
+      ],
+      "unresolved_prime_gates": [
+        103,
+        163
       ]
     },
     {
@@ -908,6 +1145,10 @@
         67,
         139
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        67
+      ],
       "root": 2989473,
       "sources": [
         {
@@ -918,6 +1159,9 @@
           "mirror_token": "02989473",
           "source_root": 37498920
         }
+      ],
+      "unresolved_prime_gates": [
+        139
       ]
     },
     {
@@ -930,6 +1174,10 @@
         79,
         18043
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        79
+      ],
       "root": 4276191,
       "sources": [
         {
@@ -940,6 +1188,9 @@
           "mirror_token": "04276191",
           "source_root": 19167240
         }
+      ],
+      "unresolved_prime_gates": [
+        18043
       ]
     },
     {
@@ -951,6 +1202,8 @@
       "novel_prime_support": [
         363173
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4358076,
       "sources": [
         {
@@ -961,6 +1214,9 @@
           "mirror_token": "04358076",
           "source_root": 67085340
         }
+      ],
+      "unresolved_prime_gates": [
+        363173
       ]
     },
     {
@@ -974,6 +1230,8 @@
         47,
         659
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4553031,
       "sources": [
         {
@@ -984,6 +1242,10 @@
           "mirror_token": "04553031",
           "source_root": 13035540
         }
+      ],
+      "unresolved_prime_gates": [
+        47,
+        659
       ]
     },
     {
@@ -996,6 +1258,8 @@
       "novel_prime_support": [
         7561
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4650015,
       "sources": [
         {
@@ -1006,6 +1270,9 @@
           "mirror_token": "04650015",
           "source_root": 51005640
         }
+      ],
+      "unresolved_prime_gates": [
+        7561
       ]
     },
     {
@@ -1016,6 +1283,8 @@
       "novel_prime_support": [
         1626649
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4879947,
       "sources": [
         {
@@ -1026,6 +1295,9 @@
           "mirror_token": "04879947",
           "source_root": 74997840
         }
+      ],
+      "unresolved_prime_gates": [
+        1626649
       ]
     },
     {
@@ -1038,6 +1310,8 @@
       "novel_prime_support": [
         2333
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 6124125,
       "sources": [
         {
@@ -1048,6 +1322,9 @@
           "mirror_token": "06124125",
           "source_root": 52142160
         }
+      ],
+      "unresolved_prime_gates": [
+        2333
       ]
     },
     {
@@ -1061,12 +1338,18 @@
         719,
         739
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 6376092,
       "sources": [
         {
           "mirror_token": "6376092",
           "source_root": 2906736
         }
+      ],
+      "unresolved_prime_gates": [
+        719,
+        739
       ]
     },
     {
@@ -1079,6 +1362,8 @@
         457,
         4663
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 6392973,
       "sources": [
         {
@@ -1089,6 +1374,10 @@
           "mirror_token": "06392973",
           "source_root": 37929360
         }
+      ],
+      "unresolved_prime_gates": [
+        457,
+        4663
       ]
     },
     {
@@ -1099,6 +1388,8 @@
       "novel_prime_support": [
         2164927
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 6494781,
       "sources": [
         {
@@ -1109,6 +1400,9 @@
           "mirror_token": "06494781",
           "source_root": 18749460
         }
+      ],
+      "unresolved_prime_gates": [
+        2164927
       ]
     },
     {
@@ -1121,12 +1415,19 @@
         13,
         178559
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13
+      ],
       "root": 6963801,
       "sources": [
         {
           "mirror_token": "6963801",
           "source_root": 1083696
         }
+      ],
+      "unresolved_prime_gates": [
+        178559
       ]
     },
     {
@@ -1137,12 +1438,17 @@
       "novel_prime_support": [
         2328889
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 6986667,
       "sources": [
         {
           "mirror_token": "6986667",
           "source_root": 7666896
         }
+      ],
+      "unresolved_prime_gates": [
+        2328889
       ]
     },
     {
@@ -1156,6 +1462,10 @@
         67,
         5419
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        67
+      ],
       "root": 7624533,
       "sources": [
         {
@@ -1166,6 +1476,9 @@
           "mirror_token": "07624533",
           "source_root": 33542670
         }
+      ],
+      "unresolved_prime_gates": [
+        5419
       ]
     },
     {
@@ -1177,6 +1490,8 @@
       "novel_prime_support": [
         1336177
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 8017062,
       "sources": [
         {
@@ -1187,6 +1502,9 @@
           "mirror_token": "08017062",
           "source_root": 26071080
         }
+      ],
+      "unresolved_prime_gates": [
+        1336177
       ]
     },
     {
@@ -1201,6 +1519,10 @@
         149,
         1453
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13
+      ],
       "root": 8443383,
       "sources": [
         {
@@ -1211,6 +1533,10 @@
           "mirror_token": "08443383",
           "source_root": 38334480
         }
+      ],
+      "unresolved_prime_gates": [
+        149,
+        1453
       ]
     },
     {
@@ -1224,6 +1550,10 @@
         53,
         7757
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        53
+      ],
       "root": 8633541,
       "sources": [
         {
@@ -1234,6 +1564,9 @@
           "mirror_token": "08633541",
           "source_root": 14533680
         }
+      ],
+      "unresolved_prime_gates": [
+        7757
       ]
     },
     {
@@ -1247,6 +1580,10 @@
         59,
         997
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        59
+      ],
       "root": 8646981,
       "sources": [
         {
@@ -1257,6 +1594,9 @@
           "mirror_token": "08646981",
           "source_root": 18964680
         }
+      ],
+      "unresolved_prime_gates": [
+        997
       ]
     },
     {
@@ -1267,6 +1607,8 @@
       "novel_prime_support": [
         7547377
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 22642131,
       "sources": [
         {
@@ -1277,6 +1619,9 @@
           "mirror_token": "022642131",
           "source_root": 131246220
         }
+      ],
+      "unresolved_prime_gates": [
+        7547377
       ]
     },
     {
@@ -1288,12 +1633,17 @@
       "novel_prime_support": [
         37097
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 23482401,
       "sources": [
         {
           "mirror_token": "23482401",
           "source_root": 10428432
         }
+      ],
+      "unresolved_prime_gates": [
+        37097
       ]
     },
     {
@@ -1305,12 +1655,17 @@
       "novel_prime_support": [
         1819109
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 27286635,
       "sources": [
         {
           "mirror_token": "27286635",
           "source_root": 53668272
         }
+      ],
+      "unresolved_prime_gates": [
+        1819109
       ]
     },
     {
@@ -1323,6 +1678,8 @@
         103,
         130859
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 40435431,
       "sources": [
         {
@@ -1333,6 +1690,10 @@
           "mirror_token": "040435431",
           "source_root": 134534040
         }
+      ],
+      "unresolved_prime_gates": [
+        103,
+        130859
       ]
     },
     {
@@ -1346,6 +1707,10 @@
         19,
         368141
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        19
+      ],
       "root": 41968074,
       "sources": [
         {
@@ -1356,6 +1721,9 @@
           "mirror_token": "041968074",
           "source_root": 470869140
         }
+      ],
+      "unresolved_prime_gates": [
+        368141
       ]
     },
     {
@@ -1367,6 +1735,8 @@
       "novel_prime_support": [
         7382377
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 44294262,
       "sources": [
         {
@@ -1377,6 +1747,9 @@
           "mirror_token": "044294262",
           "source_root": 262492440
         }
+      ],
+      "unresolved_prime_gates": [
+        7382377
       ]
     },
     {
@@ -1389,6 +1762,8 @@
         2311,
         7151
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 49577883,
       "sources": [
         {
@@ -1399,6 +1774,10 @@
           "mirror_token": "049577883",
           "source_root": 388775940
         }
+      ],
+      "unresolved_prime_gates": [
+        2311,
+        7151
       ]
     },
     {
@@ -1412,12 +1791,19 @@
         23,
         178643
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        23
+      ],
       "root": 61631835,
       "sources": [
         {
           "mirror_token": "61631835",
           "source_root": 53813616
         }
+      ],
+      "unresolved_prime_gates": [
+        178643
       ]
     },
     {
@@ -1429,6 +1815,8 @@
       "novel_prime_support": [
         10523977
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 63143862,
       "sources": [
         {
@@ -1439,6 +1827,9 @@
           "mirror_token": "063143862",
           "source_root": 268341360
         }
+      ],
+      "unresolved_prime_gates": [
+        10523977
       ]
     },
     {
@@ -1452,12 +1843,19 @@
         13,
         836159
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13
+      ],
       "root": 65220402,
       "sources": [
         {
           "mirror_token": "65220402",
           "source_root": 20402256
         }
+      ],
+      "unresolved_prime_gates": [
+        836159
       ]
     },
     {
@@ -1473,6 +1871,10 @@
         199,
         1019
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        31
+      ],
       "root": 75434532,
       "sources": [
         {
@@ -1483,6 +1885,10 @@
           "mirror_token": "075434532",
           "source_root": 235434570
         }
+      ],
+      "unresolved_prime_gates": [
+        199,
+        1019
       ]
     },
     {
@@ -1498,6 +1904,8 @@
         101,
         607
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 76327215,
       "sources": [
         {
@@ -1508,6 +1916,11 @@
           "mirror_token": "076327215",
           "source_root": 512723670
         }
+      ],
+      "unresolved_prime_gates": [
+        83,
+        101,
+        607
       ]
     },
     {
@@ -1522,6 +1935,10 @@
         103,
         8329
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        31
+      ],
       "root": 79783491,
       "sources": [
         {
@@ -1532,6 +1949,10 @@
           "mirror_token": "079783491",
           "source_root": 194387970
         }
+      ],
+      "unresolved_prime_gates": [
+        103,
+        8329
       ]
     },
     {
@@ -1550,6 +1971,11 @@
         47,
         137
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13,
+        23
+      ],
       "root": 80860962,
       "sources": [
         {
@@ -1560,6 +1986,10 @@
           "mirror_token": "080860962",
           "source_root": 269068080
         }
+      ],
+      "unresolved_prime_gates": [
+        47,
+        137
       ]
     },
     {
@@ -1570,6 +2000,8 @@
       "novel_prime_support": [
         27370067
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 82110201,
       "sources": [
         {
@@ -1580,6 +2012,9 @@
           "mirror_token": "082110201",
           "source_root": 102011280
         }
+      ],
+      "unresolved_prime_gates": [
+        27370067
       ]
     },
     {
@@ -1590,6 +2025,8 @@
       "novel_prime_support": [
         27612383
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 82837149,
       "sources": [
         {
@@ -1600,6 +2037,9 @@
           "mirror_token": "082837149",
           "source_root": 941738280
         }
+      ],
+      "unresolved_prime_gates": [
+        27612383
       ]
     },
     {
@@ -1610,6 +2050,8 @@
       "novel_prime_support": [
         28690477
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 86071431,
       "sources": [
         {
@@ -1620,6 +2062,9 @@
           "mirror_token": "086071431",
           "source_root": 134170680
         }
+      ],
+      "unresolved_prime_gates": [
+        28690477
       ]
     },
     {
@@ -1632,12 +2077,18 @@
         593,
         48679
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 86599941,
       "sources": [
         {
           "mirror_token": "86599941",
           "source_root": 14999568
         }
+      ],
+      "unresolved_prime_gates": [
+        593,
+        48679
       ]
     },
     {
@@ -1648,6 +2099,8 @@
       "novel_prime_support": [
         29385259
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 88155777,
       "sources": [
         {
@@ -1658,6 +2111,9 @@
           "mirror_token": "088155777",
           "source_root": 777551880
         }
+      ],
+      "unresolved_prime_gates": [
+        29385259
       ]
     },
     {
@@ -1669,6 +2125,8 @@
       "novel_prime_support": [
         1179859
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 88489425,
       "sources": [
         {
@@ -1679,6 +2137,9 @@
           "mirror_token": "088489425",
           "source_root": 524984880
         }
+      ],
+      "unresolved_prime_gates": [
+        1179859
       ]
     },
     {
@@ -1691,6 +2152,10 @@
         53,
         735239
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        53
+      ],
       "root": 116903001,
       "sources": [
         {
@@ -1701,6 +2166,9 @@
           "mirror_token": "0116903001",
           "source_root": 1003096110
         }
+      ],
+      "unresolved_prime_gates": [
+        735239
       ]
     },
     {
@@ -1714,6 +2182,10 @@
         23,
         1140949
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        23
+      ],
       "root": 157450962,
       "sources": [
         {
@@ -1724,6 +2196,9 @@
           "mirror_token": "0157450962",
           "source_root": 2690547510
         }
+      ],
+      "unresolved_prime_gates": [
+        1140949
       ]
     },
     {
@@ -1737,6 +2212,8 @@
         809,
         9463
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 160766907,
       "sources": [
         {
@@ -1747,6 +2224,10 @@
           "mirror_token": "0160766907",
           "source_root": 7096670610
         }
+      ],
+      "unresolved_prime_gates": [
+        809,
+        9463
       ]
     },
     {
@@ -1760,6 +2241,8 @@
         83,
         165383
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 205901835,
       "sources": [
         {
@@ -1770,6 +2253,10 @@
           "mirror_token": "0205901835",
           "source_root": 5381095020
         }
+      ],
+      "unresolved_prime_gates": [
+        83,
+        165383
       ]
     },
     {
@@ -1782,12 +2269,18 @@
         3371,
         21121
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 213596673,
       "sources": [
         {
           "mirror_token": "213596673",
           "source_root": 376695312
         }
+      ],
+      "unresolved_prime_gates": [
+        3371,
+        21121
       ]
     },
     {
@@ -1803,6 +2296,10 @@
         71,
         30781
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        17
+      ],
       "root": 222916002,
       "sources": [
         {
@@ -1813,6 +2310,10 @@
           "mirror_token": "0222916002",
           "source_root": 2006192220
         }
+      ],
+      "unresolved_prime_gates": [
+        71,
+        30781
       ]
     },
     {
@@ -1826,12 +2327,18 @@
         317,
         38609
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 257020113,
       "sources": [
         {
           "mirror_token": "257020113",
           "source_root": 311020752
         }
+      ],
+      "unresolved_prime_gates": [
+        317,
+        38609
       ]
     },
     {
@@ -1845,12 +2352,19 @@
         19,
         1222601
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        19
+      ],
       "root": 278753028,
       "sources": [
         {
           "mirror_token": "278753028",
           "source_root": 820357872
         }
+      ],
+      "unresolved_prime_gates": [
+        1222601
       ]
     },
     {
@@ -1863,6 +2377,8 @@
         709,
         205663
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 437445201,
       "sources": [
         {
@@ -1873,6 +2389,10 @@
           "mirror_token": "0437445201",
           "source_root": 1025447340
         }
+      ],
+      "unresolved_prime_gates": [
+        709,
+        205663
       ]
     },
     {
@@ -1886,6 +2406,10 @@
         19,
         975509
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        19
+      ],
       "root": 444832104,
       "sources": [
         {
@@ -1896,6 +2420,9 @@
           "mirror_token": "0444832104",
           "source_root": 4012384440
         }
+      ],
+      "unresolved_prime_gates": [
+        975509
       ]
     },
     {
@@ -1912,6 +2439,10 @@
         71,
         421
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13
+      ],
       "root": 498940572,
       "sources": [
         {
@@ -1922,6 +2453,10 @@
           "mirror_token": "0498940572",
           "source_root": 2750498940
         }
+      ],
+      "unresolved_prime_gates": [
+        71,
+        421
       ]
     },
     {
@@ -1935,6 +2470,10 @@
         53,
         2012173
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        53
+      ],
       "root": 639871014,
       "sources": [
         {
@@ -1945,6 +2484,9 @@
           "mirror_token": "0639871014",
           "source_root": 4101789360
         }
+      ],
+      "unresolved_prime_gates": [
+        2012173
       ]
     },
     {
@@ -1957,6 +2499,10 @@
         17,
         12877331
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        17
+      ],
       "root": 656743881,
       "sources": [
         {
@@ -1967,6 +2513,9 @@
           "mirror_token": "0656743881",
           "source_root": 1883476560
         }
+      ],
+      "unresolved_prime_gates": [
+        12877331
       ]
     },
     {
@@ -1981,6 +2530,10 @@
         431,
         40039
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13
+      ],
       "root": 673015551,
       "sources": [
         {
@@ -1991,6 +2544,10 @@
           "mirror_token": "0673015551",
           "source_root": 1555103760
         }
+      ],
+      "unresolved_prime_gates": [
+        431,
+        40039
       ]
     },
     {
@@ -2005,12 +2562,20 @@
         71,
         60209
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        53
+      ],
       "root": 679699401,
       "sources": [
         {
           "mirror_token": "679699401",
           "source_root": 104996976
         }
+      ],
+      "unresolved_prime_gates": [
+        71,
+        60209
       ]
     },
     {
@@ -2021,6 +2586,8 @@
       "novel_prime_support": [
         245727523
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 737182569,
       "sources": [
         {
@@ -2031,6 +2598,9 @@
           "mirror_token": "0737182569",
           "source_root": 9652817370
         }
+      ],
+      "unresolved_prime_gates": [
+        245727523
       ]
     },
     {
@@ -2043,6 +2613,8 @@
         293,
         852589
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 749425731,
       "sources": [
         {
@@ -2053,6 +2625,10 @@
           "mirror_token": "0749425731",
           "source_root": 1375249470
         }
+      ],
+      "unresolved_prime_gates": [
+        293,
+        852589
       ]
     },
     {
@@ -2065,6 +2641,8 @@
         1021,
         252289
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 772761207,
       "sources": [
         {
@@ -2075,6 +2653,10 @@
           "mirror_token": "0772761207",
           "source_root": 7021672770
         }
+      ],
+      "unresolved_prime_gates": [
+        1021,
+        252289
       ]
     },
     {
@@ -2087,6 +2669,10 @@
         17,
         16300367
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        17
+      ],
       "root": 831318717,
       "sources": [
         {
@@ -2097,6 +2683,9 @@
           "mirror_token": "0831318717",
           "source_root": 7178131380
         }
+      ],
+      "unresolved_prime_gates": [
+        16300367
       ]
     },
     {
@@ -2112,6 +2701,10 @@
         2039,
         4159
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        17
+      ],
       "root": 864980502,
       "sources": [
         {
@@ -2122,6 +2715,10 @@
           "mirror_token": "0864980502",
           "source_root": 2050894680
         }
+      ],
+      "unresolved_prime_gates": [
+        2039,
+        4159
       ]
     },
     {
@@ -2133,6 +2730,8 @@
       "novel_prime_support": [
         59199337
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 887990055,
       "sources": [
         {
@@ -2143,6 +2742,9 @@
           "mirror_token": "0887990055",
           "source_root": 5500997880
         }
+      ],
+      "unresolved_prime_gates": [
+        59199337
       ]
     },
     {
@@ -2154,6 +2756,8 @@
       "novel_prime_support": [
         9257023
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 888674208,
       "sources": [
         {
@@ -2164,6 +2768,9 @@
           "mirror_token": "0888674208",
           "source_root": 8024768880
         }
+      ],
+      "unresolved_prime_gates": [
+        9257023
       ]
     },
     {
@@ -2176,6 +2783,10 @@
         13,
         24759227
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13
+      ],
       "root": 965609853,
       "sources": [
         {
@@ -2186,6 +2797,9 @@
           "mirror_token": "0965609853",
           "source_root": 3589065690
         }
+      ],
+      "unresolved_prime_gates": [
+        24759227
       ]
     },
     {
@@ -2197,6 +2811,8 @@
       "novel_prime_support": [
         105444721
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 2214339141,
       "sources": [
         {
@@ -2207,6 +2823,9 @@
           "mirror_token": "02214339141",
           "source_root": 14193341220
         }
+      ],
+      "unresolved_prime_gates": [
+        105444721
       ]
     },
     {
@@ -2220,12 +2839,18 @@
         421,
         997597
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 2519930022,
       "sources": [
         {
           "mirror_token": "2519930022",
           "source_root": 2200399152
         }
+      ],
+      "unresolved_prime_gates": [
+        421,
+        997597
       ]
     },
     {
@@ -2237,6 +2862,8 @@
       "novel_prime_support": [
         425420297
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 2552521782,
       "sources": [
         {
@@ -2247,6 +2874,9 @@
           "mirror_token": "02552521782",
           "source_root": 28712525520
         }
+      ],
+      "unresolved_prime_gates": [
+        425420297
       ]
     },
     {
@@ -2259,6 +2889,8 @@
         31607,
         42281
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4009126701,
       "sources": [
         {
@@ -2269,6 +2901,10 @@
           "mirror_token": "04009126701",
           "source_root": 10762190040
         }
+      ],
+      "unresolved_prime_gates": [
+        31607,
+        42281
       ]
     },
     {
@@ -2283,12 +2919,18 @@
         251,
         30469
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4015052475,
       "sources": [
         {
           "mirror_token": "4015052475",
           "source_root": 5742505104
         }
+      ],
+      "unresolved_prime_gates": [
+        251,
+        30469
       ]
     },
     {
@@ -2301,6 +2943,8 @@
       "novel_prime_support": [
         18002717
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4428668382,
       "sources": [
         {
@@ -2311,6 +2955,9 @@
           "mirror_token": "04428668382",
           "source_root": 28386682440
         }
+      ],
+      "unresolved_prime_gates": [
+        18002717
       ]
     },
     {
@@ -2321,6 +2968,8 @@
       "novel_prime_support": [
         1518111347
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4554334041,
       "sources": [
         {
@@ -2331,6 +2980,9 @@
           "mirror_token": "04554334041",
           "source_root": 14043345540
         }
+      ],
+      "unresolved_prime_gates": [
+        1518111347
       ]
     },
     {
@@ -2341,6 +2993,8 @@
       "novel_prime_support": [
         1529445133
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4588335399,
       "sources": [
         {
@@ -2351,6 +3005,9 @@
           "mirror_token": "04588335399",
           "source_root": 99353388540
         }
+      ],
+      "unresolved_prime_gates": [
+        1529445133
       ]
     },
     {
@@ -2363,6 +3020,8 @@
         113,
         13993069
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4743650391,
       "sources": [
         {
@@ -2373,6 +3032,10 @@
           "mirror_token": "04743650391",
           "source_root": 19305634740
         }
+      ],
+      "unresolved_prime_gates": [
+        113,
+        13993069
       ]
     },
     {
@@ -2390,12 +3053,21 @@
         1033,
         3989
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13,
+        19
+      ],
       "root": 6106784034,
       "sources": [
         {
           "mirror_token": "6106784034",
           "source_root": 4304876016
         }
+      ],
+      "unresolved_prime_gates": [
+        1033,
+        3989
       ]
     },
     {
@@ -2407,6 +3079,8 @@
       "novel_prime_support": [
         408555811
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 6128337165,
       "sources": [
         {
@@ -2417,6 +3091,9 @@
           "mirror_token": "06128337165",
           "source_root": 56173382160
         }
+      ],
+      "unresolved_prime_gates": [
+        408555811
       ]
     },
     {
@@ -2431,6 +3108,8 @@
         293,
         74293
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 6726265341,
       "sources": [
         {
@@ -2441,6 +3120,11 @@
           "mirror_token": "06726265341",
           "source_root": 14356262760
         }
+      ],
+      "unresolved_prime_gates": [
+        103,
+        293,
+        74293
       ]
     },
     {
@@ -2453,6 +3137,10 @@
         73,
         30867169
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        73
+      ],
       "root": 6759910011,
       "sources": [
         {
@@ -2463,6 +3151,9 @@
           "mirror_token": "06759910011",
           "source_root": 11001995760
         }
+      ],
+      "unresolved_prime_gates": [
+        30867169
       ]
     },
     {
@@ -2481,12 +3172,22 @@
         83,
         1223
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13,
+        29,
+        59
+      ],
       "root": 6773594061,
       "sources": [
         {
           "mirror_token": "6773594061",
           "source_root": 1604953776
         }
+      ],
+      "unresolved_prime_gates": [
+        83,
+        1223
       ]
     },
     {
@@ -2499,6 +3200,10 @@
         29,
         80270371
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        29
+      ],
       "root": 6983522277,
       "sources": [
         {
@@ -2509,6 +3214,9 @@
           "mirror_token": "06983522277",
           "source_root": 77222538960
         }
+      ],
+      "unresolved_prime_gates": [
+        80270371
       ]
     },
     {
@@ -2524,6 +3232,8 @@
         701,
         2689
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 7249667694,
       "sources": [
         {
@@ -2534,6 +3244,11 @@
           "mirror_token": "07249667694",
           "source_root": 49676694270
         }
+      ],
+      "unresolved_prime_gates": [
+        641,
+        701,
+        2689
       ]
     },
     {
@@ -2547,6 +3262,8 @@
         229,
         728561
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 8008342512,
       "sources": [
         {
@@ -2557,6 +3274,10 @@
           "mirror_token": "08008342512",
           "source_root": 21524380080
         }
+      ],
+      "unresolved_prime_gates": [
+        229,
+        728561
       ]
     },
     {
@@ -2572,6 +3293,10 @@
         113,
         319687
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        37
+      ],
       "root": 8019668082,
       "sources": [
         {
@@ -2582,6 +3307,10 @@
           "mirror_token": "08019668082",
           "source_root": 28086691080
         }
+      ],
+      "unresolved_prime_gates": [
+        113,
+        319687
       ]
     },
     {
@@ -2592,6 +3321,8 @@
       "novel_prime_support": [
         2832070561
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 8496211683,
       "sources": [
         {
@@ -2602,6 +3333,9 @@
           "mirror_token": "08496211683",
           "source_root": 38611269480
         }
+      ],
+      "unresolved_prime_gates": [
+        2832070561
       ]
     },
     {
@@ -2615,6 +3349,8 @@
         10937,
         53923
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 8846337765,
       "sources": [
         {
@@ -2625,6 +3361,10 @@
           "mirror_token": "08846337765",
           "source_root": 56773364880
         }
+      ],
+      "unresolved_prime_gates": [
+        10937,
+        53923
       ]
     },
     {
@@ -2637,12 +3377,18 @@
         109,
         71766493
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 23467643211,
       "sources": [
         {
           "mirror_token": "23467643211",
           "source_root": 11234676432
         }
+      ],
+      "unresolved_prime_gates": [
+        109,
+        71766493
       ]
     },
     {
@@ -2655,12 +3401,18 @@
         8263,
         960173
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 23801728497,
       "sources": [
         {
           "mirror_token": "23801728497",
           "source_root": 79482710832
         }
+      ],
+      "unresolved_prime_gates": [
+        8263,
+        960173
       ]
     },
     {
@@ -2675,12 +3427,19 @@
         3851,
         15809
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 29770544451,
       "sources": [
         {
           "mirror_token": "29770544451",
           "source_root": 15444507792
         }
+      ],
+      "unresolved_prime_gates": [
+        163,
+        3851,
+        15809
       ]
     },
     {
@@ -2693,6 +3452,8 @@
       "novel_prime_support": [
         11363749
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 41761777575,
       "sources": [
         {
@@ -2703,6 +3464,9 @@
           "mirror_token": "041761777575",
           "source_root": 575777167140
         }
+      ],
+      "unresolved_prime_gates": [
+        11363749
       ]
     },
     {
@@ -2717,6 +3481,8 @@
         2053,
         284729
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 61377606885,
       "sources": [
         {
@@ -2727,6 +3493,10 @@
           "mirror_token": "061377606885",
           "source_root": 588606773160
         }
+      ],
+      "unresolved_prime_gates": [
+        2053,
+        284729
       ]
     },
     {
@@ -2739,6 +3509,8 @@
         227,
         90242753
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 61455314793,
       "sources": [
         {
@@ -2749,6 +3521,10 @@
           "mirror_token": "061455314793",
           "source_root": 397413554160
         }
+      ],
+      "unresolved_prime_gates": [
+        227,
+        90242753
       ]
     },
     {
@@ -2759,12 +3535,17 @@
       "novel_prime_support": [
         22642548437
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 67927645311,
       "sources": [
         {
           "mirror_token": "67927645311",
           "source_root": 11354672976
         }
+      ],
+      "unresolved_prime_gates": [
+        22642548437
       ]
     },
     {
@@ -2780,6 +3561,8 @@
         769,
         39761
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 72557343957,
       "sources": [
         {
@@ -2790,6 +3573,11 @@
           "mirror_token": "072557343957",
           "source_root": 759343755270
         }
+      ],
+      "unresolved_prime_gates": [
+        113,
+        769,
+        39761
       ]
     },
     {
@@ -2805,6 +3593,10 @@
         2347,
         314903
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        17
+      ],
       "root": 75385888782,
       "sources": [
         {
@@ -2815,6 +3607,10 @@
           "mirror_token": "075385888782",
           "source_root": 287888583570
         }
+      ],
+      "unresolved_prime_gates": [
+        2347,
+        314903
       ]
     },
     {
@@ -2829,6 +3625,8 @@
         389,
         528383
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 80777607891,
       "sources": [
         {
@@ -2839,6 +3637,11 @@
           "mirror_token": "080777607891",
           "source_root": 198706777080
         }
+      ],
+      "unresolved_prime_gates": [
+        131,
+        389,
+        528383
       ]
     },
     {
@@ -2856,6 +3659,11 @@
         479,
         7177
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        31,
+        67
+      ],
       "root": 85683303492,
       "sources": [
         {
@@ -2866,6 +3674,10 @@
           "mirror_token": "085683303492",
           "source_root": 294303386580
         }
+      ],
+      "unresolved_prime_gates": [
+        479,
+        7177
       ]
     },
     {
@@ -2878,6 +3690,8 @@
         863,
         35687969
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 92396151741,
       "sources": [
         {
@@ -2888,6 +3702,10 @@
           "mirror_token": "092396151741",
           "source_root": 147151693290
         }
+      ],
+      "unresolved_prime_gates": [
+        863,
+        35687969
       ]
     },
     {
@@ -2901,12 +3719,18 @@
         2311,
         1959263
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 217337126064,
       "sources": [
         {
           "mirror_token": "217337126064",
           "source_root": 460621733712
         }
+      ],
+      "unresolved_prime_gates": [
+        2311,
+        1959263
       ]
     },
     {
@@ -2921,6 +3745,8 @@
         3623,
         26891
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 236453127711,
       "sources": [
         {
@@ -2931,6 +3757,11 @@
           "mirror_token": "0236453127711",
           "source_root": 1177213546320
         }
+      ],
+      "unresolved_prime_gates": [
+        809,
+        3623,
+        26891
       ]
     },
     {
@@ -2942,6 +3773,8 @@
       "novel_prime_support": [
         17099951821
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 410398843704,
       "sources": [
         {
@@ -2952,6 +3785,9 @@
           "mirror_token": "0410398843704",
           "source_root": 4073488930140
         }
+      ],
+      "unresolved_prime_gates": [
+        17099951821
       ]
     },
     {
@@ -2962,6 +3798,8 @@
       "novel_prime_support": [
         150052622717
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 450157868151,
       "sources": [
         {
@@ -2972,6 +3810,9 @@
           "mirror_token": "0450157868151",
           "source_root": 1518687510540
         }
+      ],
+      "unresolved_prime_gates": [
+        150052622717
       ]
     },
     {
@@ -2983,12 +3824,17 @@
       "novel_prime_support": [
         38575603711
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 462907244532,
       "sources": [
         {
           "mirror_token": "462907244532",
           "source_root": 235442709264
         }
+      ],
+      "unresolved_prime_gates": [
+        38575603711
       ]
     },
     {
@@ -3004,6 +3850,10 @@
         2273,
         2641411
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        17
+      ],
       "root": 612400574706,
       "sources": [
         {
@@ -3014,6 +3864,10 @@
           "mirror_token": "0612400574706",
           "source_root": 6074750042160
         }
+      ],
+      "unresolved_prime_gates": [
+        2273,
+        2641411
       ]
     },
     {
@@ -3027,6 +3881,10 @@
         19,
         1444447397
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        19
+      ],
       "root": 658668013032,
       "sources": [
         {
@@ -3037,6 +3895,9 @@
           "mirror_token": "0658668013032",
           "source_root": 2303108668560
         }
+      ],
+      "unresolved_prime_gates": [
+        1444447397
       ]
     },
     {
@@ -3052,6 +3913,11 @@
         31,
         223163971
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        17,
+        31
+      ],
       "root": 705644476302,
       "sources": [
         {
@@ -3062,6 +3928,9 @@
           "mirror_token": "0705644476302",
           "source_root": 2036744465070
         }
+      ],
+      "unresolved_prime_gates": [
+        223163971
       ]
     },
     {
@@ -3074,6 +3943,8 @@
         293,
         911496857
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 801205737303,
       "sources": [
         {
@@ -3084,6 +3955,10 @@
           "mirror_token": "0801205737303",
           "source_root": 3037375021080
         }
+      ],
+      "unresolved_prime_gates": [
+        293,
+        911496857
       ]
     },
     {
@@ -3098,6 +3973,8 @@
         34369,
         568541
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 820687796418,
       "sources": [
         {
@@ -3108,6 +3985,10 @@
           "mirror_token": "0820687796418",
           "source_root": 8146977860280
         }
+      ],
+      "unresolved_prime_gates": [
+        34369,
+        568541
       ]
     },
     {
@@ -3122,6 +4003,10 @@
         601,
         12356801
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        37
+      ],
       "root": 824334551511,
       "sources": [
         {
@@ -3132,6 +4017,10 @@
           "mirror_token": "0824334551511",
           "source_root": 1151554334280
         }
+      ],
+      "unresolved_prime_gates": [
+        601,
+        12356801
       ]
     },
     {
@@ -3148,6 +4037,10 @@
         9473,
         34211
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        29
+      ],
       "root": 986826045135,
       "sources": [
         {
@@ -3158,6 +4051,10 @@
           "mirror_token": "0986826045135",
           "source_root": 5315406286890
         }
+      ],
+      "unresolved_prime_gates": [
+        9473,
+        34211
       ]
     },
     {
@@ -3172,12 +4069,20 @@
         73,
         742680709
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13,
+        73
+      ],
       "root": 2114411978523,
       "sources": [
         {
           "mirror_token": "2114411978523",
           "source_root": 3258791144112
         }
+      ],
+      "unresolved_prime_gates": [
+        742680709
       ]
     },
     {
@@ -3189,6 +4094,8 @@
       "novel_prime_support": [
         179933769377
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 2159205232524,
       "sources": [
         {
@@ -3199,6 +4106,9 @@
           "mirror_token": "02159205232524",
           "source_root": 42523250295120
         }
+      ],
+      "unresolved_prime_gates": [
+        179933769377
       ]
     },
     {
@@ -3212,12 +4122,19 @@
         13,
         8600734777
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13
+      ],
       "root": 2348000594121,
       "sources": [
         {
           "mirror_token": "2348000594121",
           "source_root": 1214950008432
         }
+      ],
+      "unresolved_prime_gates": [
+        8600734777
       ]
     },
     {
@@ -3231,12 +4148,18 @@
         233,
         3011087671
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 4209500564058,
       "sources": [
         {
           "mirror_token": "4209500564058",
           "source_root": 8504650059024
         }
+      ],
+      "unresolved_prime_gates": [
+        233,
+        3011087671
       ]
     },
     {
@@ -3247,6 +4170,8 @@
       "novel_prime_support": [
         2167585313087
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 6502755939261,
       "sources": [
         {
@@ -3257,6 +4182,9 @@
           "mirror_token": "06502755939261",
           "source_root": 16293955720560
         }
+      ],
+      "unresolved_prime_gates": [
+        2167585313087
       ]
     },
     {
@@ -3270,6 +4198,10 @@
         23,
         23819393537
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        23
+      ],
       "root": 6574152616212,
       "sources": [
         {
@@ -3280,6 +4212,9 @@
           "mirror_token": "06574152616212",
           "source_root": 21261625147560
         }
+      ],
+      "unresolved_prime_gates": [
+        23819393537
       ]
     },
     {
@@ -3292,6 +4227,8 @@
         277,
         10514466671
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 8737521803601,
       "sources": [
         {
@@ -3302,6 +4239,10 @@
           "mirror_token": "08737521803601",
           "source_root": 10630812573780
         }
+      ],
+      "unresolved_prime_gates": [
+        277,
+        10514466671
       ]
     },
     {
@@ -3317,6 +4258,10 @@
         827,
         193084253
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        73
+      ],
       "root": 69940136627178,
       "sources": [
         {
@@ -3327,6 +4272,10 @@
           "mirror_token": "069940136627178",
           "source_root": 871726631049960
         }
+      ],
+      "unresolved_prime_gates": [
+        827,
+        193084253
       ]
     },
     {
@@ -3339,6 +4288,8 @@
       "novel_prime_support": [
         2129178889727
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 89425513368534,
       "sources": [
         {
@@ -3349,6 +4300,9 @@
           "mirror_token": "089425513368534",
           "source_root": 435863315524980
         }
+      ],
+      "unresolved_prime_gates": [
+        2129178889727
       ]
     },
     {
@@ -3360,6 +4314,8 @@
       "novel_prime_support": [
         490977896561
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 94267756139712,
       "sources": [
         {
@@ -3370,6 +4326,9 @@
           "mirror_token": "094267756139712",
           "source_root": 217931657762490
         }
+      ],
+      "unresolved_prime_gates": [
+        490977896561
       ]
     },
     {
@@ -3388,6 +4347,10 @@
         569,
         255847
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [
+        13
+      ],
       "root": 299902623543471,
       "sources": [
         {
@@ -3398,6 +4361,12 @@
           "mirror_token": "0299902623543471",
           "source_root": 1743453262099920
         }
+      ],
+      "unresolved_prime_gates": [
+        101,
+        523,
+        569,
+        255847
       ]
     },
     {
@@ -3410,12 +4379,18 @@
         27059,
         6035136259
       ],
+      "promotion_ready": false,
+      "resolved_novel_support": [],
       "root": 489914256096843,
       "sources": [
         {
           "mirror_token": "489914256096843",
           "source_root": 348690652419984
         }
+      ],
+      "unresolved_prime_gates": [
+        27059,
+        6035136259
       ]
     }
   ],
@@ -3809,6 +4784,14 @@
     757,
     1481
   ],
+  "promotion_ready_root_count": 5,
+  "promotion_ready_roots": [
+    1344,
+    2352,
+    2688,
+    88536,
+    711474
+  ],
   "resolved_preview_gates": [
     13,
     17,
@@ -3821,7 +4804,8 @@
     53,
     59,
     67,
-    73
+    73,
+    79
   ],
   "simulated_closure_count": 326,
   "simulated_closure_max_node": 1743453262099920,
@@ -3836,7 +4820,6 @@
   "unresolved_preview_gates": [
     47,
     71,
-    79,
     83,
     101,
     103,
@@ -4119,6 +5102,14 @@
       "prime_verified": true,
       "rank": 5329,
       "witness": 159869
+    },
+    "79": {
+      "exact_rank_verified": true,
+      "kind": "primitive-part-pminus1-prime",
+      "prime_verified": true,
+      "primitive_quotient": "P_6241 / P_79",
+      "rank": 6241,
+      "witness": 2266870750557409
     }
   }
 }

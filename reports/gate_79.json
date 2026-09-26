@@ -1,0 +1,50 @@
+{
+  "direct_scan": {
+    "compiled_window": {
+      "end_k": 1000000000,
+      "pell_divisibility_hits": 0,
+      "prime_hits": 0,
+      "small_prime_sieve_survivors": 49243669,
+      "start_k": 1
+    },
+    "python_window": {
+      "end_k": 200000,
+      "hits": [],
+      "prime_candidates_tested": 10241,
+      "start_k": 1
+    }
+  },
+  "discovery": {
+    "B1": 50000,
+    "B2": 10000000,
+    "method": "GMP-ECM P-1",
+    "note": "Factor returned during quiet P-1 campaign before the planned P+1 campaign.",
+    "preloaded_order_factor": 6241,
+    "requested_runs": 10
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 363222360288,
+    "p": 2266870750557409,
+    "prime_verified": true,
+    "sign": 1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      711474,
+      4276191
+    ],
+    "newly_ready_preview_root": 711474,
+    "remaining_gate_for_4276191": 18043
+  },
+  "name": "Brutus-Pell Gate 79",
+  "primitive_part": {
+    "decimal_digits": 2359,
+    "factor_divides_primitive_quotient": true,
+    "object": "P_6241 / P_79"
+  },
+  "root": 79,
+  "status": "RESOLVED",
+  "target_rank": 6241
+}
