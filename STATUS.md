@@ -348,3 +348,13 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Preview root `4,209,500,564,058` remains blocked by gate `3,011,087,671`.
 - Gate `233`: **resolved**; Level 3 remains simulation-only.
 - Next never-worked Level-3 gate: `251`.
+
+## Gate 251 status
+
+- Target rank: `63,001 = 251^2`.
+- Direct Python scan through `k = 200,000`: 4,551 prime candidates, zero hits.
+- Compiled scan through `k = 10^10`: 246,749,264 sieve survivors, zero Pell-divisibility hits.
+- Primitive quotient `P_63001 / P_251`: 24,020 decimal digits.
+- Bounded P-1/P+1 checkpoints: no factor.
+- Classification: `HARD_UNRESOLVED / DEEP_COMPUTATIONAL_FRONTIER`.
+- Affected Level-3 preview root `4,015,052,475` also requires gate `30,469`.

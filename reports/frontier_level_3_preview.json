@@ -4407,7 +4407,8 @@
     71,
     83,
     101,
-    113
+    113,
+    251
   ],
   "name": "Brutus-Pell Frontier Level 3 Preview",
   "new_mirror_root_count": 160,
@@ -4574,7 +4575,7 @@
     489914256096843
   ],
   "next_unresolved_gate": 47,
-  "next_unworked_gate": 251,
+  "next_unworked_gate": 269,
   "novel_prime_gate_count": 210,
   "novel_prime_gates": [
     13,
@@ -5037,7 +5038,6 @@
     2167585313087
   ],
   "unworked_preview_gates": [
-    251,
     269,
     277,
     281,

@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Classifies Gate 251 as a hard-unresolved Level-3 computational frontier after scans through `k = 10^10`.
+- Records the 24,020-digit primitive quotient `P_63001 / P_251` and bounded P-1/P+1 checkpoints.
+
 - Resolves Level-3 preview Gate 233 with primitive-part P-1 prime witness `179,216,201,898,552,121`.
 - Verifies `z_P(p)=54,289=233^2`, exact divisibility into the 20,692-digit primitive quotient, and advances the next never-worked gate to 251.
 - Leaves preview root `4,209,500,564,058` blocked only by gate `3,011,087,671`.

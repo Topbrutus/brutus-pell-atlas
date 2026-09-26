@@ -1,0 +1,67 @@
+{
+  "boundary": "No hit in bounded scans and no factor in recorded P-1/P+1 campaigns do not establish nonexistence.",
+  "compiled_pell_scan": {
+    "end_k": 10000000000,
+    "implementation": "calculation/gate_scan_compiled.c",
+    "interpretation": "NO_PELL_DIVISIBILITY_HIT_THROUGH_K_1E10",
+    "largest_candidate_bound": 630010000000001,
+    "pell_divisibility_hits": 0,
+    "prime_hits": 0,
+    "small_prime_sieve_survivors": 246749264,
+    "start_k": 200001
+  },
+  "direct_scan": {
+    "end_k": 200000,
+    "hits": [],
+    "prime_candidates_tested": 4551,
+    "start_k": 1
+  },
+  "factorization_attempts": [
+    {
+      "B1": 20000,
+      "B2": 2000000,
+      "audit_directory": "~/tools/gmp-ecm-local/gate251-pm1pp1",
+      "exit_status": 0,
+      "factor_found": false,
+      "method": "P-1",
+      "output_check": "normalized output equals the input primitive quotient",
+      "runs": 4
+    },
+    {
+      "B1": 20000,
+      "B2": 2000000,
+      "audit_directory": "~/tools/gmp-ecm-local/gate251-pm1pp1",
+      "exit_status": 0,
+      "factor_found": false,
+      "method": "P+1",
+      "output_check": "normalized output equals the input primitive quotient",
+      "runs": 4
+    }
+  ],
+  "frontier_class": "DEEP_COMPUTATIONAL_FRONTIER",
+  "known_theory": {
+    "classification": "KNOWN_THEORY",
+    "consequence": "At least one prime p with z_P(p)=63001 exists.",
+    "primitive_prime_divisor_existence": true
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      4015052475
+    ],
+    "remaining_other_gate_support": {
+      "4015052475": [
+        30469
+      ]
+    }
+  },
+  "name": "Brutus-Pell Gate 251 Status",
+  "primitive_part": {
+    "decimal_digits": 24020,
+    "exact_division_verified": true,
+    "object": "P_63001 / P_251",
+    "sha256": "4b2b8068a367ec812b83cca2c05902a5768f0e36e24c71de6b79c2ffd24067d6"
+  },
+  "root": 251,
+  "status": "HARD_UNRESOLVED",
+  "target_rank": 63001
+}
