@@ -188,3 +188,11 @@ Gate `1481` is resolved by the explicit prime witness `13,169,009,631,553`, with
 All Level-2 prime-support gates are now resolved; promotion into the core lattice remains a separate decision.
 
 See `GATE_1481.md` and `reports/gate_1481_scan.json`.
+
+## Frontier Level 3 preview
+
+After closing Frontier Level 2, the next mirror expansion is kept as a simulation-only preview. The simulated gcd/lcm closure contains 326 nodes; mirroring it produces 160 roots outside that closure and 210 novel prime-support gates.
+
+Eight preview gates already have verified witnesses: `13, 17, 19, 23, 29, 31, 37, 43`. The next unresolved preview gate is `47`.
+
+See `reports/frontier_level_3_preview.json`.

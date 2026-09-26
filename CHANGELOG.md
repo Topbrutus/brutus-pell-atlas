@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Adds a simulation-only Frontier Level 3 preview: 326 closure nodes, 160 new mirror roots, and 210 novel prime-support gates.
+- Adds verified preview witnesses for gates 13, 17, 19, 23, 29, 31, 37, and 43.
+- Identifies 47 as the next unresolved Level-3 preview gate.
+
 - Adds the Signed Mirror Layer with fixed-width decimal reversal and independent sign operation.
 - Adds verified mirror-root fibers for roots 3, 12, 21, and 24.
 - Expands the Rank Lattice to 16 verified nodes and gives every node at least one Pell square-rank witness.

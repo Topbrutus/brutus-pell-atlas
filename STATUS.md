@@ -76,3 +76,13 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Level-2 root `8886`: explicit verified witness `7,782,884,692,247,823`.
 - Gate `1481`: resolved; core-lattice promotion remains a separate decision.
 - All Level-2 prime gates are resolved.
+
+## Frontier Level 3 preview status
+
+- Level 3 is `SIMULATION_ONLY_NOT_PROMOTED`.
+- Simulated closure: 326 nodes.
+- New mirror roots: 160.
+- Novel prime-support gates: 210.
+- Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43`.
+- Next unresolved preview gate: `47`.
+- No Level-2 or Level-3 root is promoted into the core lattice by this preview.
