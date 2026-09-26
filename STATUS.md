@@ -86,3 +86,14 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Verified preview gates: `13, 17, 19, 23, 29, 31, 37, 43`.
 - Next unresolved preview gate: `47`.
 - No Level-2 or Level-3 root is promoted into the core lattice by this preview.
+
+## Gate 47 status
+
+- Target rank: `2209 = 47^2`.
+- Known theory: a primitive prime divisor, hence an exact rank-2209 prime witness, exists.
+- Explicit witness: not yet found.
+- Direct scan: `k <= 1,000,000,000`; 37,316,974 admissible prime candidates tested; zero hits.
+- Primitive quotient: `P_2209 / P_47`, 828 decimal digits.
+- Archived factor-run outputs checked: 1,224; none differs from the input quotient.
+- Status: `HARD_UNRESOLVED`.
+- No Level-3 promotion is implied.

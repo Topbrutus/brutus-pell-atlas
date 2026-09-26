@@ -1,0 +1,59 @@
+{
+  "boundary": "Negative bounded searches and failed factorization campaigns do not establish nonexistence. Gate 47 remains unresolved only at the explicit-witness level.",
+  "direct_scan": {
+    "hits": [],
+    "interpretation": "NO_EXPLICIT_PRIME_WITNESS_IN_SCANNED_WINDOW",
+    "largest_candidate_bound": 2209000000001,
+    "max_k": 1000000000,
+    "prime_candidates_tested": 37316974,
+    "windows": [
+      {
+        "end_k": 200000,
+        "prime_candidates_tested": 10857,
+        "start_k": 1
+      },
+      {
+        "end_k": 100000000,
+        "prime_candidates_tested": 4065326,
+        "start_k": 200001
+      },
+      {
+        "end_k": 500000000,
+        "prime_candidates_tested": 15066870,
+        "start_k": 100000001
+      },
+      {
+        "end_k": 1000000000,
+        "prime_candidates_tested": 18173921,
+        "start_k": 500000001
+      }
+    ]
+  },
+  "known_theory": {
+    "classification": "KNOWN_THEORY",
+    "consequence": "At least one prime p with z_P(p)=2209 exists.",
+    "primitive_prime_divisor_existence": true
+  },
+  "name": "Brutus-Pell Gate 47 Status",
+  "primitive_part": {
+    "archived_factor_run_outputs": 1224,
+    "archived_output_counts": {
+      "ecm47_parallel": 48,
+      "ecm47_parallel_strong": 96,
+      "gate47-ecm-1m": 120,
+      "gate47-ecm250k": 240,
+      "gate47-pm1-1m": 120,
+      "gate47-pm1-250k": 240,
+      "gate47-pp1-1m": 120,
+      "gate47-pp1-250k": 240
+    },
+    "archived_outputs_different_from_input": 0,
+    "decimal_digits": 828,
+    "exact_division_verified": true,
+    "interpretation": "NO_FACTOR_FOUND_IN_ARCHIVED_CAMPAIGNS",
+    "object": "P_2209 / P_47"
+  },
+  "root": 47,
+  "status": "HARD_UNRESOLVED",
+  "target_rank": 2209
+}

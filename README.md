@@ -196,3 +196,9 @@ After closing Frontier Level 2, the next mirror expansion is kept as a simulatio
 Eight preview gates already have verified witnesses: `13, 17, 19, 23, 29, 31, 37, 43`. The next unresolved preview gate is `47`.
 
 See `reports/frontier_level_3_preview.json`.
+
+## Gate 47
+
+Gate `47` is the first hard unresolved gate in the Level-3 preview. Direct congruence scanning now covers `k <= 1,000,000,000` with 37,316,974 admissible prime candidates exactly tested and no hit. The primitive quotient `P_2209 / P_47` has 828 digits; 1,224 archived factor-run outputs record no nontrivial factor.
+
+Status: `HARD_UNRESOLVED`, not a nonexistence claim. See `GATE_47.md` and `reports/gate_47_status.json`.

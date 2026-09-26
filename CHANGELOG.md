@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Adds a formal Gate 47 hard-unresolved checkpoint.
+- Extends deterministic Gate 47 direct scanning through k = 1,000,000,000 with 37,316,974 admissible prime candidates tested and zero hits.
+- Records the 828-digit primitive quotient `P_2209 / P_47` and audits 1,224 archived factor-run outputs with no nontrivial factor recorded.
+
 - Adds a simulation-only Frontier Level 3 preview: 326 closure nodes, 160 new mirror roots, and 210 novel prime-support gates.
 - Adds verified preview witnesses for gates 13, 17, 19, 23, 29, 31, 37, and 43.
 - Identifies 47 as the next unresolved Level-3 preview gate.
