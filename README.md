@@ -354,3 +354,9 @@ See `GATE_233.md` and `reports/gate_233.json`.
 Gate `251` is classified `HARD_UNRESOLVED` in the simulation-only Level-3 preview. A direct/compiled scan found no Pell-divisibility hit through `k = 10^10`; the exact primitive quotient `P_63001 / P_251` has 24,020 digits, and bounded P-1/P+1 checkpoints found no factor.
 
 See `GATE_251.md` and `reports/gate_251_status.json`.
+
+## Gate 269
+
+Gate `269` is classified `HARD_UNRESOLVED` in the simulation-only Level-3 preview. Scans found no Pell-divisibility hit through `k = 10^10`; the exact primitive quotient `P_72361 / P_269` has 27,596 digits, and bounded P-1/P+1 checkpoints found no factor. Gate `269` is the only unresolved novel support in preview root `42,771`.
+
+See `GATE_269.md` and `reports/gate_269_status.json`.

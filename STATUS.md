@@ -358,3 +358,13 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Bounded P-1/P+1 checkpoints: no factor.
 - Classification: `HARD_UNRESOLVED / DEEP_COMPUTATIONAL_FRONTIER`.
 - Affected Level-3 preview root `4,015,052,475` also requires gate `30,469`.
+
+## Gate 269 status
+
+- Target rank: `72,361 = 269^2`.
+- Direct Python scan through `k = 200,000`: 4,529 prime candidates, zero hits.
+- Compiled scan through `k = 10^10`: 246,634,988 sieve survivors, zero Pell-divisibility hits.
+- Primitive quotient `P_72361 / P_269`: 27,596 decimal digits.
+- Bounded P-1/P+1 checkpoints: no factor.
+- Classification: `HARD_UNRESOLVED / DEEP_COMPUTATIONAL_FRONTIER`.
+- Preview root `42,771` has gate `53` already resolved and is blocked only by gate `269`.

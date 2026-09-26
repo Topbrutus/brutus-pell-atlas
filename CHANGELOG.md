@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Classifies Gate 269 as a hard-unresolved Level-3 computational frontier after scans through `k = 10^10`.
+- Records the 27,596-digit primitive quotient `P_72361 / P_269` and bounded P-1/P+1 checkpoints.
+- Notes that Gate 269 is the final unresolved novel support for preview root `42,771`.
+
 - Classifies Gate 251 as a hard-unresolved Level-3 computational frontier after scans through `k = 10^10`.
 - Records the 24,020-digit primitive quotient `P_63001 / P_251` and bounded P-1/P+1 checkpoints.
 
