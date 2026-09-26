@@ -208,3 +208,9 @@ Status: `HARD_UNRESOLVED`, not a nonexistence claim. See `GATE_47.md` and `repor
 Gate `53` is resolved by the prime witness `13,747,841,783,933,689`, extracted from the exact primitive quotient `P_2809 / P_53` by GMP-ECM P-1. Its exact Pell rank is `2809 = 53^2`.
 
 Gate `47` remains hard-unresolved; Level 3 remains simulation-only. See `GATE_53.md` and `reports/gate_53.json`.
+
+## Gate 59
+
+Gate `59` is resolved by the direct prime witness `31,217,609`, found at `k = 8,968` and independently verified to have exact Pell rank `3481 = 59^2`.
+
+Level 3 remains simulation-only. See `GATE_59.md` and `reports/gate_59.json`.

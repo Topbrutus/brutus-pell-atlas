@@ -1,0 +1,37 @@
+{
+  "direct_scan": {
+    "first_hit": {
+      "k": 8968,
+      "p": 31217609,
+      "sign": 1
+    },
+    "first_hit_k": 8968,
+    "reported_prime_candidates_tested": 10517,
+    "search_cap": 200000,
+    "start_k": 1
+  },
+  "explicit_prime_witness": {
+    "exact_rank_verified": true,
+    "identity_verified": true,
+    "k": 8968,
+    "p": 31217609,
+    "prime_verified": true,
+    "sign": 1
+  },
+  "level3_role": {
+    "affected_preview_roots": [
+      8646981,
+      6773594061
+    ],
+    "promotion_effect": "prime support 59 resolved; affected roots still require other novel gates"
+  },
+  "name": "Brutus-Pell Gate 59",
+  "primitive_part": {
+    "decimal_digits": 1310,
+    "factor_divides_primitive_quotient": true,
+    "object": "P_3481 / P_59"
+  },
+  "root": 59,
+  "status": "RESOLVED",
+  "target_rank": 3481
+}

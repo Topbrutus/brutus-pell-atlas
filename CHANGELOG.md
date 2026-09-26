@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Resolves Level-3 preview Gate 59 with direct prime witness 31,217,609 at k = 8,968.
+- Verifies exact rank `z_P(31,217,609)=3481=59^2` and divisibility into `P_3481 / P_59`.
+
 - Resolves Level-3 preview Gate 53 with prime witness 13,747,841,783,933,689 from the primitive quotient `P_2809 / P_53`.
 - Records the GMP-ECM P-1 stage-2 discovery and independent exact-rank verification `z_P(p)=2809=53^2`.
 

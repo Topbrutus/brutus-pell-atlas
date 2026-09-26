@@ -106,3 +106,12 @@ A visually or numerically striking relation is not upgraded to a theorem or phys
 - Discovery: GMP-ECM P-1, stage 2, `B1=50,000`, effective `B2=6,303,568`, preloaded order factor `2809`.
 - Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
 - Gate `53`: resolved; affected Level-3 preview roots still require other novel prime support.
+
+## Gate 59 status
+
+- Target rank: `3481 = 59^2`.
+- Explicit prime witness: `31,217,609`.
+- Direct-search hit: `k = 8,968` in `p = k*3481 + 1`.
+- Exact rank: verified by fast modular target testing and the original iterative Pell-rank engine.
+- Primitive quotient `P_3481 / P_59`: 1,310 digits; witness divides it exactly.
+- Gate `59`: resolved; affected preview roots still require other novel prime support.
