@@ -16,8 +16,12 @@ from calculation.derived_laws import (
     prime_rank_and_lift_depth,
     rank_lcm,
     square_cover_root,
+    odd_square_gate_coordinates,
+    odd_square_gate_rail_ok,
+    divides_primitive_square_quotient,
 )
 from calculation.pell_atlas import pell_rank
+from calculation.frontier_level_3 import KNOWN_LEVEL3_GATE_WITNESSES
 
 
 class BrutusPellDerivedLawTests(unittest.TestCase):
@@ -105,6 +109,28 @@ class BrutusPellDerivedLawTests(unittest.TestCase):
         z31 = pell_rank(31, 30)
         self.assertEqual(z31, 30)
         self.assertEqual(p_valuation(pell_number(z31), 31), 2)
+
+
+    def test_all_known_level3_prime_witnesses_follow_gate8_rails(self):
+        checked = 0
+        for root, data in sorted(KNOWN_LEVEL3_GATE_WITNESSES.items()):
+            witness = int(data["witness"])
+            k, sign = odd_square_gate_coordinates(root, witness)
+            self.assertEqual(witness, k * root * root + sign)
+            self.assertTrue(odd_square_gate_rail_ok(root, witness))
+            if sign == 1:
+                self.assertEqual(k % 8, 0)
+                self.assertEqual(witness % 8, 1)
+            else:
+                self.assertEqual(k % 8, 6)
+                self.assertEqual(witness % 8, 5)
+            checked += 1
+        self.assertEqual(checked, 25)
+
+    def test_selected_gate_witnesses_divide_primitive_square_quotients(self):
+        for root in (13, 17, 23, 29, 37, 43, 73):
+            witness = int(KNOWN_LEVEL3_GATE_WITNESSES[root]["witness"])
+            self.assertTrue(divides_primitive_square_quotient(root, witness))
 
 
 if __name__ == "__main__":

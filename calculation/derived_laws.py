@@ -106,3 +106,68 @@ def absorbed_rank(host_rank: int, added_rank: int) -> bool:
     if host_rank < 1 or added_rank < 1:
         raise ValueError("ranks must be positive")
     return lcm(host_rank, added_rank) == host_rank
+
+
+def legendre_2_symbol_for_odd_candidate(p: int) -> int:
+    """Return (2/p) from the odd prime-candidate residue modulo 8."""
+    if p <= 2 or p % 2 == 0:
+        raise ValueError("p must be odd and > 2")
+    residue = p % 8
+    if residue in (1, 7):
+        return 1
+    if residue in (3, 5):
+        return -1
+    raise AssertionError("unreachable odd residue")
+
+
+def odd_square_gate_coordinates(root: int, witness: int) -> tuple[int, int]:
+    """
+    For odd root q and a prime witness p of target rank q^2, recover
+    p = k*q^2 + sign using sign=(2/p).
+    """
+    if root < 1 or root % 2 == 0:
+        raise ValueError("root must be positive and odd")
+    if witness <= 2 or witness % 2 == 0:
+        raise ValueError("witness must be odd and > 2")
+    sign = legendre_2_symbol_for_odd_candidate(witness)
+    target = root * root
+    numerator = witness - sign
+    if numerator % target:
+        raise ValueError("witness is not on a q^2 congruence rail")
+    return numerator // target, sign
+
+
+def odd_square_gate_rail_ok(root: int, witness: int) -> bool:
+    """
+    Exact Gate-8 rail used for odd square target ranks:
+
+      sign=+1 -> k == 0 (mod 8), p == 1 (mod 8)
+      sign=-1 -> k == 6 (mod 8), p == 5 (mod 8)
+    """
+    try:
+        k, sign = odd_square_gate_coordinates(root, witness)
+    except ValueError:
+        return False
+    if witness % 4 != 1:
+        return False
+    if sign == 1:
+        return witness % 8 == 1 and k % 8 == 0
+    return witness % 8 == 5 and k % 8 == 6
+
+
+def primitive_square_quotient(root: int) -> int:
+    """Return the exact quotient P_(root^2) / P_root."""
+    if root < 1:
+        raise ValueError("root must be positive")
+    numerator = pell_number(root * root)
+    denominator = pell_number(root)
+    quotient, remainder = divmod(numerator, denominator)
+    if remainder:
+        raise AssertionError("P_root must divide P_(root^2)")
+    return quotient
+
+
+def divides_primitive_square_quotient(root: int, witness: int) -> bool:
+    if witness < 2:
+        raise ValueError("witness must be >= 2")
+    return primitive_square_quotient(root) % witness == 0

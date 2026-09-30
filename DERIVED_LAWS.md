@@ -201,3 +201,78 @@ The p-adic Lucas-sequence framework underlying L1 is standard. Relevant starting
 - P. K. Ray, N. Irmak, B. K. Patel, *The rank of apparition of powers of Lucas sequence*, Turkish Journal of Mathematics 42 (2018), DOI: `10.3906/mat-1705-116`.
 
 A dedicated bibliography review is still required before any novelty statement or formal publication of this layer.
+
+---
+
+## L5 — Odd Square Gate-8 Congruence Rails
+
+Let `q` be odd and suppose a prime `p` has exact Pell rank
+
+`z_P(p)=q^2`.
+
+The Lucas rank congruence forces
+
+`q^2 | p-(2/p)`,
+
+where `(2/p)` is the Legendre symbol.
+
+Since `q^2` is odd, the Pell identity at odd index also forces `p=1 (mod 4)`. Combining these conditions with the modulo-8 formula for `(2/p)` leaves exactly two rails:
+
+`p = k q^2 + 1` with `k = 0 (mod 8)`,
+
+or
+
+`p = k q^2 - 1` with `k = 6 (mod 8)`.
+
+Equivalently:
+
+- plus rail: `p = 1 (mod 8)`, `k = 0 (mod 8)`;
+- minus rail: `p = 5 (mod 8)`, `k = 6 (mod 8)`.
+
+**Status:** `KNOWN_THEORY / DERIVED_RELATION`.
+
+### Current Atlas verification
+
+All **25** stored resolved Level-3 prime witnesses obey one of the two rails exactly.
+
+Examples:
+
+- gate 13: `1013 = 6*13^2 - 1`;
+- gate 37: `1566137 = 1144*37^2 + 1`;
+- gate 139: `12635933 = 654*139^2 - 1`;
+- gate 227: `309173 = 6*227^2 - 1`.
+
+This is the mathematical reason the direct gate scanner can reject most `(k,sign)` pairs before primality or Pell-divisibility testing.
+
+---
+
+## L6 — Primitive-Quotient Containment
+
+If a prime witness satisfies
+
+`z_P(p)=q^2`
+
+with `q>=1`, then `p` divides `P_(q^2)` but does not divide `P_q`, because its first appearance is at `q^2>q`.
+
+Since the Pell sequence is a divisibility sequence and `q | q^2`,
+
+`P_q | P_(q^2)`.
+
+Therefore
+
+`p | P_(q^2) / P_q`.
+
+**Status:** `KNOWN_THEORY / DERIVED_RELATION`.
+
+The repository adds direct quotient-divisibility checks for selected resolved gates `13,17,23,29,37,43,73`; many deeper gate modules already independently record the same primitive-quotient condition.
+
+### Two-key gate strategy
+
+L5 and L6 give two independent search routes for a square gate `q`:
+
+1. **Congruence route:** search only the Gate-8 rails `p=kq^2 +/- 1`.
+2. **Primitive route:** factor the exact quotient `P_(q^2)/P_q`.
+
+A valid prime witness discovered by either route is then sent through exact rank verification.
+
+This formalizes the search pattern already used successfully by the Atlas for direct witnesses and for difficult gates resolved through P-1/P+1/ECM factorization.
