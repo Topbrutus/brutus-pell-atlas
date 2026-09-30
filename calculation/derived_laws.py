@@ -205,3 +205,31 @@ def bounded_gate8_witness_lower_bound(root: int, scanned_through_k: int) -> int:
     minus_candidate = km * target - 1
     plus_candidate = kp * target + 1
     return min(minus_candidate, plus_candidate)
+
+def prime_square_quotient_congruence(root: int) -> tuple[int, int, int]:
+    """Return (P_q, Q_q mod P_q, expected residue) for odd prime q."""
+    if root == 2 or not is_prime_trial(root):
+        raise ValueError("root must be an odd prime")
+    p_root = pell_number(root)
+    quotient = primitive_square_quotient(root)
+    sign = -1 if ((root - 1) // 2) % 2 else 1
+    expected = (sign * root) % p_root
+    return p_root, quotient % p_root, expected
+
+def prime_square_quotient_coprime(root: int) -> bool:
+    if root == 2 or not is_prime_trial(root):
+        raise ValueError("root must be an odd prime")
+    return gcd(pell_number(root), primitive_square_quotient(root)) == 1
+
+def quotient_factor_is_exact_square_rank_witness(root: int, factor: int) -> bool:
+    """Verify the L8 consequence for a concrete prime quotient factor."""
+    if root == 2 or not is_prime_trial(root):
+        raise ValueError("root must be an odd prime")
+    if factor < 3 or not is_prime_trial(factor):
+        return False
+    quotient = primitive_square_quotient(root)
+    if quotient % factor != 0:
+        return False
+    if pell_number(root) % factor == 0:
+        return False
+    return pell_rank(factor, root * root) == root * root

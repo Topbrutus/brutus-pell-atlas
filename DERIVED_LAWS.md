@@ -332,3 +332,42 @@ For the current hard gates:
 | 269 | 72361 | 723,610,000,434,165 |
 
 The A1 continuation scan further raises the finite bound for q = 47,71,83 from `K=10^10` to `K=10,000,100,000`; those updated per-gate bounds can be regenerated mechanically with the same formula.
+
+---
+
+## L8 — Prime-Square Quotient Witness Equivalence
+
+Let `q` be an odd prime and define
+
+`Q_q = P_(q^2) / P_q`.
+
+The Pell/Lucas divisibility congruence gives
+
+`Q_q ≡ (-1)^((q-1)/2) q (mod P_q)`.
+
+The prime-index Pell congruence also gives
+
+`P_q ≡ (2/q) (mod q)`,
+
+so `q` does not divide `P_q`. Therefore
+
+`gcd(P_q,Q_q)=1`.
+
+Now let `p` be a prime divisor of `Q_q`. Then `p | P_(q^2)` but `p` does not divide `P_q`. Hence `z_P(p)` divides `q^2` but does not divide `q`. Since q is prime, the only remaining divisor is `q^2`.
+
+Therefore:
+
+**every prime factor of Q_q is an exact Pell-rank q^2 witness.**
+
+**Status:** `KNOWN_THEORY / DERIVED_RELATION`.
+
+Operationally, for hard prime-root gates such as `47,71,83,101,113,251,269`, any prime factor obtained from `P_(q^2)/P_q` is already in the exact target fiber.
+
+Regression anchors:
+
+- q=3: 197 has rank 9;
+- q=5: 1549 and 29201 have rank 25;
+- q=7: 293 and 40710764977973 have rank 49;
+- q=13: 1013 has rank 169.
+
+The repository also verifies the quotient congruence and coprimality for every odd prime q<50.

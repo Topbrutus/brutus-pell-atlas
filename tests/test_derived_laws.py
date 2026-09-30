@@ -21,6 +21,9 @@ from calculation.derived_laws import (
     divides_primitive_square_quotient,
     next_gate8_k_after,
     bounded_gate8_witness_lower_bound,
+    prime_square_quotient_congruence,
+    prime_square_quotient_coprime,
+    quotient_factor_is_exact_square_rank_witness,
 )
 from calculation.pell_atlas import pell_rank
 from calculation.frontier_level_3 import KNOWN_LEVEL3_GATE_WITNESSES
@@ -154,6 +157,27 @@ class BrutusPellDerivedLawTests(unittest.TestCase):
         for root, bound in expected.items():
             self.assertEqual(bounded_gate8_witness_lower_bound(root, K), bound)
 
+    def test_prime_square_quotient_congruence_for_odd_primes_below_50(self):
+        checked = 0
+        for q in odd_primes_below(50):
+            p_q, observed, expected = prime_square_quotient_congruence(q)
+            self.assertEqual(observed, expected)
+            self.assertEqual(gcd(p_q, q), 1)
+            self.assertTrue(prime_square_quotient_coprime(q))
+            checked += 1
+        self.assertEqual(checked, 14)
+
+    def test_known_quotient_prime_factors_are_exact_square_rank_witnesses(self):
+        examples = [
+            (3, 197),
+            (5, 1549),
+            (5, 29201),
+            (7, 293),
+            (7, 40710764977973),
+            (13, 1013),
+        ]
+        for q, p in examples:
+            self.assertTrue(quotient_factor_is_exact_square_rank_witness(q, p))
 
 if __name__ == "__main__":
     unittest.main()
