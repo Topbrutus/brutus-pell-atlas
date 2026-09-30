@@ -171,3 +171,37 @@ def divides_primitive_square_quotient(root: int, witness: int) -> bool:
     if witness < 2:
         raise ValueError("witness must be >= 2")
     return primitive_square_quotient(root) % witness == 0
+
+
+def next_gate8_k_after(bound_k: int, sign: int) -> int:
+    """
+    Return the first Gate-8-admissible k strictly above bound_k.
+
+    sign=+1 uses k == 0 (mod 8).
+    sign=-1 uses k == 6 (mod 8).
+    """
+    if bound_k < 0:
+        raise ValueError("bound_k must be non-negative")
+    if sign not in (-1, 1):
+        raise ValueError("sign must be -1 or +1")
+    residue = 0 if sign == 1 else 6
+    candidate = bound_k + 1
+    candidate += (residue - candidate) % 8
+    return candidate
+
+
+def bounded_gate8_witness_lower_bound(root: int, scanned_through_k: int) -> int:
+    """
+    Given a completed no-hit scan through scanned_through_k, return the
+    smallest integer p that could lie on either next legal Gate-8 rail.
+
+    This is a computational lower bound, not a universal existence theorem.
+    """
+    if root < 1 or root % 2 == 0:
+        raise ValueError("root must be positive and odd")
+    target = root * root
+    km = next_gate8_k_after(scanned_through_k, -1)
+    kp = next_gate8_k_after(scanned_through_k, 1)
+    minus_candidate = km * target - 1
+    plus_candidate = kp * target + 1
+    return min(minus_candidate, plus_candidate)

@@ -276,3 +276,59 @@ L5 and L6 give two independent search routes for a square gate `q`:
 A valid prime witness discovered by either route is then sent through exact rank verification.
 
 This formalizes the search pattern already used successfully by the Atlas for direct witnesses and for difficult gates resolved through P-1/P+1/ECM factorization.
+
+
+---
+
+## L7 — Gate-8 Post-Scan Witness Lower Bound
+
+Suppose an odd square gate `q` has been exhaustively checked with no witness through
+
+`k <= K`
+
+on the Gate-8 rails from L5.
+
+The next legal coefficients are determined exactly by their residue classes:
+
+- minus rail: first `k > K` with `k = 6 (mod 8)`;
+- plus rail: first `k > K` with `k = 0 (mod 8)`.
+
+Therefore every future explicit prime witness must satisfy
+
+`p >= min(k_minus*q^2 - 1, k_plus*q^2 + 1)`.
+
+**Status:** `DERIVED_FROM_BOUNDED_SEARCH`.
+
+This is not a universal theorem about where a witness exists. It is an exact lower bound conditional on the recorded finite scan being complete through `K`.
+
+### Specialization to K = 10^10
+
+Since
+
+`10^10 = 0 (mod 8)`,
+
+the next legal coefficients are
+
+`k_minus = 10,000,000,006`
+
+and
+
+`k_plus = 10,000,000,008`.
+
+Thus the first possible post-frontier integer on either legal rail is the minus-rail value
+
+`(10,000,000,006) q^2 - 1`.
+
+For the current hard gates:
+
+| q | target q^2 | exact witness lower bound after k<=10^10 |
+|---:|---:|---:|
+| 47 | 2209 | 22,090,000,013,253 |
+| 71 | 5041 | 50,410,000,030,245 |
+| 83 | 6889 | 68,890,000,041,333 |
+| 101 | 10201 | 102,010,000,061,205 |
+| 113 | 12769 | 127,690,000,076,613 |
+| 251 | 63001 | 630,010,000,378,005 |
+| 269 | 72361 | 723,610,000,434,165 |
+
+The A1 continuation scan further raises the finite bound for q = 47,71,83 from `K=10^10` to `K=10,000,100,000`; those updated per-gate bounds can be regenerated mechanically with the same formula.

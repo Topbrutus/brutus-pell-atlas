@@ -19,6 +19,8 @@ from calculation.derived_laws import (
     odd_square_gate_coordinates,
     odd_square_gate_rail_ok,
     divides_primitive_square_quotient,
+    next_gate8_k_after,
+    bounded_gate8_witness_lower_bound,
 )
 from calculation.pell_atlas import pell_rank
 from calculation.frontier_level_3 import KNOWN_LEVEL3_GATE_WITNESSES
@@ -131,6 +133,26 @@ class BrutusPellDerivedLawTests(unittest.TestCase):
         for root in (13, 17, 23, 29, 37, 43, 73):
             witness = int(KNOWN_LEVEL3_GATE_WITNESSES[root]["witness"])
             self.assertTrue(divides_primitive_square_quotient(root, witness))
+
+
+    def test_gate8_next_k_after_1e10(self):
+        K = 10_000_000_000
+        self.assertEqual(next_gate8_k_after(K, -1), 10_000_000_006)
+        self.assertEqual(next_gate8_k_after(K, 1), 10_000_000_008)
+
+    def test_bounded_witness_lower_bounds_for_hard_gates(self):
+        K = 10_000_000_000
+        expected = {
+            47: 22_090_000_013_253,
+            71: 50_410_000_030_245,
+            83: 68_890_000_041_333,
+            101: 102_010_000_061_205,
+            113: 127_690_000_076_613,
+            251: 630_010_000_378_005,
+            269: 723_610_000_434_165,
+        }
+        for root, bound in expected.items():
+            self.assertEqual(bounded_gate8_witness_lower_bound(root, K), bound)
 
 
 if __name__ == "__main__":
